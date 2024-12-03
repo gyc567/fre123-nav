@@ -1,13 +1,13 @@
 {
 	"base": {
-		"app_name": "FRE123",
-		"web_host": "https://www.fre123.com",
+		"app_name": "smartwallex",
+		"web_host": "https://www.smartwallex.com",
 		"logo": "https://img.fre123.com/i/2023/11/25/65619e8022505.png"
 	},
 	"seo": {
-		"title": "FRE123 免费资源共享平台",
-		"description": "FRE123 专注于为您提供各种免费优质资源，包括影视资源、动漫番剧、软件工具等。无论您在寻找哪种资源，我们都将尽力为您提供，为您的学习或工作助力",
-		"keywords": "FRE123, 免费资源, 优质资源, 资源聚合, 在线资源, 影视资源, 动漫番剧, 软件工具, 网盘资源",
+		"title": "smartwallex  聪明钱包导航平台",
+		"description": "smartwallex  聪明钱包导航平台  聪明钱包导航平台 专注于为您提供各种聪明钱包信息，包括交易所资源、链上数据、一级工具等。无论您在寻找哪种资源，我们都将尽力为您提供，为您的学习或工作助力",
+		"keywords": "smartwallex, 免费加密货币资源, 优质币圈资源, 资源聚合, 在线资源, 链上数据, 币种信息, 币种行情, 币种分析, 币种交易, 币种钱包, 币种工具, wallet导航平台",
 		"icon": "https://img.fre123.com/i/2023/11/25/65619e791f166.ico"
 	},
 	"header": {
@@ -37,8 +37,8 @@
 		"right": {
 			"is_show": true,
 			"group": {
-				"name": "热点榜单",
-				"url": "https://www.fre123.com/news",
+				"name": "交易所榜单",
+				"url": "https://www.smartwallex.com/news",
 				"children": [
 					{
 						"name": "新闻热榜",
@@ -64,8 +64,8 @@
 				"icon_size": 20,
 				"icon_color": "#00b140",
 				"icon_hover_color": "#008733",
-				"text": "有兴趣加我进群聊聊",
-				"img": "https://img.fre123.com/i/2023/12/03/656c990d9fbb8.jpeg",
+				"text": "有兴趣加我微信：btcgo6868",
+				"img": "",
 				"url": ""
 			},
 			{
@@ -73,18 +73,9 @@
 				"icon_size": 20,
 				"icon_color": "#0088cc",
 				"icon_hover_color": "#085b85",
-				"text": "关注老胡TG信息流频道",
+				"text": "关注比特财商频道",
 				"img": "",
-				"url": "https://t.me/howie_weekly"
-			},
-			{
-				"icon_class": "fas fa-comment-dots",
-				"icon_size": 20,
-				"icon_color": "#0088cc",
-				"icon_hover_color": "#085b85",
-				"text": "FRE123 期待您的建议反馈",
-				"img": "",
-				"url": "https://txc.qq.com/products/617721"
+				"url": "https://t.me/cryptochanneleric"
 			}
 		]
 	},
