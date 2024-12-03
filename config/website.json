@@ -37,20 +37,24 @@
 		"right": {
 			"is_show": true,
 			"group": {
-				"name": "交易所榜单",
-				"url": "https://www.smartwallex.com/news",
+				"name": "中心化交易所推荐",
+				"url": "",
 				"children": [
 					{
-						"name": "新闻热榜",
-						"url": "https://www.fre123.com/news"
+						"name": "芝麻交易所",
+						"url": "https://www.gateio24.com/signup/VlFFBg1W?ref_type=103"
 					},
 					{
-						"name": "技术热榜",
-						"url": "https://www.fre123.com/tech"
+						"name": "币安交易所",
+						"url": "https://www.binance.com/activity/referral-entry/CPA?ref=CPA_00OY78C3X4"
 					},
 					{
-						"name": "技术周刊",
-						"url": "https://www.fre123.com/weekly"
+						"name": "bitget交易所",
+						"url": "https://partner.bitgetapp.com/bg/L9BLZB"
+					},
+					{
+						"name": "欧易交易所",
+						"url": "https://okx.com/join/2270923"
 					}
 				]
 			}
@@ -86,23 +90,19 @@
 				{
 					"icon_class": "fas fa-comment-dots",
 					"icon_size": 20,
-					"url": "https://github.com/fre123-com"
+					"url": "https://github.com/gyc567"
 				},
 				{
 					"icon_class": "fab fa-telegram-plane",
 					"icon_size": 20,
-					"url": "https://t.me/howie_weekly"
+					"url": "https://t.me/cryptochanneleric"
 				},
 				{
 					"icon_class": "fas fa-blog",
 					"icon_size": 20,
-					"url": "https://www.fre123.com/weekly"
-				},
-				{
-					"icon_class": "fas fa-qrcode",
-					"icon_size": 20,
-					"url": "https://cdn.jsdelivr.net/gh/howie6879/weekly/src/statics/wechat.jpeg"
+					"url": "https://medium.com/@gyc567"
 				}
+			
 			]
 		}
 	}
