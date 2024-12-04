@@ -1,40 +1,40 @@
 [
 	{
-		"group_name": "新闻资讯",
+		"group_name": "加密资讯",
 		"style": 1,
 		"style_des": "标准风格",
 		"tab_list": [
 			{
-				"tab_name": "新闻热点",
+				"tab_name": "加密热点",
 				"upper_right_corner": {
-					"title": "热榜资讯汇总>>>",
+					"title": "加密资讯汇总>>>",
 					"url": "https://www.fre123.com/news"
 				},
 				"details": [
 					{
-						"title": "FRE123 新闻热榜",
-						"ori_url": "https://www.fre123.com/news",
-						"url": "https://www.fre123.com/news",
+						"title": "加密新闻热榜",
+						"ori_url": "https://www.theblockbeats.info/newsflash",
+						"url": "https://www.theblockbeats.info/newsflash",
 						"icon": "https://img.fre123.com/i/2024/01/18/65a81a0370405.jpg",
-						"description": "FRE123 新闻热榜汇集各平台技术热点资讯，助您快速了解实时资讯",
+						"description": "加密新闻热榜汇集各平台技术热点资讯，助您快速了解实时资讯",
 						"suffix": false,
 						"is_show": true
 					},
 					{
-						"title": "FRE123 技术热榜",
-						"ori_url": "https://www.fre123.com/tech",
-						"url": "https://www.fre123.com/tech",
+						"title": "加密技术热榜",
+						"ori_url": "https://www.techflowpost.com/newsletter/index.html",
+						"url": "https://www.techflowpost.com/newsletter/index.html",
 						"icon": "https://img.fre123.com/i/2024/01/18/65a819ea7d80f.jpg",
-						"description": "FRE123 技术热榜汇集各平台技术热点资讯，助您快速了解实时资讯",
+						"description": "加密技术热榜汇集各平台技术热点资讯，助您快速了解实时资讯",
 						"suffix": false,
 						"is_show": true
 					},
 					{
-						"title": "FRE123 精选周刊",
-						"ori_url": "https://www.fre123.com/weekly",
-						"url": "https://www.fre123.com/weekly",
+						"title": "加密精选周刊",
+						"ori_url": "https://medium.com/@gyc567",
+						"url": "https://medium.com/@gyc567",
 						"icon": "https://img.fre123.com/i/2024/01/18/65a81a125a343.jpg",
-						"description": "这是老胡储物柜为您收集的前后端技术周刊精选推荐信息流。这里提供技术思考、开发指南、编程实践，开源项目，架构探索以及最新的周刊信息流。深耕你的编程知识，提升你的技术实力",
+						"description": "这是Eric提供的技术思考及最新的加密周刊信息流。",
 						"suffix": false,
 						"is_show": true
 					},
