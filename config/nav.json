@@ -8,7 +8,7 @@
 				"tab_name": "加密热点",
 				"upper_right_corner": {
 					"title": "加密资讯汇总>>>",
-					"url": "https://www.fre123.com/news"
+					"url": "https://medium.com/@gyc56"
 				},
 				"details": [
 					{
@@ -39,10 +39,10 @@
 						"is_show": true
 					},
 					{
-						"title": "微博热搜",
-						"ori_url": "https://s.weibo.com/top/summary",
-						"url": "https://www.fre123.com/news/weibo",
-						"icon": "https://img.fre123.com/i/2023/12/05/656f27339b3b8.png",
+						"title": "加密ChainFeeds热点",
+						"ori_url": "https://www.chainfeeds.xyz/",
+						"url": "https://www.chainfeeds.xyz/",
+						"icon": "/chainfeeds_logo.jpg",
 						"description": "与世界分享你的瞬间 ",
 						"suffix": false,
 						"is_show": true
