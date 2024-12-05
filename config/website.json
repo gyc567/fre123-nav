@@ -2,7 +2,7 @@
 	"base": {
 		"app_name": "smartwallex",
 		"web_host": "https://www.smartwallex.com",
-		"logo": "@/assets/img/smartwallex2.jpg"
+		"logo": "/smartwallex2.jpg"
 	},
 	"seo": {
 		"title": "smartwallex:聪明钱一站式导航平台",
