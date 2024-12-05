@@ -203,7 +203,7 @@
 					{
 						"title": "Hacker News",
 						"ori_url": "https://news.ycombinator.com/",
-						"url": "https://www.fre123.com/tech/ycombinator",
+						"url": "https://news.ycombinator.com/",
 						"icon": "https://img.fre123.com/i/2023/12/12/657738fb0da11.png",
 						"description": "程序员和创业者的热门新闻网站",
 						"suffix": false,
@@ -212,7 +212,7 @@
 					{
 						"title": "Github",
 						"ori_url": "https://github.com/trending",
-						"url": "https://www.fre123.com/tech/github_trending",
+						"url": "https://github.com/trending",
 						"icon": "https://img.fre123.com/i/2023/12/12/65773615a03a5.png",
 						"description": "全球最大的代码托管平台，共享开源项目",
 						"suffix": false,
@@ -221,7 +221,7 @@
 					{
 						"title": "Stack Overflow",
 						"ori_url": "https://stackoverflow.com/",
-						"url": "https://www.fre123.com/tech/stackoverflow",
+						"url": "https://stackoverflow.com/",
 						"icon": "https://img.fre123.com/i/2023/12/12/65773ed583ad3.png",
 						"description": "开发者问答社区，解决编程难题",
 						"suffix": false,
@@ -230,7 +230,7 @@
 					{
 						"title": "V2EX",
 						"ori_url": "https://www.v2ex.com/?tab=hot",
-						"url": "https://www.fre123.com/tech/v2ex",
+						"url": "https://www.v2ex.com/?tab=hot",
 						"icon": "https://img.fre123.com/i/2023/12/12/657733214ec3f.png",
 						"description": "程序员社区，分享与讨论",
 						"suffix": false,
