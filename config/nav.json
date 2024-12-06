@@ -50,7 +50,7 @@
 					{
 						"title": "今日头条",
 						"ori_url": "https://www.toutiao.com/",
-						"url": "https://www.fre123.com/news/toutiao",
+						"url": "https://www.toutiao.com/",
 						"icon": "https://img.fre123.com/i/2023/12/05/656f276c1711f.png",
 						"description": "个性化资讯推荐",
 						"suffix": false,
@@ -59,7 +59,7 @@
 					{
 						"title": "抖音热点",
 						"ori_url": "https://www.douyin.com/hot",
-						"url": "https://www.fre123.com/news/douyin",
+						"url": "https://www.douyin.com/hot",
 						"icon": "https://img.fre123.com/i/2023/12/05/656f27e4dccaa.png",
 						"description": "发现身边的新鲜事",
 						"suffix": false,
@@ -77,7 +77,7 @@
 					{
 						"title": "微信热文",
 						"ori_url": "https://tophub.today/n/WnBe01o371",
-						"url": "https://www.fre123.com/news/douywei_xin_re_wenin",
+						"url": "https://tophub.today/n/WnBe01o371",
 						"icon": "https://img.fre123.com/i/2023/12/05/656f469aecf87.png",
 						"description": "热门文章与资讯推荐",
 						"suffix": false,
