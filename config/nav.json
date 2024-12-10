@@ -87,7 +87,7 @@
 						"title": "币安交易所",
 						"ori_url": "https://www.binance.com/activity/referral-entry/CPA/together-v4?hl=zh-CN&ref=CPA_00OY78C3X4",
 						"url": "https://www.binance.com/activity/referral-entry/CPA/together-v4?hl=zh-CN&ref=CPA_00OY78C3X4",
-						"icon": "https://img.fre123.com/i/2023/12/12/657738fb0da11.png",
+						"icon": "/binance_logo.jpg",
 						"description": "全球最大的交易所",
 						"suffix": false,
 						"is_show": true
@@ -97,7 +97,7 @@
 						"ori_url": "https://www.gateio24.com/signup/VlFFBg1W?ref_type=103",
 						"url": "https://www.gateio24.com/signup/VlFFBg1W?ref_type=103",
 						"icon": "/gate_logo.jpg",
-						"description": "老牌交易所",
+						"description": "老牌交易所，稳定，可靠",
 						"suffix": false,
 						"is_show": true
 					},
@@ -110,7 +110,16 @@
 						"suffix": false,
 						"is_show": true
 					}
-					
+					,
+					{
+						"title": "BitGet交易所",
+						"ori_url": "https://partner.bitgetapp.com/bg/L9BLZB",
+						"url": "https://partner.bitgetapp.com/bg/L9BLZB",
+						"icon": "/bitget_logo.jpg",
+						"description": "排名靠前的交易所",
+						"suffix": false,
+						"is_show": true
+					}
 					
 					
 					
