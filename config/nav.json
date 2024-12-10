@@ -73,6 +73,15 @@
 						"description": "区块链新闻平台",
 						"suffix": false,
 						"is_show": true
+					},
+					{
+						"title": "币圈日历",
+						"ori_url": "https://www.coincarp.com/zh/",
+						"url": "https://www.coincarp.com/zh/",
+						"icon": "/coin_carp.jpg",
+						"description": "币圈日历",
+						"suffix": false,
+						"is_show": true
 					}
 				]
 			},
