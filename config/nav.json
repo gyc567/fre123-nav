@@ -48,20 +48,20 @@
 						"is_show": true
 					},
 					{
-						"title": "今日头条",
-						"ori_url": "https://www.toutiao.com/",
-						"url": "https://www.toutiao.com/",
-						"icon": "https://img.fre123.com/i/2023/12/05/656f276c1711f.png",
-						"description": "个性化资讯推荐",
+						"title": "CMC",
+						"ori_url": "https://coinmarketcap.com/",
+						"url": "https://coinmarketcap.com/",
+						"icon": "/cmc_logo.jpg",
+						"description": "最全代币数据资讯平台：coinmarketcap.com",
 						"suffix": false,
 						"is_show": true
 					},
 					{
-						"title": "抖音热点",
-						"ori_url": "https://www.douyin.com/hot",
-						"url": "https://www.douyin.com/hot",
-						"icon": "https://img.fre123.com/i/2023/12/05/656f27e4dccaa.png",
-						"description": "发现身边的新鲜事",
+						"title": "CoinGecko",
+						"ori_url": "https://www.coingecko.com/",
+						"url": "https://www.coingecko.com/",
+						"icon": "/coingecko_logo.jpg",
+						"description": "代币价格与市值数据平台：coingecko.com",
 						"suffix": false,
 						"is_show": true
 					},
