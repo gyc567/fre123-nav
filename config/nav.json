@@ -78,146 +78,43 @@
 			},
 			{
 				"upper_right_corner": {
-					"title": "技术资讯汇总>>>",
-					"url": "https://www.fre123.com/tech"
+					"title": "中心化交易所汇总>>>",
+					"url": "https://medium.com/@gyc567/%E4%B8%AD%E5%BF%83%E5%8C%96%E4%BA%A4%E6%98%93%E6%89%80%E6%B1%87%E6%80%BB-03a73e8306b7"
 				},
-				"tab_name": "技术资讯",
+				"tab_name": "中心化交易所",
 				"details": [
 					{
-						"title": "Hacker News",
-						"ori_url": "https://news.ycombinator.com/",
-						"url": "https://news.ycombinator.com/",
+						"title": "币安交易所",
+						"ori_url": "https://www.binance.com/activity/referral-entry/CPA/together-v4?hl=zh-CN&ref=CPA_00OY78C3X4",
+						"url": "https://www.binance.com/activity/referral-entry/CPA/together-v4?hl=zh-CN&ref=CPA_00OY78C3X4",
 						"icon": "https://img.fre123.com/i/2023/12/12/657738fb0da11.png",
-						"description": "程序员和创业者的热门新闻网站",
+						"description": "全球最大的交易所",
 						"suffix": false,
 						"is_show": true
 					},
 					{
-						"title": "Github",
-						"ori_url": "https://github.com/trending",
-						"url": "https://github.com/trending",
-						"icon": "https://img.fre123.com/i/2023/12/12/65773615a03a5.png",
-						"description": "全球最大的代码托管平台，共享开源项目",
+						"title": "芝麻交易所",
+						"ori_url": "https://www.gateio24.com/signup/VlFFBg1W?ref_type=103",
+						"url": "https://www.gateio24.com/signup/VlFFBg1W?ref_type=103",
+						"icon": "/gate_logo.jpg",
+						"description": "老牌交易所",
 						"suffix": false,
 						"is_show": true
 					},
 					{
-						"title": "Stack Overflow",
-						"ori_url": "https://stackoverflow.com/",
-						"url": "https://stackoverflow.com/",
-						"icon": "https://img.fre123.com/i/2023/12/12/65773ed583ad3.png",
-						"description": "开发者问答社区，解决编程难题",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "V2EX",
-						"ori_url": "https://www.v2ex.com/?tab=hot",
-						"url": "https://www.v2ex.com/?tab=hot",
-						"icon": "https://img.fre123.com/i/2023/12/12/657733214ec3f.png",
-						"description": "程序员社区，分享与讨论",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "DEV",
-						"ori_url": "https://dev.to/",
-						"url": "https://www.fre123.com/tech/dev_to",
-						"icon": "https://img.fre123.com/i/2023/12/12/65773605a7d3f.png",
-						"description": "开发者社区，探索编程世界",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "掘金",
-						"ori_url": "https://juejin.cn/hot/articles",
-						"url": "https://www.fre123.com/tech/juejin_trending_all_weekly",
-						"icon": "https://img.fre123.com/i/2023/12/12/6577329c73a89.png",
-						"description": "技术社区，发现优质内容",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "博客园",
-						"ori_url": "https://www.cnblogs.com/aggsite/topviews",
-						"url": "https://www.fre123.com/tech/cnblogs_topviews",
-						"icon": "https://img.fre123.com/i/2023/12/12/65773305be49d.png",
-						"description": "程序员社区，知识交流平台",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "CSDN",
-						"ori_url": "https://blog.csdn.net/rank/list",
-						"url": "https://www.fre123.com/tech/csdnnews",
-						"icon": "https://img.fre123.com/i/2023/12/12/65773339badda.png",
-						"description": "IT技术社区，知识传播平台",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "开源中国",
-						"ori_url": "https://www.oschina.net/news",
-						"url": "https://www.fre123.com/tech/oschina_news",
-						"icon": "https://img.fre123.com/i/2023/12/12/65773357604e7.png",
-						"description": "开源技术社区，共享创新精神",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "Segmentfault",
-						"ori_url": "https://segmentfault.com/news",
-						"url": "https://www.fre123.com/tech/segmentfault_news",
-						"icon": "https://img.fre123.com/i/2023/12/12/6577354f59e5d.png",
-						"description": "开发者问答社区，解决问题互助",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "InfoQ",
-						"ori_url": "https://www.infoq.cn/",
-						"url": "https://www.fre123.com/tech/infoq",
-						"icon": "https://img.fre123.com/i/2023/12/12/65773588b7b52.png",
-						"description": "技术资讯平台，深度洞察行业动态",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "机器之心",
-						"ori_url": "https://www.jiqizhixin.com/",
-						"url": "https://www.fre123.com/tech/jiqizhixin",
-						"icon": "https://img.fre123.com/i/2023/12/12/657741a779223.png",
-						"description": "人工智能科技媒体，探索智能世界",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "量子位",
-						"ori_url": "https://www.qbitai.com/category/%e8%b5%84%e8%ae%af",
-						"url": "https://www.fre123.com/tech/qbitai",
-						"icon": "https://img.fre123.com/i/2023/12/12/6577368408291.png",
-						"description": "科技资讯平台，前沿科技动态解读",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "湾区日报",
-						"ori_url": "https://www.wanqu.co/",
-						"url": "https://www.fre123.com/tech/wanqu",
-						"icon": "https://img.fre123.com/i/2023/12/12/65773eb7cded4.png",
-						"description": "科技创新资讯，关注湾区科技动态",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "小众软件",
-						"ori_url": "https://www.appinn.com/",
-						"url": "https://www.fre123.com/tech/appinn",
-						"icon": "https://img.fre123.com/i/2023/12/12/65773dd163b37.jpeg",
-						"description": "探索独特应用，发现小众精品软件",
+						"title": "欧易交易所",
+						"ori_url": "https://okx.com/join/2270923",
+						"url": "https://okx.com/join/2270923",
+						"icon": "/okx_logo.jpg",
+						"description": "排名前三的交易所",
 						"suffix": false,
 						"is_show": true
 					}
+					
+					
+					
+					
+					
 				]
 			},
 			{
