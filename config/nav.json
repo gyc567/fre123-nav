@@ -278,17 +278,10 @@
 						"description": "全面的巨鲸数据追踪平台",
 						"suffix": true,
 						"is_show": true
-					}
-					
-					
-					
-				
+					}						
 				
 					,
-
-					
-					
-					
+	
 					
 					{
 						"title": "Block AI",
@@ -304,236 +297,42 @@
 		]
 	},
 	{
-		"group_name": "动漫番剧",
+		"group_name": "DEFI工具",
 		"style": 1,
 		"style_des": "标准风格",
 		"tab_list": [
 			{
-				"tab_name": "番剧资源",
+				"tab_name": "DEFI仪表盘",
 				"upper_right_corner": {
-					"title": "🔥FRE123动漫搜索引擎>>>",
-					"url": "https://www.fre123.com/anime/s"
+					"title": "🔥DEFI仪表盘汇总>>>",
+					"url": "https://medium.com/@gyc567/defi%E4%BB%AA%E8%A1%A8%E7%9B%98%E6%B1%87%E6%80%BB-6ee38a9517ff"
 				},
 				"details": [
 					{
-						"title": "FRE123 动漫搜索引擎",
-						"url": "https://www.fre123.com/anime/s",
-						"icon": "https://img.fre123.com/i/2023/11/25/65619e8022505.png",
-						"description": "FRE123 动漫搜索引擎为您提供各类动漫番剧在线观看下载资源，追番找动漫必备工具，还为您提供最新番剧时间表，直接搜索关键词即可找到对应的漫画番剧播放源。",
+						"title": "defillama",
+						"url": "https://defillama.com/",
+						"icon": "/Defillama_Logo.jpg",
+						"description": "最全面的defi数据仪表盘，包括TVL、交易量、APR、年化等，可一键查看。",
 						"suffix": true,
 						"is_show": true
 					},
 					{
-						"title": "AGE 动漫",
-						"url": "https://www.agedm.org/",
-						"icon": "https://img.fre123.com/i/2023/11/25/6561b8413511a.png",
-						"description": "专业的在线动漫网站，动漫免费在线观看，高品质画质，实时更新，追番利器!",
+						"title": "defillama",
+						"url": "https://defillama.com/",
+						"icon": "/Defillama_Logo.jpg",
+						"description": "最全面的defi数据仪表盘，包括TVL、交易量、APR、年化等，可一键查看。",
 						"suffix": true,
 						"is_show": true
-					},
-					{
-						"title": "樱花动漫",
-						"url": "https://www.iyhdmm.com",
-						"icon": "https://img.fre123.com/i/2023/11/25/6561b85abc481.png",
-						"description": "专注动漫的门户网站",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "怡萱动漫",
-						"url": "http://yxdm.tv",
-						"icon": "https://img.fre123.com/i/2023/11/25/6561b8916d0e7.jpg",
-						"description": "动漫番剧观看下载网站",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "E站",
-						"url": "https://www.ezdmw.site/",
-						"icon": "https://img.fre123.com/i/2023/12/13/6579a72d755f8.png",
-						"description": "E站弹幕网是国内专业的二次元（ACG）社区，在线动漫&下载",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "动漫岛",
-						"url": "http://www.dmand5.com/",
-						"icon": "https://img.fre123.com/i/2023/12/18/657fe5c5cca6e.png",
-						"description": "动漫岛为大家提供新番连载大量完结日漫热门国漫剧场动漫等动漫的在线观看",
-						"suffix": true,
-						"is_show": false
-					},
-					{
-						"title": "异世界动漫",
-						"url": "https://www.mikudm.com/",
-						"icon": "https://img.fre123.com/i/2023/11/25/6561b8a56cb6e.png",
-						"description": "动漫网站，新番国漫都有，打开会自动跳转到最新域名",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "风车动漫",
-						"url": "https://dm530.org/",
-						"icon": "https://img.fre123.com/i/2024/02/25/65dac06cb64d2.jpg",
-						"description": "上万集高清晰画质的在线动漫，观看完全免费、无须注册",
-						"suffix": true,
-						"is_show": false
-					},
-					{
-						"title": "D站",
-						"url": "https://www.5dm.link/",
-						"icon": "https://img.fre123.com/i/2024/03/11/65ee581dbd63e.ico",
-						"description": "五弹幕/5DM，原名dilili/嘀哩哩弹幕网，被广大网友称为d站。以传递正能量为宗旨,致力于打造真正的二次元理想乡。嘀哩嘀哩弹幕网",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "蜜糖动漫",
-						"url": "https://www.mitang.tv/",
-						"icon": "https://img.fre123.com/i/2024/02/21/65d60ba7f0742.webp",
-						"description": "提供极致纯净的看番体验，卓越的画质，细腻而清晰。",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "狗番",
-						"url": "https://www.dogsfun.fun/",
-						"icon": "https://img.fre123.com/i/2024/02/21/65d60c3cd4dd1.jpg",
-						"description": "高清番剧在线看",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "c站",
-						"url": "https://www.clicli.cc/",
-						"icon": "https://img.fre123.com/i/2024/02/21/65d60d2338c5f.jpg",
-						"description": "clicli弹幕网，简称c站或clicli,主打游戏原创和推番~",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "宫下动漫",
-						"url": "https://gxdm01.org/",
-						"icon": "https://img.fre123.com/i/2024/02/21/65d60d7b0641e.jpg",
-						"description": "提供海量的动漫资源，包括日本、美国、中国大陆等地的优秀动漫作品，满足不同用户对动漫作品的需求",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "AnFuns",
-						"url": "https://www.anfuns.cc/",
-						"icon": "https://img.fre123.com/i/2024/02/21/65d60dd327866.ico",
-						"description": "AnFuns动漫,本站提供1080P 720P BDRIP动漫资源收集整理,专门为您提供海量的高质量高画质的在线动漫资源的网站门户.",
-						"suffix": true,
-						"is_show": false
-					},
-
-					{
-						"title": "bimi 动漫",
-						"url": "http://www.bimiacg10.net/",
-						"icon": "https://img.fre123.com/i/2023/12/14/6579d63c89c74.png",
-						"description": "哔咪哔咪为您将动漫番剧一网打尽",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "呵呵动漫",
-						"url": "https://www.hehe.la/",
-						"icon": "https://img.fre123.com/i/2024/02/21/65d60bfad2bbc.ico",
-						"description": "提供免费、高质量无广告的新番、老番在线观看！",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "动漫线上看",
-						"url": "https://anime1.me/",
-						"icon": "https://img.fre123.com/i/2023/12/13/6579a789c981f.webp",
-						"description": "最新番剧追更，在线观看",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "Myself 動漫",
-						"url": "https://myself-bbs.com",
-						"icon": "https://img.fre123.com/i/2023/12/14/6579ddcd6d2a6.jpeg",
-						"description": "动漫在线观看",
-						"suffix": true,
-						"is_show": false
-					},
-					{
-						"title": "妮可动漫",
-						"url": "http://v2.nicotv.xyz/",
-						"icon": "https://img.fre123.com/i/2023/12/13/6579a29596e6f.png",
-						"description": "免费在线动漫观看，全集高清番剧",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "AnFuns 动漫",
-						"url": "https://www.anfuns.cc",
-						"icon": "https://img.fre123.com/i/2023/11/25/6561b8afa7d2a.png",
-						"description": "在线动漫资源门户",
-						"suffix": true,
-						"is_show": false
-					},
-
-					{
-						"title": "girigiri爱动漫",
-						"url": "https://anime.girigirilove.com/",
-						"icon": "https://img.fre123.com/i/2023/12/13/6579d1f8bb534.png",
-						"description": "在线追番播放网站",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "动漫巴士",
-						"url": "https://dm84.xyz/",
-						"icon": "https://img.fre123.com/i/2023/12/14/6579dbf7843df.png",
-						"description": "最新好看的动漫免费在线观看",
-						"suffix": true,
-						"is_show": true
-					},
-
-					{
-						"title": "稀饭动漫",
-						"url": "https://dick.xfani.com/",
-						"icon": "https://img.fre123.com/i/2023/12/18/657fe8995019f.png",
-						"description": "免费高清动漫分享",
-						"suffix": true,
-						"is_show": false
-					},
-					{
-						"title": "去看吧",
-						"url": "https://qkan8.com/",
-						"icon": "https://img.fre123.com/i/2023/12/14/6579dc905f000.png",
-						"description": "提供最新的日本动漫在线观看",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "橘子动漫",
-						"url": "https://www.mgnacg.com/",
-						"icon": "https://img.fre123.com/i/2023/12/13/6579d039032ea.jpg",
-						"description": "清晰画质动漫电影在线观看",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "Nicohub",
-						"url": "https://nicohub.cc/",
-						"icon": "https://img.fre123.com/i/2024/01/06/65982cbc83377.png",
-						"description": "简洁的在线番剧&漫画&轻小说一体化的网站",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "NT 动漫 🪜",
-						"url": "https://www.ntdm.tv/",
-						"icon": "https://img.fre123.com/i/2024/01/05/6598237865cd8.png",
-						"description": "专注的动漫的网站，立志为广大动漫迷提供一个在线看动漫的好平台。",
-						"suffix": true,
-						"is_show": false
 					}
+					
+					
+					
+
+					
+					
+					
+					
+					
 				]
 			},
 			{
