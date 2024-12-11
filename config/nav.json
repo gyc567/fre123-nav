@@ -371,6 +371,16 @@
 						"suffix": true,
 						"is_show": true
 					}
+					,
+					{
+						"title": "MetaMask钱包",
+						"url": "https://metamask.io/",
+						"icon": "/Mask_Logo.jpg",
+						"description": "全球用户最多的去中心化钱包",
+						"suffix": true,
+						"is_show": true
+					}
+					
 					
 					
 				]
