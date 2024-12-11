@@ -305,7 +305,7 @@
 					{
 						"title": "欧易天眼链上查询工具",
 						"url": "https://www.oklinkpro.com/#/",
-						"icon": "/BlockAI_Logo.jpg",
+						"icon": "/OKLink_Logo.jpg",
 						"description": "智能的巨鲸数据追踪平台",
 						"suffix": true,
 						"is_show": true
@@ -438,18 +438,18 @@
 				},
 				"details": [
 					{
-						"title": "NFTEye",
-						"url": "https://nfteye.io/",
-						"icon": "/NFTEye_Logo.jpg",
-						"description": "NFT分析与交易平台。",
+						"title": "Across跨链桥",
+						"url": "https://across.to/",
+						"icon": "/Across_Logo.jpg",
+						"description": "EVM跨链桥。",
 						"suffix": true,
 						"is_show": true
 					},
 					{
-						"title": "NFTEye",
-						"url": "https://nfteye.io/",
-						"icon": "/NFTEye_Logo.jpg",
-						"description": "NFT分析与交易平台。",
+						"title": "DeBridge跨链桥",
+						"url": "https://debridge.finance/",
+						"icon": "/DeBridge_Logo.jpg",
+						"description": "DeBridge跨链桥",
 						"suffix": true,
 						"is_show": true
 					}
