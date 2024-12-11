@@ -291,13 +291,26 @@
 						"suffix": true,
 						"is_show": true
 					}
+					,
+	
+					
+					{
+						"title": "欧易天眼链上查询工具",
+						"url": "https://www.oklinkpro.com/#/",
+						"icon": "/BlockAI_Logo.jpg",
+						"description": "智能的巨鲸数据追踪平台",
+						"suffix": true,
+						"is_show": true
+					}
+
+					
 					
 				]
 			}
 		]
 	},
 	{
-		"group_name": "DEFI工具",
+		"group_name": "DEFI去中心化金融",
 		"style": 1,
 		"style_des": "标准风格",
 		"tab_list": [
@@ -317,10 +330,10 @@
 						"is_show": true
 					},
 					{
-						"title": "defillama",
-						"url": "https://defillama.com/",
+						"title": "de.fi",
+						"url": "https://de.fi/",
 						"icon": "/Defillama_Logo.jpg",
-						"description": "最全面的defi数据仪表盘，包括TVL、交易量、APR、年化等，可一键查看。",
+						"description": "好用的defi数据仪表盘。",
 						"suffix": true,
 						"is_show": true
 					}
@@ -336,100 +349,30 @@
 				]
 			},
 			{
-				"tab_name": "番剧下载",
+				"tab_name": "去中心化钱包",
 				"upper_right_corner": {
-					"title": "🔥FRE123动漫搜索引擎>>>",
-					"url": "https://www.fre123.com/anime/s"
+					"title": "🔥去中心化钱包汇总>>>",
+					"url": "https://medium.com/@gyc567/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E9%92%B1%E5%8C%85%E6%B1%87%E6%80%BB-faf8f5cdb534"
 				},
 				"details": [
 					{
-						"title": "蜜柑计划",
-						"url": "https://mikanime.tv/",
-						"icon": "https://img.fre123.com/i/2023/12/13/65799a4e99649.ico",
-						"description": "新一代的动漫下载站",
+						"title": "IMToken钱包",
+						"url": "https://www.token.im/",
+						"icon": "/IMToken_Logo.jpg",
+						"description": "老牌的去心化钱包",
 						"suffix": true,
 						"is_show": true
 					},
 					{
-						"title": "爱恋动漫BT下载",
-						"url": "https://kisssub.org/",
-						"icon": "https://img.fre123.com/i/2023/12/13/6579a0dbd7368.ico",
-						"description": "爱恋BT分享站，动画/漫画/游戏/动漫音乐/片源",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "末日动漫资源库",
-						"url": "https://share.acgnx.se/",
-						"icon": "https://img.fre123.com/i/2023/12/13/6579d4b28abac.ico",
-						"description": "ACG资源检索下载",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "漫猫动漫",
-						"url": "https://comicat.org/",
-						"icon": "https://img.fre123.com/i/2023/12/14/6579d9c1844d0.jpg",
-						"description": "动画/漫画/游戏/动漫音乐/片源BT分享下载",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "airAnime",
-						"url": "https://air.tls.moe/#/home",
-						"icon": "https://img.fre123.com/i/2023/12/13/6579a8317c4a1.jpg",
-						"description": "轻量的聚合番剧搜索工具",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "菲特动漫",
-						"url": "https://fitacg.com/",
-						"icon": "https://img.fre123.com/i/2024/02/21/65d60e8d532aa.png",
-						"description": "支持动画,新番,动画,音乐,日剧等各类动漫资源下载",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "幻樱字幕组",
-						"url": "http://www.hysub.net/",
-						"icon": "https://img.fre123.com/i/2024/02/21/65d60f500066a.ico",
-						"description": "幻樱字幕组",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "Browse :: Nyaa",
-						"url": "https://nyaa.si/",
-						"icon": "https://img.fre123.com/i/2023/12/13/65799e1f1ad15.png",
-						"description": "一个番剧下载资源网站",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "漫猫动漫BT下载",
-						"url": "https://comicat.org/",
-						"icon": "https://img.fre123.com/i/2024/01/17/65a7b8e692125.ico",
-						"description": "漫猫BT分享站，动画～漫画～游戏～动漫音乐～片源（RAW）等资源BT下载～欢迎各大字幕组及个人发布入住",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "动漫花园",
-						"url": "https://dmhy.org",
-						"icon": "https://img.fre123.com/i/2023/11/25/6561b8ca8d9db.png",
-						"description": "动漫花园是一个动漫爱好者交流的平台，提供最及时全面的动漫资源",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "萌番组",
-						"url": "https://bangumi.moe/",
-						"icon": "https://img.fre123.com/i/2023/12/13/6579a462818f1.jpg",
-						"description": "番剧种子资源下载网站",
+						"title": "TP钱包",
+						"url": "https://www.tpwallet.io/",
+						"icon": "/TP_Wallet_Logo.jpg",
+						"description": "用户最多的去中心化钱包",
 						"suffix": true,
 						"is_show": true
 					}
+					
+					
 				]
 			},
 			{
