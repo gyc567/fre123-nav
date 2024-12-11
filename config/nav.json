@@ -223,10 +223,10 @@
 					}
 					,
 					{
-						"title": "TradingView",
-						"url": "https://cn.tradingview.com/",
-						"icon": "/TradingView.jpg",
-						"description": "专业的K数据平台",
+						"title": "AICoin",
+						"url": "https://www.aicoin.com/zh-Hans",
+						"icon": "/AICoin_Logo.jpg",
+						"description": "专业的交易所K数据平台",
 						"suffix": true,
 						"is_show": true
 					}
@@ -234,102 +234,23 @@
 				]
 			},
 			{
-				"tab_name": "美日韩剧",
+				"tab_name": "链上数据平台",
 				"upper_right_corner": {},
 				"details": [
 					{
-						"title": "HDmoli",
-						"url": "https://www.hdmoli.pro",
-						"icon": "https://img.fre123.com/i/2023/11/25/6561ae6e55df8.png",
-						"description": "HDMOLI 提供免费、高品质、同时支持电脑和移动设备的影视剧在线观看网站",
+						"title": "AVE",
+						"url": "https://ave.ai/",
+						"icon": "/AVE_Logo.jpg",
+						"description": "链上聚合数据平台及一级MEME交易平台",
 						"suffix": true,
 						"is_show": true
-					},
+					}
+					,
 					{
-						"title": "LIBVIO",
-						"url": "https://www.libvio.me/",
-						"icon": "https://img.fre123.com/i/2024/01/06/659829e49995c.png",
-						"description": "海外影视资源为主的老牌在线影视资源网站",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "JoJo 影视",
-						"url": "https://jiohub.top/",
-						"icon": "https://img.fre123.com/i/2023/11/25/6561af1988649.png",
-						"description": "努力打造为最好的海外热门影视剧在线观看站点",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "低端影视",
-						"url": "https://ddys.pro/",
-						"icon": "https://img.fre123.com/i/2023/11/25/6561aeddd0eb6.png",
-						"description": "超清在线视频站",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "NO 视频",
-						"url": "https://www.novipnoad.net/",
-						"icon": "https://img.fre123.com/i/2024/01/06/65983049921a2.png",
-						"description": "主打海外影视剧资源，不负追剧好时光。",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "在线之家",
-						"url": "https://www.zxzjhd.com/",
-						"icon": "https://img.fre123.com/i/2024/01/06/659830c0e152c.png",
-						"description": "在线观看最新美剧|最新韩剧|天天美剧|人人美剧",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "美剧天堂",
-						"url": "https://www.meijutt.tw/",
-						"icon": "https://img.fre123.com/i/2023/11/25/6561b1683e2ca.png",
-						"description": "海量好看的美剧在线观看、最新美剧下载！",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "秋爸日字",
-						"url": "https://qq88.info/",
-						"icon": "https://img.fre123.com/i/2023/11/25/6561b18462068.png",
-						"description": "日剧下载网站",
-						"suffix": true,
-						"is_show": false
-					},
-					{
-						"title": "日剧跑",
-						"url": "https://www.rijupao.com/",
-						"icon": "https://img.fre123.com/i/2023/12/14/6579d8bfd3476.jpg",
-						"description": "热爱日剧，分享日剧。还有日影、动漫分享，百度网盘高清下载，迅雷高速下载。",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "韩饭网",
-						"url": "https://www.hanfan.cc/",
-						"icon": "https://img.fre123.com/i/2023/11/25/6561b19c18889.png",
-						"description": "提供韩国电视剧、韩国电影、韩国综艺、节目表、音乐演出和明星时尚",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "两个BT",
-						"url": "https://www.bttwo.net/",
-						"icon": "https://img.fre123.com/i/2024/02/21/65d6091fa0321.ico",
-						"description": "两个BT免费为网友提交BT种子下载，免费电影资源下载，以及各种高清电影在线观看,最全的最新电视剧，最近上映热门电影下载。韩国电视剧、香港TVB电视剧、韩剧、日剧、美剧、动漫番剧。",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "快看美剧",
-						"url": "https://www.kmeiju.cc/",
-						"icon": "https://img.fre123.com/i/2024/02/21/65d6098d9e248.ico",
-						"description": "看美剧是一个专注外国影视剧高清在线点播的的网站!",
+						"title": "DexTools",
+						"url": "https://www.dextools.io/app/cn/pairs",
+						"icon": "/DexTools_Logo.jpg",
+						"description": "外网最流行的一级MEME交易平台及数据聚合平台",
 						"suffix": true,
 						"is_show": true
 					}
