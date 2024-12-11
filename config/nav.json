@@ -254,140 +254,51 @@
 						"suffix": true,
 						"is_show": true
 					}
-				]
-			},
-			{
-				"tab_name": "影视下载",
-				"upper_right_corner": {},
-				"details": [
+					,
 					{
-						"title": "海盗湾",
-						"url": "https://www.pirateproxy-bay.com/",
-						"icon": "https://img.fre123.com/i/2024/01/05/6597c20198e3b.png",
-						"description": "全世界最大的磁力搜索网站",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "音范丝",
-						"url": "https://www.yinfans.me/",
-						"icon": "https://img.fre123.com/i/2023/11/25/6561b0a161eeb.png",
-						"description": "精选 4K 蓝光原盘下载",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "不太灵影视",
-						"url": "https://www.2bt0.com/",
-						"icon": "https://img.fre123.com/i/2024/01/06/65983354c2ad9.png",
-						"description": "海外电影电视剧下载",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "磁力熊",
-						"url": "https://www.cilixiong.cc/",
-						"icon": "https://img.fre123.com/i/2023/11/25/6561aef0bb22e.png",
-						"description": "磁力电影高清电影下载，豆瓣 Top250 高分高清电影磁力下载",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "电影天堂",
-						"url": "https://www.dy2018.com/",
-						"icon": "https://img.fre123.com/i/2023/11/25/6561b0e16bb9e.png",
-						"description": "分享最新电影，高清电影、综艺、动漫、电视剧等下载",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "飘花资源网",
-						"url": "https://www.piaohua.com/",
-						"icon": "https://img.fre123.com/i/2023/11/25/6561b1600d9d9.jpg",
-						"description": "每天搜集最新迅雷免费电影下载",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "美剧天堂",
-						"url": "https://www.meijutt.tw/",
-						"icon": "https://img.fre123.com/i/2023/11/25/6561b1683e2ca.png",
-						"description": "海量好看的美剧在线观看、最新美剧下载！",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "蚂蚁 4K",
-						"url": "https://www.mayi4k.com/",
-						"icon": "https://img.fre123.com/i/2023/11/25/6561b1a7eb11e.png",
-						"description": "提供4K高清电影资源下载及最新电影下载服务",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "4K 影视论坛",
-						"url": "https://www.4khdr.cn/",
-						"icon": "https://img.fre123.com/i/2023/11/25/6561b1ba0622b.png",
-						"description": "4K 电影美剧下载 ，HDR 杜比视界资源",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "迷客电影",
-						"url": "https://www.mini4k.net/",
-						"icon": "https://img.fre123.com/i/2023/12/16/657d3fd6549b7.png",
-						"description": "高清2160P 4K电影下载网站",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "秋爸日字",
-						"url": "https://qq88.info/",
-						"icon": "https://img.fre123.com/i/2023/11/25/6561b18462068.png",
-						"description": "日剧下载网站",
-						"suffix": true,
-						"is_show": false
-					},
-					{
-						"title": "日剧跑",
-						"url": "https://www.rijupao.com/",
-						"icon": "https://img.fre123.com/i/2023/12/14/6579d8bfd3476.jpg",
-						"description": "热爱日剧，分享日剧。还有日影、动漫分享，百度网盘高清下载，迅雷高速下载。",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "韩饭网",
-						"url": "https://www.hanfan.cc/",
-						"icon": "https://img.fre123.com/i/2023/11/25/6561b19c18889.png",
-						"description": "提供韩国电视剧、韩国电影、韩国综艺、节目表、音乐演出和明星时尚",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "布谷TV",
-						"url": "https://www.bugutv.org/",
-						"icon": "https://img.fre123.com/i/2023/11/25/6561b1c807121.png",
-						"description": "4K 电影爱好者基地",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "YYeTs",
-						"url": "https://yyets.click/search",
-						"icon": "https://img.fre123.com/i/2023/12/13/6579ced83bdae.png",
-						"description": "包含人人影视全部资源以及众多网友的网盘分享",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "迅雷电影天堂",
-						"url": "https://xunlei8.cc/",
-						"icon": "https://img.fre123.com/i/2024/01/23/65aec5d189579.png",
-						"description": "迅雷电影天堂 - 全球领先的高清电影下载平台，以丰富的内容、极致的下载体验、满足您最新电影迅雷下载和BT下载需求。每日更新720p、1080p，蓝光高清电影下载资源。",
+						"title": "DexScreener",
+						"url": "https://dexscreener.com/",
+						"icon": "/DexScreener_Logo.jpg",
+						"description": "外网一级MEME交易平台及数据聚合平台",
 						"suffix": true,
 						"is_show": true
 					}
+					
+				]
+			},
+			{
+				"tab_name": "链上巨鲸数据追踪",
+				"upper_right_corner": {},
+				"details": [
+
+					{
+						"title": "Whale Alert",
+						"url": "https://whale-alert.io/",
+						"icon": "/WhaleAlert_Logo.jpg",
+						"description": "全面的巨鲸数据追踪平台",
+						"suffix": true,
+						"is_show": true
+					}
+					
+					
+					
+				
+				
+					,
+
+					
+					
+					
+					
+					{
+						"title": "Block AI",
+						"url": "https://www.blockin.ai/",
+						"icon": "/BlockAI_Logo.jpg",
+						"description": "智能的巨鲸数据追踪平台",
+						"suffix": true,
+						"is_show": true
+					}
+					
 				]
 			}
 		]
