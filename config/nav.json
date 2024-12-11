@@ -416,63 +416,40 @@
 						"suffix": true,
 						"is_show": true
 					}
+					,
+					{
+						"title": "NFTEye",
+						"url": "https://nfteye.io/",
+						"icon": "/NFTEye_Logo.jpg",
+						"description": "NFT分析与交易平台。",
+						"suffix": true,
+						"is_show": true
+					}
 					
 					
 					
 				]
 			},
 			{
-				"tab_name": "动漫资讯",
+				"tab_name": "跨链桥",
 				"upper_right_corner": {
-					"title": "🔥FRE123动漫搜索引擎>>>",
-					"url": "https://www.fre123.com/anime/s"
+					"title": "🔥跨链桥汇总>>>",
+					"url": "https://medium.com/@gyc567/%E8%B7%A8%E9%93%BE%E6%A1%A5%E6%B1%87%E6%80%BB-84d6a538f9fe"
 				},
 				"details": [
 					{
-						"title": "Bangumi 番组计划",
-						"url": "https://bgm.tv/",
-						"icon": "https://img.fre123.com/i/2023/12/13/657999ff600a4.png",
-						"description": "专注于动漫、音乐、游戏领域，帮助你分享、发现与结识同好的ACG网络",
+						"title": "NFTEye",
+						"url": "https://nfteye.io/",
+						"icon": "/NFTEye_Logo.jpg",
+						"description": "NFT分析与交易平台。",
 						"suffix": true,
 						"is_show": true
 					},
 					{
-						"title": "BiliBili番剧",
-						"url": "https://www.bilibili.com/anime",
-						"icon": "https://img.fre123.com/i/2023/11/25/6561b84c2d200.png",
-						"description": "bilibili是国内知名的视频弹幕网站，这里有最及时的动漫新番，最棒的ACG氛围，最有创意的Up主。",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "AcFun",
-						"url": "https://www.acfun.cn/",
-						"icon": "https://img.fre123.com/i/2024/02/21/65d619ca74341.ico",
-						"description": "AcFun是国内首家弹幕视频网站，这里有全网独家动漫新番， 友好的弹幕氛围，有趣的UP主，好玩有科技感的虚拟偶像，年轻人都在用。",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "FRE123 2024年01月冬季新番表",
-						"url": "https://www.fre123.com/anime/s",
-						"icon": "https://img.fre123.com/i/2023/11/25/65619e8022505.png",
-						"description": "FRE123 动漫搜索引擎为您提供各类动漫番剧在线观看下载资源，追番找动漫必备工具，还为您提供2024最新番剧时间表，直接搜索关键词即可找到对应的漫画番剧播放源。",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "YuC's AnimeList",
-						"url": "https://yuc.wiki/",
-						"icon": "https://img.fre123.com/i/2023/12/13/65799b5609a6b.png",
-						"description": "新番信息资讯",
-						"suffix": true,
-						"is_show": true
-					},
-					{
-						"title": "动漫新番表",
-						"url": "https://xf.hmacg.cn/",
-						"icon": "https://img.fre123.com/i/2024/02/24/65da117e9d77a.ico",
-						"description": "由Hazx精心整理的新番表，详细展示本季度所有新番的播放时间与可观看站点。",
+						"title": "NFTEye",
+						"url": "https://nfteye.io/",
+						"icon": "/NFTEye_Logo.jpg",
+						"description": "NFT分析与交易平台。",
 						"suffix": true,
 						"is_show": true
 					}
