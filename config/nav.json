@@ -158,7 +158,15 @@
 						"suffix": true,
 						"is_show": true
 					}
-					
+					,
+					{
+						"title": "芝麻加密学院",
+						"url": "https://www.gate.io/zh/learn",
+						"icon": "/gate_logo.jpg",
+						"description": "芝麻交易所的加密货币学院",
+						"suffix": true,
+						"is_show": true
+					}
 					
 
 					
