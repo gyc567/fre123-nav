@@ -491,19 +491,19 @@
 				"details": [
 
 					{
-						"title": "LookOnChain",
-						"url": "https://x.com/lookonchain",
-						"icon": "/LookOnChain.jpg",
-						"description": "链上追踪聪明钱的追踪工具。",
+						"title": "MEME新手入门与教程汇总",
+						"url": "https://medium.com/@gyc567/meme%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B%E6%B1%87%E6%80%BB-71831d65f0f6",
+						"icon": "/DegeCoin_Logo.jpg",
+						"description": "MEME新手入门与教程汇总",
 						"suffix": false,
 						"is_show": true
 					},
 
 					{
-						"title": "WatcherGuru",
-						"url": "https://watcher.guru/",
-						"icon": "/WatcherGuru_Logo.jpg",
-						"description": "链上追踪综合平台。",
+						"title": "Web3Caff",
+						"url": "https://research.web3caff.com/",
+						"icon": "/Web3Caff_Logo.jpg",
+						"description": "Web3投研与教育社区",
 						"suffix": false,
 						"is_show": true
 					}
