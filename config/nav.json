@@ -48,7 +48,7 @@
 						"is_show": true
 					},
 					{
-						"title": "CMC",
+						"title": "CoinMarketCap",
 						"ori_url": "https://coinmarketcap.com/",
 						"url": "https://coinmarketcap.com/",
 						"icon": "/cmc_logo.jpg",
@@ -539,12 +539,12 @@
 		]
 	},
 	{
-		"group_name": "软件工具",
+		"group_name": "实用工具",
 		"style": 1,
 		"style_des": "标准风格",
 		"tab_list": [
 			{
-				"tab_name": "软件下载",
+				"tab_name": "综合查询",
 				"upper_right_corner": {},
 				"details": [
 					{
