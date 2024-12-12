@@ -486,208 +486,54 @@
 				]
 			},
 			{
-				"tab_name": "编程书籍",
+				"tab_name": "新手入门与教程",
 				"upper_right_corner": {},
 				"details": [
+
 					{
-						"title": "图灵社区",
-						"url": "https://www.ituring.com.cn/",
-						"icon": "https://img.fre123.com/i/2024/02/22/65d75f5411ca6.png",
-						"description": "图灵社区以策划出版高质量的科技书籍为核心业务，主要出版领域包括计算机、电子电气、数学统计、科普等，通过引进国际高水平的教材、专著，以及发掘国内优秀原创作品等途径，为目标读者提供一流的内容。",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "搬书匠",
-						"url": "http://www.banshujiang.cn/",
-						"icon": "https://img.fre123.com/i/2024/02/21/65d5f4f51c928.ico",
-						"description": "搬书匠",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "SaltTiger",
-						"url": "https://salttiger.com/",
-						"icon": "https://img.fre123.com/i/2024/02/22/65d75f9a27e20.ico",
-						"description": "每天一本编程书，每天进步一点点",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "IT熊猫",
-						"url": "https://itpanda.net/book/",
-						"icon": "https://img.fre123.com/i/2024/02/22/65d75fc6094e4.ico",
-						"description": "收集网络上的计算机书籍，相互分享",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "免费的编程中文书籍",
-						"url": "https://github.com/justjavac/free-programming-books-zh_CN",
-						"icon": "https://img.fre123.com/i/2024/02/22/65d7606804690.ico",
-						"description": "免费的编程中文书籍",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "免费计算机书籍汇总",
-						"url": "https://sourcegraph.com/github.com/ruanyf/free-books/-/blob/README.md",
-						"icon": "https://img.fre123.com/i/2024/02/22/65d7682e935ee.jpg",
-						"description": "免费计算机书籍汇总",
-						"suffix": false,
-						"is_show": false
-					}
-				]
-			},
-			{
-				"tab_name": "小说精选",
-				"upper_right_corner": {},
-				"details": [
-					{
-						"title": "owlook",
-						"url": "https://www.owlook.com.cn/",
-						"icon": "https://img.fre123.com/i/2024/01/16/65a65c0de39e6.ico",
-						"description": "owllook支持在线阅读，提供检索服务，最清新简洁的阅读体验，无广告，页面清爽，免费全本小说",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "奇书网",
-						"url": "https://www.qisuwang.cc/",
-						"icon": "https://img.fre123.com/i/2024/02/21/65d4ea4bd5e77.ico",
-						"description": "奇书网官网提供TXT电子书免费下载,TXT全集下载,小说TXT下载,全本完本完结TXT小说下载,奇书网TXT小说都是通过网友上传,TXT全本小说电子书下载尽在奇书网.",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "精校吧",
-						"url": "https://www.jingjiaoba.com/",
-						"icon": "https://img.fre123.com/i/2024/02/21/65d4ef6189f8d.png",
-						"description": "精校吧是一个给书友提供下载网络精校txt小说、完本电子书的网站。本站的宗旨是以为书友推荐网络上人气精品的完本精校版小说、完本校对版小说，是书荒者必上小说下载网站！",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "努努书坊",
-						"url": "https://www.kanunu8.com/",
-						"icon": "https://img.fre123.com/i/2024/02/21/65d4f078a5388.jpg",
-						"description": "免费小说阅读网,内容包括国内外华人作品,世界名著,言情小说,校园小说,武侠小说,灵异,侦探推理,网游小说,科幻小说,玄幻小说,网络原创文学等.",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "找书神器",
-						"url": "https://mianfei22.com/",
-						"icon": "https://img.fre123.com/i/2024/02/18/65d22671284c8.ico",
-						"description": "帮你快速找到需要的小说书籍",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "燃文小说",
-						"url": "https://www.ygshu.com/",
-						"icon": "https://img.fre123.com/i/2024/01/16/65a56b8693096.jpg",
-						"description": "燃文小说是广大书友最值得收藏的热门小说阅读网，网站收录了当前最火热的热门小说，免费提供高质量的小说最新章节，是广大热门小说爱好者必备的小说阅读网。",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "知轩藏书",
-						"url": "https://zxcs.info/",
-						"icon": "https://img.fre123.com/i/2024/01/16/65a56cd10e169.jpg",
-						"description": "知轩藏书,玄幻小说排行榜-校对全本TXT小说下载网",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "全本小说网",
-						"url": "https://www.quanben.io/",
-						"icon": "https://img.fre123.com/i/2024/01/16/65a56afec4dee.ico",
-						"description": "全本小说无弹窗《全本小说》最好看的小说阅读网。全本小说提供海量全本小说免费阅读，是您值得收藏的免费小说阅读网站。",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "搜搜小说网",
-						"url": "https://www.dwrl.net/",
-						"icon": "https://img.fre123.com/i/2024/01/16/65a566a307861.jpg",
-						"description": "搜搜小说网全本小说网是免费小说阅读网站，提供各类完结总排行榜榜单。",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "红薯小说网",
-						"url": "https://www.happycolon.net/",
-						"icon": "https://img.fre123.com/i/2024/01/16/65a5699805fdf.jpg",
-						"description": "红薯小说网致力于打造无广告无弹窗的在线小说阅读网站，提供小说在线阅读，小说TXT全文，网站没有弹窗广告页面简洁。",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "新笔趣阁",
-						"url": "https://www.xxbqg5200.com/",
-						"icon": "https://img.fre123.com/i/2024/01/16/65a567a4c8b0f.ico",
-						"description": "新笔趣阁是最值得收藏的免费小说阅读网,为您推荐最好看的网络热门小说,本站小说最新章节更新速度快,阅读流畅,所有小说免费在线阅读,找好看的网络小说就上新笔趣阁。",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "聚小说",
-						"url": "https://www.juxiaoshuo.net/",
-						"icon": "https://img.fre123.com/i/2024/02/22/65d760a4bf263.ico",
-						"description": "聚小说是深受广大书迷喜爱的免费小说阅读网站,通过大数据技术汇聚全网热门小说,最快更新热门网络小说最新章节,无广告弹窗,是广大网络小说爱好者必备的小说阅读网",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "天涯书库",
-						"url": "https://www.tianyabooks.com/",
-						"icon": "https://img.fre123.com/i/2024/01/16/65a56889e30e5.jpg",
-						"description": "天涯书库收录全球华人文学,世界文学,,校园小说,都市小说,网络小说,恐怖惊悚小说,推理小说,科幻小说,玄幻小说,武侠小说,言情小说,作家文集等.",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "读小说吧",
-						"url": "http://www.duxs8.com/",
-						"icon": "https://img.fre123.com/i/2024/01/16/65a566725894f.ico",
-						"description": "读小说吧主要提供网络小说在线阅读，包括历史，言情，玄幻等题材小说",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "59文学网",
-						"url": "https://www.ipwang.net/",
-						"icon": "https://img.fre123.com/i/2024/01/16/65a56749ce85b.jpg",
-						"description": "59文学网是广大书友最值得收藏的网络小说阅读网，网站收录了当前最火热的网络小说，免费提供高质量的小说最新章节，是广大网络小说爱好者必备的小说阅读网。",
-						"suffix": false,
-						"is_show": false
-					},
-					{
-						"title": "追书网",
-						"url": "http://www.kkzw.cc/",
-						"icon": "https://img.fre123.com/i/2024/01/16/65a56c042b766.jpg",
-						"description": "追书网是广大书友最值得收藏的免费小说阅读网，网站收录了当前最火热的免费小说，免费提供高质量的小说最新章节，是广大免费小说爱好者必备的小说阅读网。",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "笔趣看",
-						"url": "https://www.biqukan8.cc/",
-						"icon": "https://img.fre123.com/i/2024/01/16/65a56064bfe91.ico",
-						"description": "笔趣看是广大书友比较喜欢的，是顶点小说阅读网的备份网站，收录了当前最热门、最火爆的小说",
+						"title": "LookOnChain",
+						"url": "https://x.com/lookonchain",
+						"icon": "/LookOnChain.jpg",
+						"description": "链上追踪聪明钱的追踪工具。",
 						"suffix": false,
 						"is_show": true
 					},
 
 					{
-						"title": "SoDu",
-						"url": "http://www.soduzw.com/",
-						"icon": "",
-						"description": "",
+						"title": "WatcherGuru",
+						"url": "https://watcher.guru/",
+						"icon": "/WatcherGuru_Logo.jpg",
+						"description": "链上追踪综合平台。",
 						"suffix": false,
-						"is_show": false
+						"is_show": true
 					}
+					
+				]
+			},
+			{
+				"tab_name": "精选TG频道",
+				"upper_right_corner": {},
+				"details": [
+					{
+						"title": "比特财商",
+						"url": "https://t.me/cryptochanneleric",
+						"icon": "/btcs_Logo.jpg",
+						"description": "专业分析币圈趋势和金狗投研",
+						"suffix": false,
+						"is_show": true
+					},
+					{
+						"title": "BlockBeats",
+						"url": "https://t.me/theblockbeats",
+						"icon": "/BlockBeats_Logo.jpg",
+						"description": "实时币圈资讯.",
+						"suffix": false,
+						"is_show": true
+					}
+					
+					
+					
+					
 				]
 			}
 		]
