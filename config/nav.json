@@ -306,7 +306,7 @@
 						"title": "欧易天眼链上查询工具",
 						"url": "https://www.oklinkpro.com/#/",
 						"icon": "/OKLink_Logo.jpg",
-						"description": "智能的巨鲸数据追踪平台",
+						"description": "欧易的链上数据追踪平台",
 						"suffix": true,
 						"is_show": true
 					}
@@ -458,247 +458,28 @@
 		]
 	},
 	{
-		"group_name": "书籍资源",
+		"group_name": "MEME资源与工具",
 		"style": 1,
-		"style_des": "书籍资源",
+		"style_des": "MEME资源与工具",
 		"tab_list": [
 			{
-				"tab_name": "电子书籍",
+				"tab_name": "聪明钱追踪",
 				"upper_right_corner": {},
 				"details": [
 					{
-						"title": "微信读书",
-						"url": "https://weread.qq.com/",
-						"icon": "https://img.fre123.com/i/2024/02/21/65d4ed7d38bd2.ico",
-						"description": "微信读书提供海量正版书籍、小说、漫画、公众号、听书，多设备同步实现跨屏阅读。与微信好友一起发现更多精品好书，随时交流感想，让阅读不再孤独。",
+						"title": "LookOnChain",
+						"url": "https://x.com/lookonchain",
+						"icon": "/LookOnChain.jpg",
+						"description": "链上追踪聪明钱的追踪工具。",
 						"suffix": false,
 						"is_show": true
 					},
 
 					{
-						"title": "多看阅读",
-						"url": "https://www.duokan.com/pc/",
-						"icon": "https://img.fre123.com/i/2024/02/21/65d4edac7a2d9.ico",
-						"description": "提供精品正版电子书免费下载和购买；多看阅读APP目前支持Android、iPhone、iPad、Kindle等多种设备。多看阅读，享受精品阅读时光。好书，你值得多看。",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "京东读书",
-						"url": "https://m-tob.jd.com/",
-						"icon": "https://img.fre123.com/i/2024/02/22/65d759d54aef4.png",
-						"description": "京东读书专业版",
-						"suffix": false,
-						"is_show": false
-					},
-
-					{
-						"title": "无名图书",
-						"url": "https://www.book123.info/",
-						"icon": "https://img.fre123.com/i/2024/02/19/65d2312675d0b.ico",
-						"description": "无名图书是一个提供免费电子书下载的在线网站，能够帮助我们轻松搜索到自己想要的电子书并提供相关的下载服务，电子书支持PDF、EPUB、MOBI等格式，使用无需注册登录，网站界面UI简洁，电子书涉及到理工科、美食旅游、政治、计算机、设计、生物、天文等等各个方面的领域，电子书搜索支持书名、作者和ISBN。",
-						"suffix": false,
-						"is_show": true
-					},
-
-					{
-						"title": "相识电子书",
-						"url": "https://www.xiangshibook.com/",
-						"icon": "https://img.fre123.com/i/2024/02/22/65d75b840fb18.ico",
-						"description": "相识电子书是完全免费的电子书下载网站,提供优质的pdf,txt电子书下载,热门电子书下载,英文电子书下载,相识电子书汇聚了大量阅读爱好者,为书友们提供优质的服务平台",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "飞库文学网",
-						"url": "https://www.feiku6.com/",
-						"icon": "https://img.fre123.com/i/2024/02/21/65d4efe4b64ec.ico",
-						"description": "飞库网收录了最好最全的经典精品图书，免费提供高质量的图书小说阅读，是广大文学小说爱好者必备的文学阅读网。",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "z-library",
-						"url": " https://zh.singlelogin.re/",
-						"icon": "https://img.fre123.com/i/2024/02/19/65d22f2e1f801.ico",
-						"description": "世界上最大的电子图书馆。自由访问知识和文化",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "Liber3",
-						"url": "https://liber3.eth.limo/",
-						"icon": "https://img.fre123.com/i/2024/02/21/65d4eefd181f7.ico",
-						"description": "An eBook search engine works on ENS & IPFS.",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "安娜的档案",
-						"url": "https://zh.annas-archive.org",
-						"icon": "https://img.fre123.com/i/2024/02/22/65d75d4d42da8.png",
-						"description": "世界上最大的开源、开放数据图书馆。不仅是 Sci-Hub, Library Genesis, Z-Library 等站的镜像。",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "VDOC.PUB",
-						"url": "https://vdoc.pub/",
-						"icon": "https://img.fre123.com/i/2024/02/21/65d5fc59e36dd.png",
-						"description": "VDOC.PUB 为学生提供了数十万本免费的电子书和文档。所有这些都是免费和可下载的。",
-						"suffix": false,
-						"is_show": false
-					},
-					{
-						"title": "书享家",
-						"url": "https://www.shuxiangjia.cn/",
-						"icon": "https://img.fre123.com/i/2024/02/21/65d4ee09408fe.jpg",
-						"description": "书享家：好用的电子书下载导航",
-						"suffix": false,
-						"is_show": false
-					},
-					{
-						"title": "PDF DRIVE",
-						"url": "https://www.pdfdrive.com/",
-						"icon": "https://img.fre123.com/i/2024/02/22/65d764556250a.ico",
-						"description": "免费 PDF 资源下载",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "SoBooks",
-						"url": "https://sobooks.net/",
-						"icon": "https://img.fre123.com/i/2024/02/22/65d75a52a7fcc.ico",
-						"description": "一起分享阅读的乐趣",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "鸠摩搜索",
-						"url": "https://www.jiumodiary.com/",
-						"icon": "https://img.fre123.com/i/2024/02/21/65d4edc65c9de.png",
-						"description": "鸠摩搜索引擎",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "taco搜索",
-						"url": "https://www.tacoso.cc/",
-						"icon": "https://img.fre123.com/i/2024/02/22/65d75b5a29445.png",
-						"description": "taco搜索是一个知识文档搜索引擎，查找网络上的各种文档、电子书、学术资源",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "知搜",
-						"url": "https://zhiso.cc/",
-						"icon": "https://img.fre123.com/i/2024/02/22/65d75b0e31c63.ico",
-						"description": "知搜是一个专注知搜搜索的搜索引擎，收录网络上的各种书籍资源！",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "书葵网",
-						"url": "https://www.shukui.net/",
-						"icon": "https://img.fre123.com/i/2024/02/19/65d22d38f2c44.ico",
-						"description": "海量图书检索下载",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "好读",
-						"url": "https://www.haodoo.net/",
-						"icon": "https://img.fre123.com/i/2024/02/22/65d766a440658.ico",
-						"description": "免费书籍下载",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "书格",
-						"url": "https://www.shuge.org/",
-						"icon": "https://img.fre123.com/i/2024/02/22/65d75b2e26a76.ico",
-						"description": "有品格的数字古籍图书馆, 书格, 每个人都能自由地看到我们的文明",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "热点图书网",
-						"url": "https://www.happydot.to",
-						"icon": "",
-						"description": "",
-						"suffix": false,
-						"is_show": false
-					},
-
-					{
-						"title": "知识库",
-						"url": "https://www.zhishikoo.com/",
-						"icon": "https://img.fre123.com/i/2024/02/19/65d3605005118.png",
-						"description": "优质mobi,azw3,TXT,PDF,epub格式电子书分享站",
-						"suffix": false,
-						"is_show": false
-					},
-					{
-						"title": "熊猫速读",
-						"url": "https://qread.xmsoushu.com/",
-						"icon": "https://img.fre123.com/i/2024/02/19/65d22d962acef.jpg",
-						"description": "熊猫速读，为你精心推荐视频书，速读、速览一本书，就来熊猫速读",
-						"suffix": false,
-						"is_show": false
-					},
-					{
-						"title": "源仓库",
-						"url": "https://www.yckceo.com/",
-						"icon": "https://img.fre123.com/i/2024/02/21/65d4ed34e8d81.ico",
-						"description": "可以自动生成源规则用于支持导入「源」",
-						"suffix": false,
-						"is_show": false
-					},
-					{
-						"title": "24h搜书网",
-						"url": "https://24hbook.com/",
-						"icon": "https://img.fre123.com/i/2024/02/19/65d22cfe8fa83.png",
-						"description": "简单快捷的图书搜索器，创建和搜索您的私人图书馆。",
-						"suffix": false,
-						"is_show": false
-					},
-					{
-						"title": "积微书斋",
-						"url": "https://www.aibooks.cc/",
-						"icon": "https://img.fre123.com/i/2024/02/22/65d75fea56b3c.png",
-						"description": "永久免费优质免费电子图书籍资源,电子杂志下载",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "积微书斋",
-						"url": "https://freembook.com/",
-						"icon": "",
-						"description": "",
-						"suffix": false,
-						"is_show": false
-					},
-					{
-						"title": "爱悦读",
-						"url": "https://www.iyd.wang/",
-						"icon": "https://img.fre123.com/i/2024/02/22/65d767644a8ae.ico",
-						"description": "爱悦读网，是一个免费的电子书分享平台，提供kindle、epub、mobi、azw3、pdf、txt等格式电子书，全集全本打包免费下载，爱悦读网是一个值得电子书爱好者收藏的网站。",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "风陵渡书屋",
-						"url": "http://www.eybook.com/",
-						"icon": "https://img.fre123.com/i/2024/02/22/65d7677d88a62.ico",
-						"description": "风陵渡书屋是一个集合各类畅销图书文学小说下载,电子书下载的网站,提供epub,mobi,azw3,pdf,txt 等格式的电子书下载，全本电子书下载。",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "苦瓜书盘",
-						"url": "https://www.kgbook.com/",
-						"icon": "https://img.fre123.com/i/2024/02/22/65d75bed567f3.jpg",
-						"description": "苦瓜书盘是供网友交流适合电纸书阅读的6寸pdf及mobi格式电子书制作技术的网站，提供6寸pdf、mobi等格式电子书上传及下载。",
+						"title": "WatcherGuru",
+						"url": "https://watcher.guru/",
+						"icon": "/WatcherGuru_Logo.jpg",
+						"description": "链上追踪综合平台。",
 						"suffix": false,
 						"is_show": true
 					}
