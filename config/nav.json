@@ -596,22 +596,22 @@
 				]
 			},
 			{
-				"tab_name": "微软专区",
+				"tab_name": "币种官网",
 				"upper_right_corner": {},
 				"details": [
 					{
-						"title": "Wavse",
-						"url": "https://wavse.com/",
-						"icon": "https://img.fre123.com/i/2024/01/05/659817afe54ca.png",
-						"description": "Windows 单机游戏免费下载",
+						"title": "BTC",
+						"url": "https://bitcoin.org/",
+						"icon": "/Btc_Logo.jpg",
+						"description": "比特币官网",
 						"suffix": false,
 						"is_show": true
 					},
 					{
-						"title": "系统库",
-						"url": "https://www.xitongku.com/",
-						"icon": "https://img.fre123.com/i/2023/12/14/6579e63ebad33.png",
-						"description": "MSDN系统库致力于原版windows生态服务",
+						"title": "BCH",
+						"url": "https://bitcoincash.org/",
+						"icon": "/Bch_Logo.jpg",
+						"description": "BCH官网",
 						"suffix": false,
 						"is_show": true
 					}
