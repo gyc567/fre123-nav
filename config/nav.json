@@ -575,18 +575,18 @@
 				"upper_right_corner": {},
 				"details": [
 					{
-						"title": "MacWk",
-						"url": "https://macwk.cn/",
-						"icon": "https://img.fre123.com/i/2024/02/23/65d774e5d39de.png",
-						"description": "MAC应用软件,每天更新大量精品mac软件,为您提供优质的mac软件,mac破解版软件下载",
+						"title": "贪婪指数",
+						"url": "https://www.coinglass.com/zh/pro/i/FearGreedIndex",
+						"icon": "/GreedIdx_Logo.jpg",
+						"description": "币圈贪婪与恐惧指数",
 						"suffix": false,
 						"is_show": true
 					},
 					{
-						"title": "Appstorrent",
-						"url": "https://appstorrent.ru/",
-						"icon": "https://img.fre123.com/i/2023/12/14/6579ebbbde7fe.png",
-						"description": "俄罗斯那边的 macOS 软件下载网站，质量不错",
+						"title": "比特币ahr999屯币指标",
+						"url": "https://www.coinglass.com/zh/pro/i/ahr999",
+						"icon": "/Ahr999_Logo.jpg",
+						"description": "比特币ahr999屯币指标,用来判断是否需要买入或卖出或定投比特币。",
 						"suffix": false,
 						"is_show": true
 					}
