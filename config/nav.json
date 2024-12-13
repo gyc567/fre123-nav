@@ -548,177 +548,30 @@
 				"upper_right_corner": {},
 				"details": [
 					{
-						"title": "苹果专区",
-						"url": "https://www.fre123.com/#软件工具_苹果专区",
-						"icon": "https://img.fre123.com/i/2024/01/17/65a6b6e043b45.ico",
-						"description": "MacOS 软件下载网站大全，持续更新！",
+						"title": "Dune",
+						"url": "https://dune.com/discover/content/trending",
+						"icon": "/Dune_Logo.jpg",
+						"description": "免费的超强链上查询、分析、可视化工具！",
 						"suffix": false,
 						"is_show": true
 					},
 					{
-						"title": "微软专区",
-						"url": "https://www.fre123.com/#软件工具_微软专区",
+						"title": "Nansen",
+						"url": "https://www.nansen.ai/",
 						"icon": "https://img.fre123.com/i/2024/01/17/65a6b70ea384c.ico",
-						"description": "Windows 软件下载网站大全，持续更新！",
+						"description": "最专业的链上分析工具！",
 						"suffix": false,
 						"is_show": true
-					},
-					{
-						"title": "吾爱破解",
-						"url": "https://www.52pojie.cn/",
-						"icon": "https://img.fre123.com/i/2024/01/05/65981d4cd16ad.png",
-						"description": "致力于软件安全与病毒分析的前沿网站",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "小众软件",
-						"url": "https://www.appinn.com/",
-						"icon": "https://img.fre123.com/i/2023/12/12/65773dd163b37.jpeg",
-						"description": "分享免费、小巧、实用、有趣、绿色的软件",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "异次元软件",
-						"url": "https://www.iplaysoft.com/",
-						"icon": "https://img.fre123.com/i/2024/01/05/65981e0d594ba.png",
-						"description": "专注于推荐优秀软件、app应用和互联网资源，每篇图文评测都极其用心，并提供大量软件资源下载。",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "果壳剥壳",
-						"url": "https://www.ghxi.com/",
-						"icon": "https://img.fre123.com/i/2023/12/23/6586612f085fb.png",
-						"description": "果核剥壳是一家综合科技站点，看新闻，分享精品、绿色软件，Windows系统",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "亿破姐",
-						"url": "https://www.ypojie.com/",
-						"icon": "https://img.fre123.com/i/2024/01/05/65981f482dacc.png",
-						"description": "网站专注无流氓绿色软件分享、游戏下载、电脑技术、经验教程为一体的站点、安全、纯净、放心、八年磨一剑，不忘初心只为给你最需要的内容。",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "微当下载",
-						"url": "https://weidown.com/",
-						"icon": "https://img.fre123.com/i/2024/01/05/65981d8498980.png",
-						"description": "免费的软件下载站，以官方软件、绿色软件、浏览器、单机游戏、手机软件、手机游戏等软件为主，全站下载提供cdn加速，让您享受满速下载的体验。",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "423 下载",
-						"url": "https://www.423down.com/",
-						"icon": "https://img.fre123.com/i/2024/01/05/6596f04d241cb.jpg",
-						"description": "更新快、专注去广告类软件输出10年、个人ip品牌软件分享站",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "File Eagle",
-						"url": "https://www.fileeagle.com/software",
-						"icon": "https://img.fre123.com/i/2023/12/14/6579e5ad81b4f.png",
-						"description": "免费软件下载：Windows, Mac, Linux",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "西部落",
-						"url": "https://www.xibuluo.com/",
-						"icon": "https://img.fre123.com/i/2024/02/21/65d5f5f12da14.ico",
-						"description": "西部落软件搜索平台通过收录各类优质的软件下载网站索引，让用户快速找到对的软件的同时，也让用户告别流氓全家桶软件和捆绑安装广告软件的困扰。",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "六音软件",
-						"url": "https://www.sixyin.com/",
-						"icon": "https://img.fre123.com/i/2024/02/23/65d7771b798fe.ico",
-						"description": "西部落软件搜索平台通过收录各类优质的软件下载网站索引，让用户快速找到对的软件的同时，也让用户告别流氓全家桶软件和捆绑安装广告软件的困扰。",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "爱资源",
-						"url": "https://www.iwyu.com/",
-						"icon": "https://img.fre123.com/i/2024/02/23/65d77840a4ef7.ico",
-						"description": "爱资源是一家博客类型的资源分享平台，分享绿色软件软件，破解软件，安卓软件，纯净系统等，守住互联网最后的一片净土",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "白夜资源站",
-						"url": "http://baiye.pro/",
-						"icon": "https://img.fre123.com/i/2024/02/24/65d9ea5b4120a.png",
-						"description": "安卓软件，破解，白嫖，免费",
-						"suffix": false,
-						"is_show": false
-					},
-					{
-						"title": "翻应用",
-						"url": "https://www.iapps.me/",
-						"icon": "https://img.fre123.com/i/2024/02/24/65d9eb45d2db7.png",
-						"description": "专注发现优质安卓应用",
-						"suffix": false,
-						"is_show": false
-					},
-					{
-						"title": "枫音应用",
-						"url": "https://www.fy6b.com/category/all/pcsoft",
-						"icon": "https://img.fre123.com/i/2024/02/25/65da585f3e2e0.jpg",
-						"description": "电脑软件,绿色软件,安全软件",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "乐愚社区",
-						"url": "https://bbs.leyuxyz.com/f/ruanjian",
-						"icon": "https://img.fre123.com/i/2024/02/25/65da582965c29.png",
-						"description": "精品软件分享论坛",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "",
-						"url": "",
-						"icon": "",
-						"description": "",
-						"suffix": false,
-						"is_show": false
-					},
-					{
-						"title": "",
-						"url": "",
-						"icon": "",
-						"description": "",
-						"suffix": false,
-						"is_show": false
-					},
-					{
-						"title": "",
-						"url": "",
-						"icon": "",
-						"description": "",
-						"suffix": false,
-						"is_show": false
-					},
-					{
-						"title": "",
-						"url": "",
-						"icon": "",
-						"description": "",
-						"suffix": false,
-						"is_show": false
 					}
+					
+					
+					
+					
+					
 				]
 			},
 			{
-				"tab_name": "苹果专区",
+				"tab_name": "指数查询",
 				"upper_right_corner": {},
 				"details": [
 					{
@@ -736,79 +589,10 @@
 						"description": "俄罗斯那边的 macOS 软件下载网站，质量不错",
 						"suffix": false,
 						"is_show": true
-					},
-					{
-						"title": "马可菠萝",
-						"url": "https://www.macbl.com/",
-						"icon": "https://img.fre123.com/i/2023/12/14/6579eaec2b275.png",
-						"description": "分享你喜欢的MAC应用",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "麦氪搜",
-						"url": "https://www.imacso.com/",
-						"icon": "https://img.fre123.com/i/2023/12/14/6579ea9e3bdf6.png",
-						"description": "致力于分享优秀的Mac应用软件",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "MacYY",
-						"url": "https://www.macyy.cn/",
-						"icon": "https://img.fre123.com/i/2023/12/14/6579eb594c1c7.png",
-						"description": "Mac破解软件分享中心",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "PoMac",
-						"url": "https://www.pomac.cc/",
-						"icon": "https://img.fre123.com/i/2023/12/14/6579ea5e7a3cb.png",
-						"description": "精品Mac软件下载站",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "Macked",
-						"url": "https://macked.app/",
-						"icon": "https://img.fre123.com/i/2024/02/22/65d76e5f48696.png",
-						"description": "一个免费的精品MAC软件下载网站",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "黑苹果屋",
-						"url": "https://imacos.top/",
-						"icon": "https://img.fre123.com/i/2024/02/22/65d76c05bfa76.png",
-						"description": "黑苹果单双系统安装教程资源软件下载",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "马克喵",
-						"url": "https://www.macat.vip/",
-						"icon": "https://img.fre123.com/i/2024/02/22/65d76cd316340.png",
-						"description": "全网最新破解MAC软件",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "Cmacked",
-						"url": "https://cmacked.com/",
-						"icon": "https://img.fre123.com/i/2024/02/22/65d76dd87feef.ico",
-						"description": "一个在线免费Mac软件下载网站",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "MacAPP 分享频道 🪜",
-						"url": "https://macapp.org.cn/",
-						"icon": "https://img.fre123.com/i/2023/12/14/6579ea029f70f.jpg",
-						"description": "精品Mac软件分享 🪜",
-						"suffix": false,
-						"is_show": true
 					}
+					
+					
+					
 				]
 			},
 			{
@@ -830,74 +614,19 @@
 						"description": "MSDN系统库致力于原版windows生态服务",
 						"suffix": false,
 						"is_show": true
-					},
-					{
-						"title": "HelloWindows",
-						"url": "https://www.hellowindows.cn/",
-						"icon": "https://img.fre123.com/i/2023/12/14/6579e74ec73af.png",
-						"description": "精校完整极致的 Windows系统下载仓储站",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "爱纯净",
-						"url": "http://www.aichunjing.com/",
-						"icon": "https://img.fre123.com/i/2024/01/05/65981c5ad5054.png",
-						"description": "Win纯净镜像，激活工具下载",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "MSDN原版系统",
-						"url": "https://www.imsdn.cn/",
-						"icon": "https://img.fre123.com/i/2024/01/05/65981bebe3731.png",
-						"description": "Windows 10 MSDN纯净ISO镜像，原版镜像下载。",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "MSDN-山己几子木",
-						"url": "https://msdn.sjjzm.com/",
-						"icon": "https://img.fre123.com/i/2023/12/14/6579e6d06a137.png",
-						"description": "原版ISO镜像下载站",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "大眼仔旭",
-						"url": "http://www.dayanzai.me/",
-						"icon": "https://img.fre123.com/i/2024/02/23/65d76fbfc5733.ico",
-						"description": "个人非盈利性网站",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "爱资源",
-						"url": "https://www.iwyu.com/windows",
-						"icon": "https://img.fre123.com/i/2024/02/23/65d77840a4ef7.ico",
-						"description": "爱资源是一家博客类型的资源分享平台，分享绿色软件软件，破解软件，安卓软件，纯净系统等，守住互联网最后的一片净土",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "PS资源导航",
-						"url": "https://jvhe.top/",
-						"icon": "https://img.fre123.com/i/2024/01/05/659817afe54ca.png",
-						"description": "windows 系列软件资源整合",
-						"suffix": false,
-						"is_show": true
 					}
+					
 				]
 			}
 		]
 	},
 	{
-		"group_name": "网盘资源",
+		"group_name": "安全服务与工具",
 		"style": 1,
 		"style_des": "标准风格",
 		"tab_list": [
 			{
-				"tab_name": "综合网盘",
+				"tab_name": "授权相关",
 				"upper_right_corner": {},
 				"details": [
 					{
@@ -915,170 +644,14 @@
 						"description": "微云是腾讯公司为用户精心打造的一项智能云服务, 您可以通过微云方便地在手机和电脑之间同步文件、推送照片和传输数据。",
 						"suffix": false,
 						"is_show": false
-					},
-					{
-						"title": "阿里云盘",
-						"url": "https://www.aliyundrive.com",
-						"icon": "https://img.fre123.com/i/2024/01/04/65959e70a466a.png",
-						"description": "阿里云盘是一款速度快、不打扰、够安全、易于分享的个人网盘，欢迎你来体验。",
-						"suffix": false,
-						"is_show": false
-					},
-					{
-						"title": "夸克网盘",
-						"url": "https://pan.quark.cn",
-						"icon": "https://img.fre123.com/i/2024/01/04/65959e7b8a24c.png",
-						"description": "夸克浏览器附带功能，兼容夸克浏览器各种智能小工具，支持本地文件管理，在线视频播放等",
-						"suffix": false,
-						"is_show": false
-					},
-					{
-						"title": "115云盘",
-						"url": "https://www.115.com",
-						"icon": "https://img.fre123.com/i/2024/01/04/65959e87e258e.png",
-						"description": "115，专业、安全、好用的个人云存储，让美好与你一生相伴！",
-						"suffix": false,
-						"is_show": false
-					},
-					{
-						"title": "大力盘搜索",
-						"url": "https://www.dalipan.com",
-						"icon": "https://img.fre123.com/i/2024/01/04/65959e9c46eca.png",
-						"description": "支持百度云搜索，可快速搜索百度网盘资源中的有效连接，自动识别无效的百度云网盘资源，每天更新海量资源。",
-						"suffix": false,
-						"is_show": false
-					},
-					{
-						"title": "海盗湾",
-						"url": "https://www.pirateproxy-bay.com/",
-						"icon": "https://img.fre123.com/i/2024/01/05/6596efebb32ca.png",
-						"description": "全世界最大的磁力搜索网站，资源丰富可靠，历史悠久",
-						"suffix": false,
-						"is_show": false
-					},
-					{
-						"title": "狸猫盘搜",
-						"url": "https://alipansou.com/",
-						"icon": "https://img.fre123.com/i/2024/01/04/65959eb813cb0.png",
-						"description": "猫狸云,阿里盘搜,最好用的阿里云盘资源搜索站,每天更新海量资源,失效资源实时删除",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "秒搜",
-						"url": "https://miaosou.fun/",
-						"icon": "https://img.fre123.com/i/2024/01/15/65a42165e8b35.png",
-						"description": "秒搜,网盘搜索,最优秀的阿里云盘搜索服务的平台,收集各类阿里云盘资源提供一站式搜索功能,推动互联网优质资源的高效传递!全网千万级的云盘资源每日更新，包括考研,电影,动漫,视频,图书,软件,文档,音乐,等优质网盘资源",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "PanSearch",
-						"url": "https://www.pansearch.me/",
-						"icon": "https://img.fre123.com/i/2024/01/15/65a5494651842.png",
-						"description": "网盘资源搜索",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "SearchSearchGo",
-						"url": "https://ssgo.app/",
-						"icon": "https://img.fre123.com/i/2024/01/30/65b7db46bb861.png",
-						"description": "一款极简体验、优雅、现代化、资源丰富、免费、无需登录的新一代阿里云盘搜索引擎，来体验找寻资源的快乐吧~",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "趣盘搜",
-						"url": "https://pan.funletu.com/",
-						"icon": "https://img.fre123.com/i/2024/01/04/65959ec988ff4.png",
-						"description": "专注夸克网盘资源搜索！",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "云盘4K",
-						"url": "https://www.codelicence.cn/",
-						"icon": "https://img.fre123.com/i/2024/01/09/659c3ce7d4686.ico",
-						"description": "夸克云百度云阿里云网盘资源搜索分享与下载",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "小盘盘",
-						"url": "https://xpanpan.site/",
-						"icon": "https://img.fre123.com/i/2024/01/30/65b7dbf7a97b8.png",
-						"description": "小盘盘网盘搜索汇集了阿里云盘，移动云盘，夸克网盘，迅雷云盘等网盘，拥有视频，书籍，音乐，学习，软件等最全的网盘资源。",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "小白盘",
-						"url": "https://www.xiaobaipan.com/",
-						"icon": "https://img.fre123.com/i/2024/01/04/65959e3b06a27.jpg",
-						"description": "页面清新，实时检查失效资源.帮您省心快速找到想要的电影,电视剧,小说,文档,音乐,软件,种子等热门网盘资源",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "学霸盘",
-						"url": "https://www.xuebapan.com/",
-						"icon": "https://img.fre123.com/i/2024/01/09/659c3bdd0de24.png",
-						"description": "学霸盘是百度网盘资源搜索引擎，提供抖音,短视频,课程,考研,PPT模板,电子书,会计,计算机等热门资源，实时检查无效资源，帮您更快捷的获取网盘资源下载信息。",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "咔帕搜索",
-						"url": "https://www.cuppaso.com/",
-						"icon": "https://img.fre123.com/i/2024/02/21/65d5f3847f85b.png",
-						"description": "专注于收录全网综合盘资源，包括：影视资源、音乐资源、图片资源、电子书资源、软件资源、小说资源等等",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "奈斯搜索",
-						"url": "https://www.niceso.net/",
-						"icon": "https://img.fre123.com/i/2024/01/04/65959e928f34d.png",
-						"description": "坚持做最好用的阿里云盘资源搜索引擎，服务你我他，深藏功与名！",
-						"suffix": false,
-						"is_show": true
-					},
-
-					{
-						"title": "热盘搜",
-						"url": "http://www.repanso.com/",
-						"icon": "https://img.fre123.com/i/2024/01/04/65959edc21e8d.png",
-						"description": "百度云网盘搜索引擎，为你提供免费的网盘云搜索服务。",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "UP云搜",
-						"url": "https://www.upyunso.com/",
-						"icon": "https://img.fre123.com/i/2024/01/04/65959ec24f779.png",
-						"description": "体验最好的云盘资源搜索平台",
-						"suffix": false,
-						"is_show": true
-					},
-
-					{
-						"title": "BTSearch",
-						"url": "https://www.btsearch.love/",
-						"icon": "https://img.fre123.com/i/2024/01/06/65986167ba527.png",
-						"description": "磁力搜索引擎",
-						"suffix": false,
-						"is_show": false
-					},
-
-					{
-						"title": "fastsoso",
-						"url": "https://www.fastsoso.cn/",
-						"icon": "https://img.fre123.com/i/2024/01/15/65a546c69f656.png",
-						"description": "fastsoso搜索支持百度云搜索，可快速搜索百度网盘资源中的有效连接，自动识别无效的百度云网盘资源，每天更新海量资源。",
-						"suffix": false,
-						"is_show": true
 					}
+					
+					
+					
+					
+					
+					
+
 				]
 			},
 			{
