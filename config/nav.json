@@ -630,18 +630,18 @@
 				"upper_right_corner": {},
 				"details": [
 					{
-						"title": "百度网盘",
-						"url": "https://pan.baidu.com/",
-						"icon": "https://img.fre123.com/i/2024/01/04/65959e58c6f12.png",
-						"description": "支持文件的网络备份、同步和共享服务。空间大，速度快，安全稳定，支持教育网络加速，支持手机。",
+						"title": "RevokeCash",
+						"url": "https://revoke.cash/",
+						"icon": "/Revoke_Logo.jpg",
+						"description": "代币授权撤消工具。",
 						"suffix": true,
 						"is_show": true
 					},
 					{
-						"title": "腾讯微云",
-						"url": "https://www.weiyun.com",
-						"icon": "https://img.fre123.com/i/2024/01/04/65959e67c8c22.png",
-						"description": "微云是腾讯公司为用户精心打造的一项智能云服务, 您可以通过微云方便地在手机和电脑之间同步文件、推送照片和传输数据。",
+						"title": "多签钱包",
+						"url": "https://safe.global/",
+						"icon": "/Safe_Logo.jpg",
+						"description": "老牌的多签钱包。",
 						"suffix": true,
 						"is_show": true
 					}
@@ -655,81 +655,26 @@
 				]
 			},
 			{
-				"tab_name": "阿里云盘",
+				"tab_name": "安全分析平台",
 				"upper_right_corner": {},
 				"details": [
 					{
-						"title": "阿里云盘",
-						"url": "https://www.aliyundrive.com",
-						"icon": "https://img.fre123.com/i/2024/01/04/65959e70a466a.png",
-						"description": "阿里云盘是一款速度快、不打扰、够安全、易于分享的个人网盘，欢迎你来体验。",
+						"title": "合约分析平台GoPlusLabs",
+						"url": "https://gopluslabs.io/",
+						"icon": "/GoPlus_Logo.jpg",
+						"description": "智能合约安全分析平台。",
 						"suffix": false,
 						"is_show": true
 					},
 					{
-						"title": "奈斯搜索",
-						"url": "https://www.niceso.net/",
-						"icon": "https://img.fre123.com/i/2024/01/04/65959e928f34d.png",
-						"description": "坚持做最好用的阿里云盘资源搜索引擎，服务你我他，深藏功与名！",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "狸猫盘搜",
-						"url": "https://alipansou.com/",
-						"icon": "https://img.fre123.com/i/2024/01/04/65959eb813cb0.png",
-						"description": "猫狸云,阿里盘搜,最好用的阿里云盘资源搜索站,每天更新海量资源,失效资源实时删除",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "阿里云盘搜索器",
-						"url": "https://pan.justin3go.com/",
-						"icon": "https://img.fre123.com/i/2024/01/09/659c3bbb3c342.ico",
-						"description": "一款极简体验、优雅、现代化、资源丰富、免费、无需登录的阿里云盘搜索神器，来体验找寻资源的快乐吧~",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "秒搜",
-						"url": "https://miaosou.fun/",
-						"icon": "https://img.fre123.com/i/2024/01/15/65a42165e8b35.png",
-						"description": "秒搜,网盘搜索,最优秀的阿里云盘搜索服务的平台,收集各类阿里云盘资源提供一站式搜索功能,推动互联网优质资源的高效传递!全网千万级的云盘资源每日更新，包括考研,电影,动漫,视频,图书,软件,文档,音乐,等优质网盘资源",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "UP云搜",
-						"url": "https://www.upyunso.com/",
-						"icon": "https://img.fre123.com/i/2024/01/04/65959ec24f779.png",
-						"description": "体验最好的云盘资源搜索平台",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "YaPan",
-						"url": "https://yapan.io/",
-						"icon": "https://img.fre123.com/i/2024/01/16/65a55c4e7fe22.png",
-						"description": "Yapan - 网盘检索工具",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "SearchSearchGo",
-						"url": "https://ssgo.app/",
-						"icon": "https://img.fre123.com/i/2024/01/30/65b7db46bb861.png",
-						"description": "一款极简体验、优雅、现代化、资源丰富、免费、无需登录的新一代阿里云盘搜索引擎，来体验找寻资源的快乐吧",
-						"suffix": false,
-						"is_show": true
-					},
-					{
-						"title": "阿里网盘",
-						"url": "https://tuier.wordpress.com/",
-						"icon": "https://img.fre123.com/i/2024/02/18/65d21fdd529b2.ico",
-						"description": "阿里网盘资源分享",
+						"title": "天网SkyNet",
+						"url": "https://skynet.certik.com/zh-CN",
+						"icon": "/SkyNet_Logo.jpg",
+						"description": "项目安全分析平台。",
 						"suffix": false,
 						"is_show": true
 					}
+					
 				]
 			},
 			{
