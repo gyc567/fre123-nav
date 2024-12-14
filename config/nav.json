@@ -600,7 +600,7 @@
 				"upper_right_corner": {},
 				"details": [
 					{
-						"title": "BTC",
+						"title": "BTC比特币",
 						"url": "https://bitcoin.org/",
 						"icon": "/Btc_Logo.jpg",
 						"description": "比特币官网",
@@ -608,7 +608,7 @@
 						"is_show": true
 					},
 					{
-						"title": "BCH",
+						"title": "BCH比特现金",
 						"url": "https://bitcoincash.org/",
 						"icon": "/Bch_Logo.jpg",
 						"description": "BCH官网",
@@ -617,9 +617,20 @@
 					}
 					,
 					{
+						"title": "ETH以太坊",
+						"url": "https://ethereum.org/zh/",
+						"icon": "/ETH_Logo.jpg",
+						"description": "以太坊官网",
+						"suffix": true,
+						"is_show": true
+					}
+
+					
+					,
+					{
 						"title": "LuckyCoin",
 						"url": "https://luckycoinfoundation.org/",
-						"icon": "/Bch_Lucky_LogoLogo.jpg",
+						"icon": "/Lucky_Logo.jpg",
 						"description": "幸运币官网",
 						"suffix": true,
 						"is_show": true
