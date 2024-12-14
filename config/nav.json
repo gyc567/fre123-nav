@@ -590,6 +590,16 @@
 						"suffix": true,
 						"is_show": true
 					}
+					,
+					{
+						"title": "山寨币指数",
+						"url": "https://www.blockchaincenter.net/en/altcoin-season-index/",
+						"icon": "/AltcoinIdx_Logo.jpg",
+						"description": "山寨币指标,用来判断是否需要买入或卖出或定投山寨币。",
+						"suffix": true,
+						"is_show": true
+					}
+					
 					
 					
 					
@@ -621,6 +631,15 @@
 						"url": "https://ethereum.org/zh/",
 						"icon": "/ETH_Logo.jpg",
 						"description": "以太坊官网",
+						"suffix": true,
+						"is_show": true
+					}
+					,
+					{
+						"title": "DOT波卡",
+						"url": "https://polkadot.com/",
+						"icon": "/Dot_Logo.jpg",
+						"description": "波卡链官网",
 						"suffix": true,
 						"is_show": true
 					}
