@@ -686,48 +686,39 @@
 		"style_des": "标准风格",
 		"tab_list": [
 			{
-				"tab_name": "在线音乐",
+				"tab_name": "推特大V",
 				"upper_right_corner": {},
 				"details": [
 					{
-						"title": "QQ音乐",
-						"url": "https://y.qq.com/",
-						"icon": "https://img.fre123.com/i/2024/01/16/65a68615d5159.ico",
-						"description": "QQ音乐是腾讯公司推出的一款网络音乐服务产品，海量音乐在线试听、新歌热歌在线首发、歌词翻译、手机铃声下载、高品质无损音乐试听、海量无损曲库、正版音乐下载、空间背景音乐设置、MV观看等，是互联网音乐播放和下载的优选。",
+						"title": "马斯克",
+						"url": "https://x.com/elonmusk",
+						"icon": "/Elon_Logo.jpg",
+						"description": "推特老板,地球上最有雄心的男人。",
 						"suffix": false,
 						"is_show": true
 					},
 					{
-						"title": "酷狗音乐",
-						"url": "https://www.kugou.com/yy/html/rank.html",
-						"icon": "https://img.fre123.com/i/2024/02/22/65d7620c34d85.webp",
-						"description": "酷狗音乐在线正版音乐网站，为您提供酷狗音乐播放器下载 、在线音乐试听下载，提供听书、长音频、频道、听小说和MV播放服务。酷狗音乐，就是歌多！小说相声也很多！场景音乐也很多！",
+						"title": "V神",
+						"url": "https://x.com/VitalikButerin",
+						"icon": "/Vitalik_Logo.jpg",
+						"description": "以太坊创始人。",
 						"suffix": false,
 						"is_show": true
 					}
 					
-					
 				]
 			},
 			{
-				"tab_name": "音乐下载",
+				"tab_name": "外网权威币圈媒体",
 				"upper_right_corner": {},
 				"details": [
 					{
-						"title": "熊猫无损音乐",
-						"url": "https://www.xmwav.com/",
+						"title": "bitcoinmagazine",
+						"url": "https://bitcoinmagazine.com/",
 						"icon": "https://img.fre123.com/i/2024/02/21/65d613a53f5bd.ico",
-						"description": "熊猫无损音乐免费下载网站[www.xmwav.com],一个免费分享无损音乐WAV|MP3格式的网站,为广大音乐爱好者提供音乐交流及资源分享平台。每首无损音乐都是精心挑选，最全免费的无损音乐下载网站。",
+						"description": "老牌币圈媒体网站。",
 						"suffix": false,
-						"is_show": false
-					},
-					{
-						"title": "魅力音乐",
-						"url": "https://www.meiliyizu.com/",
-						"icon": "https://img.fre123.com/i/2024/01/06/65985ec12f5b5.png",
-						"description": "无损音乐免费下载",
-						"suffix": false,
-						"is_show": false
+						"is_show": true
 					}
 					
 				]
