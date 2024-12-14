@@ -615,6 +615,17 @@
 						"suffix": true,
 						"is_show": true
 					}
+					,
+					{
+						"title": "LuckyCoin",
+						"url": "https://luckycoinfoundation.org/",
+						"icon": "/Bch_Lucky_LogoLogo.jpg",
+						"description": "幸运币官网",
+						"suffix": true,
+						"is_show": true
+					}
+
+					
 					
 				]
 			}
