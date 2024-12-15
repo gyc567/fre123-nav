@@ -11,6 +11,16 @@
 					"url": "https://medium.com/@gyc56"
 				},
 				"details": [
+					
+					{
+						"title": "聪明钱跟踪平台",
+						"ori_url": "https://platform.spotonchain.com/zh",
+						"url": "https://platform.spotonchain.com/zh",
+						"icon": "/SpotOnChain_Logo.jpg",
+						"description": "最好用的聪明钱跟踪分析平台",
+						"suffix": false,
+						"is_show": true
+					},
 					{
 						"title": "加密新闻热榜",
 						"ori_url": "https://www.theblockbeats.info/newsflash",
