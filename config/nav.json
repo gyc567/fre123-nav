@@ -11,7 +11,15 @@
 					"url": "https://medium.com/@gyc56"
 				},
 				"details": [
-					
+					{
+						"title": "代币市值比较器",
+						"ori_url": "https://mc.smartwallex.com/",
+						"url": "https://mc.smartwallex.com/",
+						"icon": "/cryptoCompare.jpg",
+						"description": "最好用的市值比较器",
+						"suffix": false,
+						"is_show": true
+					},
 					{
 						"title": "聪明钱跟踪平台",
 						"ori_url": "https://platform.spotonchain.com/zh",
@@ -53,7 +61,7 @@
 						"ori_url": "https://www.chainfeeds.xyz/",
 						"url": "https://www.chainfeeds.xyz/",
 						"icon": "/chainfeeds_logo.jpg",
-						"description": "与世界分享你的瞬间 ",
+						"description": "与世界分享加密热点 ",
 						"suffix": false,
 						"is_show": true
 					},
