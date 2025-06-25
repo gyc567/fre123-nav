@@ -38,6 +38,15 @@
 						"suffix": false,
 						"is_show": true
 					},
+					{
+						"title": "流动性Hunter Lion",
+						"ori_url": "https://lh.smartwallex.com/",
+						"url": "https://lh.smartwallex.com/",
+						"icon": "/lh.jpg",
+						"description": "流动性Hunter Lion",
+						"suffix": false,
+						"is_show": true
+					},
 					
 					{
 						"title": "交易所合约计算器",
