@@ -1,0 +1,1 @@
+export { default } from "file:///Users/guoyingcheng/claude_pro/smartwallex/fre123-nav/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

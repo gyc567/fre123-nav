@@ -9,6 +9,16 @@ export default defineNuxtConfig({
 		'nuxt-icon',
 		'@pinia-plugin-persistedstate/nuxt',
 	],
+	// SEO优化配置
+	nitro: {
+		prerender: {
+			routes: ['/']
+		},
+		// 启用压缩
+		compressPublicAssets: true,
+	},
+	// 渲染配置
+	ssr: true,
 	pinia: {
 		autoImports: ['defineStore', 'storeToRefs'],
 	},
@@ -57,6 +67,13 @@ export default defineNuxtConfig({
 	experimental: {
 		writeEarlyHints: false,
 		inlineSSRStyles: false,
+	},
+	// 图片优化配置
+	image: {
+		domains: ['www.smartwallex.com', 'img.fre123.com'],
+		formats: ['webp', 'jpg', 'png'],
+		quality: 80,
+		densities: [1, 2]
 	},
 	css: [
 		'~/assets/global.scss',

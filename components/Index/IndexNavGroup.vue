@@ -1,15 +1,16 @@
 <template>
-	<div
+	<section
 		v-if="groupData.tab_list[currTab].details.filter((i) => i.is_show).length > 0"
 		:id="`${classNamePrefixGroup}${groupData.group_name}`"
 		class="index-nav-group bg-white pt-[10px] mb-[20px] px-4 rounded-lg"
+		:aria-label="`${groupData.group_name}工具分类`"
 	>
-		<div class="flex flex-row pl-[5px] pt-[8px] leading-[28px] overflow-x-scroll no-scrollbar">
-			<h4 class="text-gray-500 text-md md:text-lg flex">
+		<header class="flex flex-row pl-[5px] pt-[8px] leading-[28px] overflow-x-scroll no-scrollbar">
+			<h2 class="text-gray-500 text-md md:text-lg flex">
 				<span class="text-[16px] md:text-[18px] text-[#555555] pr-2 font-semibold truncate">{{
 					groupData.group_name
 				}}</span>
-			</h4>
+			</h2>
 			<div class="h-[18px] my-[5px] w-[2px] bg-gray-200 mx-4 md:mx-8"></div>
 			<div class="justify-center items-center text-[#888] flex-none">
 				<div>
@@ -48,33 +49,44 @@
 					>{{ groupData.tab_list[currTab].upper_right_corner?.title }}</a
 				>
 			</div>
-		</div>
+		</header>
 		<div
 			class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-4 gap-y-2 mt-[24px] cursor-pointer"
+			role="list"
+			:aria-label="`${groupData.group_name}工具列表`"
 		>
 			<StyleTooltip
 				v-for="(item, t) in groupData.tab_list[currTab].details.filter((i) => i.is_show)"
+				:key="item.title"
 				:content="item.description"
 				:nowrap="true"
 				:element-id="`desc-${idx}-${t}`"
 				class="mb-[10px]"
 				:class="` ${showNumber <= t ? 'hidden' : ''}`"
+				role="listitem"
 			>
-				<a
-					v-show="item.is_show"
-					class="index-nav-group-content-item rounded-xl shadow shadow-warm-gray-500 items-center py-[8px] px-[8px] border-[1px] border-white"
-					:href="item.url"
-					target="_blank"
-					rel="nofollow"
-					@mouseover="showToSourceIcon('show', idx, t)"
-					@mouseout="showToSourceIcon('hide', idx, t)"
-				>
-					<img class="index-nav-group-content-item-icon" :src="item.icon" />
+				<article>
+					<a
+						v-show="item.is_show"
+						class="index-nav-group-content-item rounded-xl shadow shadow-warm-gray-500 items-center py-[8px] px-[8px] border-[1px] border-white"
+						:href="item.url"
+						target="_blank"
+						rel="nofollow"
+						:aria-label="`访问${item.title} - ${item.description}`"
+						@mouseover="showToSourceIcon('show', idx, t)"
+						@mouseout="showToSourceIcon('hide', idx, t)"
+					>
+					<img 
+						class="index-nav-group-content-item-icon" 
+						:src="item.icon" 
+						:alt="`${item.title}图标`"
+						loading="lazy"
+					/>
 					<div class="index-nav-group-content-item-main">
-						<div class="index-nav-group-content-item-name">{{ item.title }}</div>
-						<div :id="`desc-${idx}-${t}`" class="index-nav-group-content-item-desc">
+						<h3 class="index-nav-group-content-item-name">{{ item.title }}</h3>
+						<p :id="`desc-${idx}-${t}`" class="index-nav-group-content-item-desc">
 							{{ item.description }}
-						</div>
+						</p>
 					</div>
 					<div
 						v-if="item.ori_url"
@@ -90,9 +102,10 @@
 						></Icon>
 					</div>
 				</a>
+				</article>
 			</StyleTooltip>
 		</div>
-	</div>
+	</section>
 </template>
 
 <script setup lang="ts">
