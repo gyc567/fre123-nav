@@ -29,8 +29,8 @@
 							:id="`${classNamePrefixGroupTab}${groupData.group_name}_${tab.tab_name}`"
 							class="z-10 hover:text-[#007bff] hover:cursor-pointer active:text-[#007bff] active:font-bold px-3 text-[14px]"
 							:class="`${currTab == i ? 'active' : 'font-wei'}`"
-							@mouseenter="slideTo(i, `${tab.tab_name}`)"
-							@mouseleave="slideBack(`${tab.tab_name}`)"
+							@mouseenter="slideTo(i)"
+							@mouseleave="slideBack()"
 							@click="switchTab(i)"
 						>
 							{{ tab.tab_name }}
@@ -119,58 +119,65 @@ const classNamePrefixGroupTab = 'nav_group_tab_'
 
 const currTab = ref(0)
 const isHovering = ref(false)
-const tabName = ref(props.groupData.tab_list[0].tab_name)
-
 const showNumber = ref(100)
+
+const padding = 12 // 左侧padding
+const fontSize = 14 //字体大小
+const scale = 0.6
+
+const initWidth = ref(
+	Math.round(props.groupData.tab_list[0].tab_name.length * fontSize * scale),
+)
+const initLeft = ref(0)
+
+const updateAnchor = (tabIndex: number) => {
+	const tab = props.groupData.tab_list[tabIndex]
+	if (!tab) return
+
+	const newWidth = Math.round(tab.tab_name.length * fontSize * scale)
+	initWidth.value = newWidth
+
+	let left = 0
+	for (let i = 0; i < tabIndex; i++) {
+		const prevTab = props.groupData.tab_list[i]
+		left += padding * 2 + prevTab.tab_name.length * fontSize
+	}
+	left += Math.round(padding + (tab.tab_name.length * fontSize * (1 - scale)) / 2)
+
+	const anchor = document.getElementById(`${classNamePrefixGroup}${props.idx}_anchor`)
+	if (anchor) {
+		anchor.style.width = `${newWidth}px`
+		anchor.style.transform = `translateX(${left}px)`
+		anchor.style.transition = 'transform 0.3s, width 0.3s'
+	}
+}
 
 // 切换数据
 let rewrite = false
 const switchTab = (val: number) => {
 	currTab.value = val
+	updateAnchor(val)
 	if (rewrite) {
 		history.pushState(null, '', ' ')
 	}
 }
 
-const padding = 12 // 左侧padding
-
-const fontSize = 14 //字体大小
-const scale = 0.6
-
-const initWidth = Math.round(tabName.value.length * fontSize * scale)
-const initLeft = ref(0)
-
 // 初始化移动条位置
 const getTranslateX = () => {
-	let left = 0
-	for (let i = 0; i < currTab.value; i++) {
-		left += padding * 2 + tabName.value.length * fontSize
-	}
-	left += Math.round(padding + (tabName.value.length * fontSize * (1 - scale)) / 2)
-	initLeft.value = left
+	updateAnchor(currTab.value)
 }
 getTranslateX()
 
 // 移动条移动
-const slideTo = (tabIndex: number, name: string) => {
+const slideTo = (tabIndex: number) => {
 	isHovering.value = true
-	let left = 0
-	initLeft.value = 0
-	for (let i = 0; i < tabIndex; i++) {
-		left += padding * 2 + name.length * fontSize
-	}
-	left += Math.round(padding + (name.length * fontSize * (1 - scale)) / 2)
-	const anchor = document.getElementById(`${classNamePrefixGroup}${props.idx}_anchor`)
-	if (anchor != null) {
-		anchor.style.transitionDuration = '0.3s'
-		anchor.style.transform = `translateX(${left}px)`
-	}
+	updateAnchor(tabIndex)
 }
 
 // 返回原位置
-const slideBack = (name: string) => {
-	slideTo(currTab.value, name)
+const slideBack = () => {
 	isHovering.value = false
+	updateAnchor(currTab.value)
 }
 
 // 展示源网站跳转按钮
