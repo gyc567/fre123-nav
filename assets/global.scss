@@ -1,3 +1,4 @@
+@import '~/components/Index/index.scss';
 body {
   // background-color : $MAIN_BG_COLOR;
   color: $MAIN_TEXT_COLOR;
@@ -29,4 +30,3 @@ body {
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
 }
-

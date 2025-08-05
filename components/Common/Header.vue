@@ -6,7 +6,7 @@
 		>
 			<div class="flex md:basis-1/3 relative">
 				<a :href="baseInfo['web_host']" target="_blank">
-					<img class="header-logo header-transition ml-[20px]" :src="baseInfo['logo']" alt="" />
+					<img class="header-logo header-transition ml-[20px]" :src="baseInfo['logo']" :alt="`${baseInfo['app_name']}网站Logo`" />
 				</a>
 				<a
 					:href="baseInfo['web_host']"

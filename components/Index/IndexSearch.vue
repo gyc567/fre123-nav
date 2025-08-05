@@ -11,7 +11,7 @@
 				@mouseleave="slideBack()"
 				@click="switchResource(i, item.name)"
 			>
-				<img v-if="item.icon" :src="item.icon" alt="" class="w-[12px] h-[12px]" />
+				<img v-if="item.icon" :src="item.icon" :alt="`${item.name}图标`" class="w-[12px] h-[12px]" />
 				<div class="ml-1 hidden lg:block">{{ item.name }}</div>
 			</li>
 		</ul>

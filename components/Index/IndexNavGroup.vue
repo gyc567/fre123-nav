@@ -76,12 +76,12 @@
 						@mouseover="showToSourceIcon('show', idx, t)"
 						@mouseout="showToSourceIcon('hide', idx, t)"
 					>
-					<img 
-						class="index-nav-group-content-item-icon" 
-						:src="item.icon" 
-						:alt="`${item.title}图标`"
-						loading="lazy"
-					/>
+<img 
+    class="index-nav-group-content-item-icon" 
+    :src="item.icon" 
+    :alt="`${item.title}图标`"
+    loading="lazy"
+/>
 					<div class="index-nav-group-content-item-main">
 						<h3 class="index-nav-group-content-item-name">{{ item.title }}</h3>
 						<p :id="`desc-${idx}-${t}`" class="index-nav-group-content-item-desc">
@@ -309,7 +309,6 @@ onMounted(async () => {
 	width: 32px;
 	height: 32px;
 	border-radius: 5px;
-	border-radius: 50%;
 	transition: all 0.6s;
 }
 

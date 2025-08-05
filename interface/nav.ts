@@ -10,8 +10,8 @@ export interface ITabDetails {
 }
 
 export interface IUpperRightCorner {
-	title: string
-	url: string
+	title?: string
+	url?: string
 }
 
 export interface ITab {
