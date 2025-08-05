@@ -1430,3 +1430,5 @@ resourceList is  RefImpl {
     }
   ]
 }
+ℹ hmr update /components/Index/IndexSearch.vue, /assets/css/tailwind.css, /assets/tailwind.css, /assets/css/tailwind.css?direct, /assets/tailwind.css?direct
+ℹ hmr update /components/Index/IndexNavGroup.vue, /assets/css/tailwind.css, /assets/tailwind.css, /assets/css/tailwind.css?direct, /assets/tailwind.css?direct

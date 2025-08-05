@@ -76,10 +76,9 @@
 						@mouseover="showToSourceIcon('show', idx, t)"
 						@mouseout="showToSourceIcon('hide', idx, t)"
 					>
-<img 
-    class="index-nav-group-content-item-icon" 
-    :src="item.icon" 
-    :alt="`${item.title}图标`"
+<img
+    class="index-nav-group-content-item-icon"
+    :src="item.icon"
     loading="lazy"
 />
 					<div class="index-nav-group-content-item-main">
