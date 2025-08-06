@@ -1,0 +1,8 @@
+{
+  "passed": [],
+  "failed": [
+    "整体测试失败: page.goto: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ],
+  "warnings": [],
+  "groups": []
+}

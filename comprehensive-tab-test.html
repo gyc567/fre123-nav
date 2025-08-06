@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全面Tab切换功能测试</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .test-container {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .tab-header {
+            display: flex;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .tab-item {
+            padding: 10px 20px;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+        .tab-item:hover {
+            color: #007bff;
+        }
+        .tab-item.active {
+            color: #007bff;
+            border-bottom-color: #007bff;
+            font-weight: bold;
+        }
+        .tab-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .item {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+        .item h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+            font-size: 14px;
+        }
+        .item p {
+            margin: 0;
+            color: #666;
+            font-size: 12px;
+        }
+        .test-results {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e8f5e8;
+            border-radius: 5px;
+            border-left: 4px solid #4caf50;
+        }
+        .error {
+            background: #ffebee;
+            border-left-color: #f44336;
+        }
+        .success {
+            background: #e8f5e8;
+            border-left-color: #4caf50;
+        }
+        .group-title {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .console-log {
+            background: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            max-height: 150px;
+            overflow-y: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h1>🧪 全面Tab切换功能测试</h1>
+        
+        <!-- 加密资讯 -->
+        <div class="test-container">
+            <h2 class="group-title">📰 加密资讯</h2>
+            <div class="tab-header">
+                <div 
+                    v-for="(tab, index) in 加密资讯" 
+                    :key="index"
+                    :class="['tab-item', { active: currentTabs.加密资讯 === index }]"
+                    @click="switchTab('加密资讯', index)"
+                >
+                    {{ tab.name }}
+                </div>
+            </div>
+            <div class="tab-content">
+                <div v-for="(item, index) in getCurrentTabItems('加密资讯')" :key="index" class="item">
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.description }}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 市场数据 -->
+        <div class="test-container">
+            <h2 class="group-title">📊 市场数据</h2>
+            <div class="tab-header">
+                <div 
+                    v-for="(tab, index) in 市场数据" 
+                    :key="index"
+                    :class="['tab-item', { active: currentTabs.市场数据 === index }]"
+                    @click="switchTab('市场数据', index)"
+                >
+                    {{ tab.name }}
+                </div>
+            </div>
+            <div class="tab-content">
+                <div v-for="(item, index) in getCurrentTabItems('市场数据')" :key="index" class="item">
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.description }}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- DEFI去中心化金融 -->
+        <div class="test-container">
+            <h2 class="group-title">💰 DEFI去中心化金融</h2>
+            <div class="tab-header">
+                <div 
+                    v-for="(tab, index) in DEFI去中心化金融" 
+                    :key="index"
+                    :class="['tab-item', { active: currentTabs.DEFI去中心化金融 === index }]"
+                    @click="switchTab('DEFI去中心化金融', index)"
+                >
+                    {{ tab.name }}
+                </div>
+            </div>
+            <div class="tab-content">
+                <div v-for="(item, index) in getCurrentTabItems('DEFI去中心化金融')" :key="index" class="item">
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.description }}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 实用工具 -->
+        <div class="test-container">
+            <h2 class="group-title">🛠️ 实用工具</h2>
+            <div class="tab-header">
+                <div 
+                    v-for="(tab, index) in 实用工具" 
+                    :key="index"
+                    :class="['tab-item', { active: currentTabs.实用工具 === index }]"
+                    @click="switchTab('实用工具', index)"
+                >
+                    {{ tab.name }}
+                </div>
+            </div>
+            <div class="tab-content">
+                <div v-for="(item, index) in getCurrentTabItems('实用工具')" :key="index" class="item">
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.description }}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 测试结果 -->
+        <div class="test-container">
+            <h2>📋 测试结果</h2>
+            <div :class="['test-results', hasErrors ? 'error' : 'success']">
+                <h3>总体状态: {{ hasErrors ? '❌ 发现问题' : '✅ 全部正常' }}</h3>
+                <p>总分组数: {{ Object.keys(allTabs).length }}</p>
+                <p>成功分组: {{ Object.keys(testResults).filter(key => testResults[key].success).length }}</p>
+                <p>失败分组: {{ Object.keys(testResults).filter(key => !testResults[key].success).length }}</p>
+            </div>
+            
+            <div v-for="(result, groupName) in testResults" :key="groupName" class="test-results" :class="result.success ? 'success' : 'error'">
+                <h4>{{ groupName }}: {{ result.success ? '✅' : '❌' }}</h4>
+                <p v-if="result.error">错误: {{ result.error }}</p>
+                <p v-else>所有Tab切换正常</p>
+            </div>
+        </div>
+
+        <!-- 控制台日志 -->
+        <div class="test-container">
+            <h2>📝 控制台日志</h2>
+            <div class="console-log">
+                <div v-for="(log, index) in consoleLogs" :key="index" style="margin: 2px 0;">
+                    {{ log }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const { createApp } = Vue;
+
+        createApp({
+            data() {
+                return {
+                    currentTabs: {
+                        '加密资讯': 0,
+                        '市场数据': 0,
+                        'DEFI去中心化金融': 0,
+                        '实用工具': 0
+                    },
+                    testResults: {},
+                    consoleLogs: [],
+                    allTabs: {
+                        '加密资讯': [
+                            {
+                                name: "加密常用",
+                                details: [
+                                    { title: "代币市值比较器", description: "最好用的市值比较器", is_show: true },
+                                    { title: "流动性Hunter", description: "流动性Hunter", is_show: true },
+                                    { title: "聪明钱跟踪平台", description: "最好用的聪明钱跟踪分析平台", is_show: true }
+                                ]
+                            },
+                            {
+                                name: "中心化交易所",
+                                details: [
+                                    { title: "币安交易所", description: "全球最大的交易所", is_show: true },
+                                    { title: "芝麻交易所", description: "老牌交易所，稳定，可靠", is_show: true },
+                                    { title: "欧易交易所", description: "排名前三的交易所", is_show: true }
+                                ]
+                            },
+                            {
+                                name: "新手入门学习大全",
+                                details: [
+                                    { title: "币安学院", description: "新手可以在这里学习入门和基础知识", is_show: true },
+                                    { title: "加密货币百科全书", description: "世界上最大的区块链和加密货币百科全书", is_show: true },
+                                    { title: "芝麻加密学院", description: "芝麻交易所的加密货币学院", is_show: true }
+                                ]
+                            }
+                        ],
+                        '市场数据': [
+                            {
+                                name: "综合数据分析平台",
+                                details: [
+                                    { title: "CoinGlass", description: "加密货币衍生品数据分析平台", is_show: true },
+                                    { title: "CoinAnk", description: "全面的加密货币数据分析平台", is_show: true },
+                                    { title: "非小号", description: "老牌的加密货币数据聚合平台", is_show: true }
+                                ]
+                            },
+                            {
+                                name: "K线数据",
+                                details: [
+                                    { title: "TradingView", description: "专业的K数据平台", is_show: true },
+                                    { title: "AICoin", description: "专业的交易所K数据平台", is_show: true }
+                                ]
+                            },
+                            {
+                                name: "链上数据平台",
+                                details: [
+                                    { title: "AVE", description: "链上聚合数据平台及一级MEME交易平台", is_show: true },
+                                    { title: "DexTools", description: "外网最流行的一级MEME交易平台及数据聚合平台", is_show: true },
+                                    { title: "DexScreener", description: "外网一级MEME交易平台及数据聚合平台", is_show: true }
+                                ]
+                            }
+                        ],
+                        'DEFI去中心化金融': [
+                            {
+                                name: "DEFI仪表盘",
+                                details: [
+                                    { title: "defillama", description: "最全面的defi数据仪表盘，包括TVL、交易量、APR、年化等，可一键查看。", is_show: true },
+                                    { title: "de.fi", description: "好用的defi数据仪表盘。", is_show: true }
+                                ]
+                            },
+                            {
+                                name: "去中心化钱包",
+                                details: [
+                                    { title: "IMToken钱包", description: "老牌的去中心化钱包", is_show: true },
+                                    { title: "TP钱包", description: "用户最多的去中心化钱包", is_show: true },
+                                    { title: "MetaMask钱包", description: "全球用户最多的去中心化钱包", is_show: true }
+                                ]
+                            },
+                            {
+                                name: "NFT 工具",
+                                details: [
+                                    { title: "NFTGo", description: "多合一的NFT分析平台。", is_show: true },
+                                    { title: "NFTScan", description: "NFT链上分析平台。", is_show: true },
+                                    { title: "NFTEye", description: "NFT分析与交易平台。", is_show: true }
+                                ]
+                            }
+                        ],
+                        '实用工具': [
+                            {
+                                name: "综合查询",
+                                details: [
+                                    { title: "Dune", description: "免费的超强链上查询、分析、可视化工具！", is_show: true },
+                                    { title: "Nansen", description: "最专业的链上分析工具！", is_show: true }
+                                ]
+                            },
+                            {
+                                name: "指数查询",
+                                details: [
+                                    { title: "贪婪指数", description: "币圈贪婪与恐惧指数", is_show: true },
+                                    { title: "比特币ahr999屯币指标", description: "比特币ahr999屯币指标,用来判断是否需要买入或卖出或定投比特币。", is_show: true },
+                                    { title: "山寨币指数", description: "山寨币指标,用来判断是否需要买入或卖出或定投山寨币。", is_show: true }
+                                ]
+                            },
+                            {
+                                name: "币种官网",
+                                details: [
+                                    { title: "BTC比特币", description: "比特币官网", is_show: true },
+                                    { title: "ETH以太坊", description: "以太坊官网", is_show: true },
+                                    { title: "DOT波卡", description: "波卡链官网", is_show: true }
+                                ]
+                            }
+                        ]
+                    }
+                };
+            },
+            computed: {
+                hasErrors() {
+                    return Object.values(this.testResults).some(result => !result.success);
+                }
+            },
+            methods: {
+                switchTab(groupName, tabIndex) {
+                    this.log(`🔄 切换 ${groupName} - Tab: ${tabIndex}`);
+                    
+                    const tabs = this.allTabs[groupName];
+                    if (!tabs || tabIndex < 0 || tabIndex >= tabs.length) {
+                        this.log(`❌ ${groupName} - 无效的tab索引: ${tabIndex}`);
+                        this.testResults[groupName] = {
+                            success: false,
+                            error: `无效的tab索引: ${tabIndex}`
+                        };
+                        return;
+                    }
+                    
+                    const targetTab = tabs[tabIndex];
+                    if (!targetTab || !targetTab.details || !Array.isArray(targetTab.details)) {
+                        this.log(`❌ ${groupName} - 无效的tab数据`);
+                        this.testResults[groupName] = {
+                            success: false,
+                            error: '无效的tab数据'
+                        };
+                        return;
+                    }
+                    
+                    const visibleItems = targetTab.details.filter(item => item.is_show !== false);
+                    this.log(`📊 ${groupName} - ${targetTab.name}: ${visibleItems.length} 个可见项目`);
+                    
+                    if (visibleItems.length === 0) {
+                        this.log(`❌ ${groupName} - ${targetTab.name}: 没有可见项目`);
+                        this.testResults[groupName] = {
+                            success: false,
+                            error: `${targetTab.name}: 没有可见项目`
+                        };
+                        return;
+                    }
+                    
+                    this.currentTabs[groupName] = tabIndex;
+                    this.testResults[groupName] = {
+                        success: true,
+                        message: `${targetTab.name}: ${visibleItems.length} 个项目`
+                    };
+                    
+                    this.log(`✅ ${groupName} - 成功切换到 ${targetTab.name}`);
+                },
+                
+                getCurrentTabItems(groupName) {
+                    const tabIndex = this.currentTabs[groupName];
+                    const tabs = this.allTabs[groupName];
+                    
+                    if (!tabs || tabIndex < 0 || tabIndex >= tabs.length) {
+                        return [];
+                    }
+                    
+                    const currentTab = tabs[tabIndex];
+                    if (!currentTab || !currentTab.details) {
+                        return [];
+                    }
+                    
+                    return currentTab.details.filter(item => item.is_show !== false);
+                },
+                
+                log(message) {
+                    const timestamp = new Date().toLocaleTimeString();
+                    this.consoleLogs.push(`[${timestamp}] ${message}`);
+                    console.log(message);
+                    
+                    // 限制日志数量
+                    if (this.consoleLogs.length > 50) {
+                        this.consoleLogs = this.consoleLogs.slice(-50);
+                    }
+                },
+                
+                runAllTests() {
+                    this.log('🚀 开始全面测试所有tab切换功能');
+                    
+                    Object.keys(this.allTabs).forEach(groupName => {
+                        const tabs = this.allTabs[groupName];
+                        this.log(`📋 测试分组: ${groupName} (${tabs.length} 个tab)`);
+                        
+                        tabs.forEach((tab, index) => {
+                            setTimeout(() => {
+                                this.switchTab(groupName, index);
+                            }, index * 500); // 延迟500ms测试每个tab
+                        });
+                    });
+                }
+            },
+            mounted() {
+                this.log('🚀 全面Tab切换测试页面已加载');
+                
+                // 初始化测试结果
+                Object.keys(this.allTabs).forEach(groupName => {
+                    this.switchTab(groupName, 0);
+                });
+                
+                // 5秒后运行全面测试
+                setTimeout(() => {
+                    this.runAllTests();
+                }, 5000);
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>

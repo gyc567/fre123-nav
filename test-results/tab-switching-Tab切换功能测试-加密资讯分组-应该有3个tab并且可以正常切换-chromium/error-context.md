@@ -1,0 +1,325 @@
+# Page snapshot
+
+```yaml
+- link "聪明钱一站式导航平台网站Logo":
+  - /url: https://www.smartwallex.com
+  - img "聪明钱一站式导航平台网站Logo"
+- link "聪明钱一站式导航平台":
+  - /url: https://www.smartwallex.com
+- list:
+  - listitem
+  - listitem:
+    - img
+    - text: 谷歌
+  - listitem:
+    - img
+    - text: 必应
+  - listitem:
+    - img
+    - text: 百度
+  - listitem:
+    - img
+    - text: 搜狗|微信
+  - listitem:
+    - img
+    - text: duckduckgo
+  - listitem:
+    - img
+    - text: presearch
+  - listitem:
+    - img
+    - text: devv.ai
+  - listitem:
+    - img
+    - text: yandex
+- text: 综合
+- list:
+  - listitem: 综合
+  - listitem: 影视
+  - listitem: 番剧
+  - listitem: 漫画
+  - listitem: 书籍
+  - listitem: 小说
+  - listitem: 网盘
+- textbox "在 谷歌 中搜索"
+- link "中心化交易所推荐":
+  - /url: ""
+- list:
+  - listitem:
+    - link "芝麻交易所":
+      - /url: https://www.gateio24.com/signup/VlFFBg1W?ref_type=103
+  - listitem:
+    - link "币安交易所":
+      - /url: https://www.binance.com/activity/referral-entry/CPA?ref=CPA_00OY78C3X4
+  - listitem:
+    - link "bitget交易所":
+      - /url: https://partner.bitgetapp.com/bg/L9BLZB
+  - listitem:
+    - link "欧易交易所":
+      - /url: https://okx.com/join/2270923
+- main:
+  - insertion
+  - heading "smartwallex:聪明钱一站式导航平台" [level=1]
+  - paragraph: 币圈导航| 区块链导航| WEB3导航|聪明钱导航 聪明钱包导航平台 专注于为您提供各种聪明钱包信息，包括交易所资源、链上数据、一级工具等。无论您在寻找哪种资源，我们都将尽力为您提供，为您的学习或工作助力
+  - navigation "加密货币工具导航":
+    - region "加密资讯工具分类":
+      - heading "加密资讯" [level=2]
+      - list:
+        - listitem
+        - listitem: 加密常用
+        - listitem: 中心化交易所
+        - listitem: 新手入门学习大全
+      - link "加密资讯汇总>>>":
+        - /url: https://medium.com/@gyc56
+      - list "加密资讯工具列表":
+        - listitem:
+          - article:
+            - link "访问代币市值比较器 - 最好用的市值比较器":
+              - /url: https://mc.smartwallex.com/
+              - img
+              - heading "代币市值比较器" [level=3]
+              - paragraph: 最好用的市值比较器
+        - listitem:
+          - article:
+            - link "访问流动性Hunter - 流动性Hunter":
+              - /url: https://liqhunter.smartwallex.com/
+              - img
+              - heading "流动性Hunter" [level=3]
+              - paragraph: 流动性Hunter
+        - listitem:
+          - article:
+            - link "访问流动性Hunter Plus - 流动性Hunter Plus":
+              - /url: https://lhr.smartwallex.com/
+              - img
+              - heading "流动性Hunter Plus" [level=3]
+              - paragraph: 流动性Hunter Plus
+        - listitem:
+          - article:
+            - link "访问流动性Hunter Lion - 流动性Hunter Lion":
+              - /url: https://lh.smartwallex.com/
+              - img
+              - heading "流动性Hunter Lion" [level=3]
+              - paragraph: 流动性Hunter Lion
+        - listitem:
+          - article:
+            - link "访问交易所合约计算器 - 简单好用的合约计算器":
+              - /url: https://ccc.smartwallex.com/
+              - img
+              - heading "交易所合约计算器" [level=3]
+              - paragraph: 简单好用的合约计算器
+        - listitem:
+          - article:
+            - link "访问聪明钱跟踪平台 - 最好用的聪明钱跟踪分析平台":
+              - /url: https://platform.spotonchain.com/zh
+              - img
+              - heading "聪明钱跟踪平台" [level=3]
+              - paragraph: 最好用的聪明钱跟踪分析平台
+        - listitem:
+          - article:
+            - link "访问加密新闻热榜 - 加密新闻热榜汇集各平台技术热点资讯，助您快速了解实时资讯":
+              - /url: https://www.theblockbeats.info/newsflash
+              - img
+              - heading "加密新闻热榜" [level=3]
+              - paragraph: 加密新闻热榜汇集各平台技术热点资讯，助您快速了解实时资讯
+        - listitem:
+          - article:
+            - link "访问加密技术热榜 - 加密技术热榜汇集各平台技术热点资讯，助您快速了解实时资讯":
+              - /url: https://www.techflowpost.com/newsletter/index.html
+              - img
+              - heading "加密技术热榜" [level=3]
+              - paragraph: 加密技术热榜汇集各平台技术热点资讯，助您快速了解实时资讯
+        - listitem:
+          - article:
+            - link "访问加密精选周刊 - 这是Eric提供的技术思考及最新的加密周刊信息流。":
+              - /url: https://medium.com/@gyc567
+              - img
+              - heading "加密精选周刊" [level=3]
+              - paragraph: 这是Eric提供的技术思考及最新的加密周刊信息流。
+        - listitem:
+          - article:
+            - link "访问加密ChainFeeds热点 - 与世界分享加密热点":
+              - /url: https://www.chainfeeds.xyz/
+              - img
+              - heading "加密ChainFeeds热点" [level=3]
+              - paragraph: 与世界分享加密热点
+        - listitem:
+          - article:
+            - link "访问CoinMarketCap - 最全代币数据资讯平台：coinmarketcap.com":
+              - /url: https://coinmarketcap.com/
+              - img
+              - heading "CoinMarketCap" [level=3]
+              - paragraph: 最全代币数据资讯平台：coinmarketcap.com
+        - listitem:
+          - article:
+            - link "访问CoinGecko - 代币价格与市值数据平台：coingecko.com":
+              - /url: https://www.coingecko.com/
+              - img
+              - heading "CoinGecko" [level=3]
+              - paragraph: 代币价格与市值数据平台：coingecko.com
+        - listitem:
+          - article:
+            - link "访问链捕手 - 区块链新闻平台":
+              - /url: https://www.chaincatcher.com/
+              - img
+              - heading "链捕手" [level=3]
+              - paragraph: 区块链新闻平台
+    - region "市场数据工具分类":
+      - heading "市场数据" [level=2]
+      - list:
+        - listitem
+        - listitem: 综合数据分析平台
+        - listitem: K线数据
+        - listitem: 链上数据平台
+        - listitem: 链上巨鲸数据追踪
+      - list "市场数据工具列表":
+        - listitem:
+          - article:
+            - link "访问CoinGlass - 加密货币衍生品数据分析平台":
+              - /url: https://www.coinglass.com/zh
+              - img
+              - heading "CoinGlass" [level=3]
+              - paragraph: 加密货币衍生品数据分析平台
+        - listitem:
+          - article:
+            - link "访问CoinAnk - 全面的加密货币数据分析平台":
+              - /url: https://coinank.com/zh
+              - img
+              - heading "CoinAnk" [level=3]
+              - paragraph: 全面的加密货币数据分析平台
+        - listitem:
+          - article:
+            - link "访问非小号 - 老牌的加密货币数据聚合平台":
+              - /url: https://www.feixiaohao.com/
+              - img
+              - heading "非小号" [level=3]
+              - paragraph: 老牌的加密货币数据聚合平台
+    - region "DEFI去中心化金融工具分类":
+      - heading "DEFI去中心化金融" [level=2]
+      - list:
+        - listitem
+        - listitem: DEFI仪表盘
+        - listitem: 去中心化钱包
+        - listitem: NFT 工具
+        - listitem: 跨链桥
+      - link "🔥DEFI仪表盘汇总>>>":
+        - /url: https://medium.com/@gyc567/defi%E4%BB%AA%E8%A1%A8%E7%9B%98%E6%B1%87%E6%80%BB-6ee38a9517ff
+      - list "DEFI去中心化金融工具列表":
+        - listitem:
+          - article:
+            - link "访问defillama - 最全面的defi数据仪表盘，包括TVL、交易量、APR、年化等，可一键查看。":
+              - /url: https://defillama.com/
+              - img
+              - heading "defillama" [level=3]
+              - paragraph: 最全面的defi数据仪表盘，包括TVL、交易量、APR、年化等，可一键查看。
+        - listitem:
+          - article:
+            - link "访问de.fi - 好用的defi数据仪表盘。":
+              - /url: https://de.fi/
+              - img
+              - heading "de.fi" [level=3]
+              - paragraph: 好用的defi数据仪表盘。
+    - region "MEME资源与工具工具分类":
+      - heading "MEME资源与工具" [level=2]
+      - list:
+        - listitem
+        - listitem: 聪明钱追踪
+        - listitem: 新手入门与教程
+        - listitem: 精选TG频道
+      - list "MEME资源与工具工具列表":
+        - listitem:
+          - article:
+            - link "访问LookOnChain - 链上追踪聪明钱的追踪工具。":
+              - /url: https://x.com/lookonchain
+              - img
+              - heading "LookOnChain" [level=3]
+              - paragraph: 链上追踪聪明钱的追踪工具。
+        - listitem:
+          - article:
+            - link "访问WatcherGuru - 链上追踪综合平台。":
+              - /url: https://watcher.guru/
+              - img
+              - heading "WatcherGuru" [level=3]
+              - paragraph: 链上追踪综合平台。
+    - region "实用工具工具分类":
+      - heading "实用工具" [level=2]
+      - list:
+        - listitem
+        - listitem: 综合查询
+        - listitem: 指数查询
+        - listitem: 币种官网
+      - list "实用工具工具列表":
+        - listitem:
+          - article:
+            - link "访问Dune - 免费的超强链上查询、分析、可视化工具！":
+              - /url: https://dune.com/discover/content/trending
+              - img
+              - heading "Dune" [level=3]
+              - paragraph: 免费的超强链上查询、分析、可视化工具！
+        - listitem:
+          - article:
+            - link "访问Nansen - 最专业的链上分析工具！":
+              - /url: https://www.nansen.ai/
+              - img
+              - heading "Nansen" [level=3]
+              - paragraph: 最专业的链上分析工具！
+    - region "安全服务与工具工具分类":
+      - heading "安全服务与工具" [level=2]
+      - list:
+        - listitem
+        - listitem: 授权相关
+        - listitem: 安全分析平台
+      - list "安全服务与工具工具列表":
+        - listitem:
+          - article:
+            - link "访问RevokeCash - 代币授权撤消工具。":
+              - /url: https://revoke.cash/
+              - img
+              - heading "RevokeCash" [level=3]
+              - paragraph: 代币授权撤消工具。
+        - listitem:
+          - article:
+            - link "访问多签钱包 - 老牌的多签钱包。":
+              - /url: https://safe.global/
+              - img
+              - heading "多签钱包" [level=3]
+              - paragraph: 老牌的多签钱包。
+    - region "币圈媒体工具分类":
+      - heading "币圈媒体" [level=2]
+      - list:
+        - listitem
+        - listitem: 推特大V
+        - listitem: 外网权威币圈媒体
+      - list "币圈媒体工具列表":
+        - listitem:
+          - article:
+            - link "访问马斯克 - 推特老板,地球上最有雄心的男人。":
+              - /url: https://x.com/elonmusk
+              - img
+              - heading "马斯克" [level=3]
+              - paragraph: 推特老板,地球上最有雄心的男人。
+        - listitem:
+          - article:
+            - link "访问V神 - 以太坊创始人。":
+              - /url: https://x.com/VitalikButerin
+              - img
+              - heading "V神" [level=3]
+              - paragraph: 以太坊创始人。
+  - insertion
+- list:
+  - listitem
+  - listitem:
+    - link:
+      - /url: https://t.me/cryptochanneleric
+- contentinfo:
+  - link:
+    - /url: https://medium.com/@gyc567
+  - link:
+    - /url: https://t.me/cryptochanneleric
+  - link:
+    - /url: https://medium.com/@gyc567
+- button "Toggle Nuxt DevTools":
+  - img
+- text: 2.2 s
+- button "Toggle Component Inspector":
+  - img
+```

@@ -5,7 +5,7 @@
 			<li
 				:id="`search_tab_${i}`"
 				class="flex px-2 div-center hover:text-[#007bff] truncate"
-				:class="`${currTab == i ? 'text-[#007bff]' : ''}`"
+				:class="currTab === i ? 'text-[#007bff] font-bold' : 'font-normal text-gray-600'"
 				v-for="(item, i) in resourceList"
 				@mouseover="slideTo(i)"
 				@mouseleave="slideBack()"
@@ -58,6 +58,7 @@
 </template>
 
 <script setup lang="ts">
+import { computed, nextTick, ref, onMounted } from 'vue'
 import type { IResource, IResourceType } from '~/interface/resource'
 import { CONFIG_KEY_BASE, getConfigItem } from '~/stores/config'
 import useResourceStore from '~/stores/resource'
@@ -94,6 +95,16 @@ console.log('selectedResourceType is ', currResourceType.value)
 
 const currTab = ref(0)
 
+// 计算当前资源是否有可见项目
+const currentResourceHasVisibleItems = computed(() => {
+	return resourceList.value.length > 0
+})
+
+// 计算当前资源
+const currentResource = computed(() => {
+	return resourceList.value[currTab.value] || resourceList.value[0]
+})
+
 const resourceList = ref<IResource[]>([])
 // 获取资源列表
 const getResourceList = (resourceType: string) => {
@@ -128,9 +139,21 @@ const generatePlaceholder = () => {
 }
 
 const switchResource = (idx: number, name: string) => {
-	selectedResource.value = resourceList.value.findLast((element) => {
+	// 确保索引在有效范围内
+	if (idx < 0 || idx >= resourceList.value.length) {
+		return
+	}
+	
+	// 检查目标资源是否存在
+	const targetResource = resourceList.value.find((element) => {
 		return element.name == name
 	})
+	
+	if (!targetResource) {
+		return
+	}
+	
+	selectedResource.value = targetResource
 	currTab.value = idx
 	searchStore.setSelectedResource(name)
 	slideTo(idx)
@@ -139,19 +162,26 @@ const switchResource = (idx: number, name: string) => {
 const scale = 0.2
 // 初始化移动条位置
 const slideTo = (idx: number) => {
-	const dom = document.getElementById(`search_tab_${idx}`)
-	if (dom) {
-		const w = dom.offsetWidth as number
-		const offsetLeft = dom.offsetLeft
-
-		console.log('w is', w, 'offsetLeft is ', offsetLeft)
-		const anchor = document.getElementById('search_tab_anchor')
-		if (anchor != null) {
-			anchor.style.width = 20 + 'px'
-			anchor.style.transitionDuration = '0.3s'
-			anchor.style.transform = `translateX(${(w - 20) / 2 + offsetLeft - 64}px)`
-		}
+	// 确保索引在有效范围内
+	if (idx < 0 || idx >= resourceList.value.length) {
+		return
 	}
+	
+	// 使用nextTick确保DOM更新完成
+	nextTick(() => {
+		const dom = document.getElementById(`search_tab_${idx}`)
+		if (dom) {
+			const w = dom.offsetWidth as number
+			const offsetLeft = dom.offsetLeft
+
+			const anchor = document.getElementById('search_tab_anchor')
+			if (anchor != null) {
+				anchor.style.width = '20px'
+				anchor.style.transitionDuration = '0.3s'
+				anchor.style.transform = `translateX(${(w - 20) / 2 + offsetLeft - 64}px)`
+			}
+		}
+	})
 }
 
 const slideBack = () => {

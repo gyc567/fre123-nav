@@ -4,7 +4,7 @@
 
 Nuxt 3.9.1 with Nitro 2.8.1
 
- ERROR  (node:8853) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+ ERROR  (node:79683) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
 (Use node --trace-deprecation ... to show where the warning was created)
 
 
@@ -12,24 +12,28 @@ Nuxt 3.9.1 with Nitro 2.8.1
   ➜ Network:  use --host to expose
 
 
- ERROR  (node:8879) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+ ERROR  (node:79754) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
 (Use node --trace-deprecation ... to show where the warning was created)
 
 [nuxt:tailwindcss] ℹ Using Tailwind CSS from ~/assets/css/tailwind.css
   ➜ DevTools: press Shift + Option + D in the browser (v1.0.8)
 
+
+ WARN  Slow module @nuxt/devtools took 5132.29ms to setup.
+
 [nuxt:tailwindcss] ℹ Tailwind Viewer: http://localhost:3000/_tailwind/
-ℹ Compiled plugins/server.mjs in 1378.76ms
-ℹ Compiled types/plugins.d.ts in 1589.52ms
-ℹ Compiled plugins/client.mjs in 1598.82ms
+ℹ Compiled plugins/server.mjs in 1692.92ms
+ℹ Compiled plugins/client.mjs in 2206.68ms
+ℹ Compiled types/plugins.d.ts in 2202.96ms
 
  WARN  Browserslist: caniuse-lite is outdated. Please run:
   npx update-browserslist-db@latest
   Why you should do it regularly: https://github.com/browserslist/update-db#readme
 
-[nitro] ✔ Nitro built in 7836 ms
-ℹ Vite server warmed up in 25382ms
-ℹ Vite client warmed up in 30642ms
+ℹ Vite server warmed up in 62632ms
+ℹ Vite client warmed up in 69771ms
+[nitro] ✔ Nitro built in 22743 ms
+✔ Vite server hmr 71 files in 2868.217ms
 全局中间件c，影响所有页面
 {
   title: 'smartwallex:聪明钱一站式导航平台',
@@ -145,124 +149,7 @@ resourceList is  RefImpl {
     }
   ]
 }
-全局中间件c，影响所有页面
-definePageMeta() is a compiler-hint helper that is only usable inside the script block of a single file component which is also a page. Its arguments should be compiled away and passing it at runtime has no effect.
-{
-  title: 'smartwallex:聪明钱一站式导航平台',
-  description: '币圈导航| 区块链导航| WEB3导航|聪明钱导航  聪明钱包导航平台 专注于为您提供各种聪明钱包信息，包括交易所资源、链上数据、一级工具等。无论您在寻找哪种资源，我们都将尽力为您提供，为您的学习或工作助力',
-  keywords: 'Web3,最全导航,币圈导航,比特币,狗狗币,以太坊,MEME,瑞波币, 免费加密货币,Pnut,Doge,金狗,土狗,投研,PNut,BTC,ETH,BITCOIN, 优质币圈资源, 资源聚合, 在线资源, 链上数据, 币种信息, 币种行情, 币种分析, 币种交易, 币种钱包, 币种工具, 钱包平台',
-  icon: '/smartwallex2.jpg'
-}
-selectedResourceType is  { key: 'search', name: '综合' }
-【formatResourceList】searchOrder.value is search undefined
-resourceList is  RefImpl {
-  __v_isShallow: false,
-  dep: undefined,
-  __v_isRef: true,
-  _rawValue: [
-    {
-      name: '谷歌',
-      url: 'https://google.com/search?igu=1&q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/6563038539819.png',
-      is_show: true
-    },
-    {
-      name: '必应',
-      url: 'https://cn.bing.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/65630386088eb.png',
-      is_show: true
-    },
-    {
-      name: '百度',
-      url: 'https://www.baidu.com/s?wd={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/656303de24efc.png',
-      is_show: true
-    },
-    {
-      name: '搜狗|微信',
-      url: 'https://weixin.sogou.com/weixin?query={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/20/65d4bc3f1dbcd.ico',
-      is_show: true
-    },
-    {
-      name: 'duckduckgo',
-      url: 'https://duckduckgo.com/?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2b2740867.ico',
-      is_show: true
-    },
-    {
-      name: 'presearch',
-      url: 'https://presearch.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2a5e16b04.png',
-      is_show: true
-    },
-    {
-      name: 'devv.ai',
-      url: 'https://devv.ai/zh/search/{keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/25/65b26106a8645.png',
-      is_show: true
-    },
-    {
-      name: 'yandex',
-      url: 'https://yandex.com/search/?text={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/21/65d4f90636b89.ico',
-      is_show: true
-    }
-  ],
-  _value: [
-    {
-      name: '谷歌',
-      url: 'https://google.com/search?igu=1&q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/6563038539819.png',
-      is_show: true
-    },
-    {
-      name: '必应',
-      url: 'https://cn.bing.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/65630386088eb.png',
-      is_show: true
-    },
-    {
-      name: '百度',
-      url: 'https://www.baidu.com/s?wd={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/656303de24efc.png',
-      is_show: true
-    },
-    {
-      name: '搜狗|微信',
-      url: 'https://weixin.sogou.com/weixin?query={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/20/65d4bc3f1dbcd.ico',
-      is_show: true
-    },
-    {
-      name: 'duckduckgo',
-      url: 'https://duckduckgo.com/?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2b2740867.ico',
-      is_show: true
-    },
-    {
-      name: 'presearch',
-      url: 'https://presearch.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2a5e16b04.png',
-      is_show: true
-    },
-    {
-      name: 'devv.ai',
-      url: 'https://devv.ai/zh/search/{keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/25/65b26106a8645.png',
-      is_show: true
-    },
-    {
-      name: 'yandex',
-      url: 'https://yandex.com/search/?text={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/21/65d4f90636b89.ico',
-      is_show: true
-    }
-  ]
-}
-ℹ hmr update /pages/index.vue, /assets/css/tailwind.css, /assets/tailwind.css, /assets/css/tailwind.css?direct, /assets/tailwind.css?direct
-ℹ hmr update /pages/index.vue, /assets/css/tailwind.css, /assets/tailwind.css, /assets/css/tailwind.css?direct, /assets/tailwind.css?direct (x2)
-✔ Vite server hmr 99 files in 1260.985ms
+✔ Vite server hmr 98 files in 407.887ms
 全局中间件c，影响所有页面
 {
   title: 'smartwallex:聪明钱一站式导航平台',
@@ -378,943 +265,7 @@ resourceList is  RefImpl {
     }
   ]
 }
-全局中间件c，影响所有页面
-definePageMeta() is a compiler-hint helper that is only usable inside the script block of a single file component which is also a page. Its arguments should be compiled away and passing it at runtime has no effect.
-{
-  title: 'smartwallex:聪明钱一站式导航平台',
-  description: '币圈导航| 区块链导航| WEB3导航|聪明钱导航  聪明钱包导航平台 专注于为您提供各种聪明钱包信息，包括交易所资源、链上数据、一级工具等。无论您在寻找哪种资源，我们都将尽力为您提供，为您的学习或工作助力',
-  keywords: 'Web3,最全导航,币圈导航,比特币,狗狗币,以太坊,MEME,瑞波币, 免费加密货币,Pnut,Doge,金狗,土狗,投研,PNut,BTC,ETH,BITCOIN, 优质币圈资源, 资源聚合, 在线资源, 链上数据, 币种信息, 币种行情, 币种分析, 币种交易, 币种钱包, 币种工具, 钱包平台',
-  icon: '/smartwallex2.jpg'
-}
-selectedResourceType is  { key: 'search', name: '综合' }
-【formatResourceList】searchOrder.value is search undefined
-resourceList is  RefImpl {
-  __v_isShallow: false,
-  dep: undefined,
-  __v_isRef: true,
-  _rawValue: [
-    {
-      name: '谷歌',
-      url: 'https://google.com/search?igu=1&q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/6563038539819.png',
-      is_show: true
-    },
-    {
-      name: '必应',
-      url: 'https://cn.bing.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/65630386088eb.png',
-      is_show: true
-    },
-    {
-      name: '百度',
-      url: 'https://www.baidu.com/s?wd={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/656303de24efc.png',
-      is_show: true
-    },
-    {
-      name: '搜狗|微信',
-      url: 'https://weixin.sogou.com/weixin?query={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/20/65d4bc3f1dbcd.ico',
-      is_show: true
-    },
-    {
-      name: 'duckduckgo',
-      url: 'https://duckduckgo.com/?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2b2740867.ico',
-      is_show: true
-    },
-    {
-      name: 'presearch',
-      url: 'https://presearch.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2a5e16b04.png',
-      is_show: true
-    },
-    {
-      name: 'devv.ai',
-      url: 'https://devv.ai/zh/search/{keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/25/65b26106a8645.png',
-      is_show: true
-    },
-    {
-      name: 'yandex',
-      url: 'https://yandex.com/search/?text={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/21/65d4f90636b89.ico',
-      is_show: true
-    }
-  ],
-  _value: [
-    {
-      name: '谷歌',
-      url: 'https://google.com/search?igu=1&q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/6563038539819.png',
-      is_show: true
-    },
-    {
-      name: '必应',
-      url: 'https://cn.bing.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/65630386088eb.png',
-      is_show: true
-    },
-    {
-      name: '百度',
-      url: 'https://www.baidu.com/s?wd={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/656303de24efc.png',
-      is_show: true
-    },
-    {
-      name: '搜狗|微信',
-      url: 'https://weixin.sogou.com/weixin?query={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/20/65d4bc3f1dbcd.ico',
-      is_show: true
-    },
-    {
-      name: 'duckduckgo',
-      url: 'https://duckduckgo.com/?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2b2740867.ico',
-      is_show: true
-    },
-    {
-      name: 'presearch',
-      url: 'https://presearch.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2a5e16b04.png',
-      is_show: true
-    },
-    {
-      name: 'devv.ai',
-      url: 'https://devv.ai/zh/search/{keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/25/65b26106a8645.png',
-      is_show: true
-    },
-    {
-      name: 'yandex',
-      url: 'https://yandex.com/search/?text={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/21/65d4f90636b89.ico',
-      is_show: true
-    }
-  ]
-}
-全局中间件c，影响所有页面
-definePageMeta() is a compiler-hint helper that is only usable inside the script block of a single file component which is also a page. Its arguments should be compiled away and passing it at runtime has no effect.
-{
-  title: 'smartwallex:聪明钱一站式导航平台',
-  description: '币圈导航| 区块链导航| WEB3导航|聪明钱导航  聪明钱包导航平台 专注于为您提供各种聪明钱包信息，包括交易所资源、链上数据、一级工具等。无论您在寻找哪种资源，我们都将尽力为您提供，为您的学习或工作助力',
-  keywords: 'Web3,最全导航,币圈导航,比特币,狗狗币,以太坊,MEME,瑞波币, 免费加密货币,Pnut,Doge,金狗,土狗,投研,PNut,BTC,ETH,BITCOIN, 优质币圈资源, 资源聚合, 在线资源, 链上数据, 币种信息, 币种行情, 币种分析, 币种交易, 币种钱包, 币种工具, 钱包平台',
-  icon: '/smartwallex2.jpg'
-}
-selectedResourceType is  { key: 'search', name: '综合' }
-【formatResourceList】searchOrder.value is search undefined
-resourceList is  RefImpl {
-  __v_isShallow: false,
-  dep: undefined,
-  __v_isRef: true,
-  _rawValue: [
-    {
-      name: '谷歌',
-      url: 'https://google.com/search?igu=1&q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/6563038539819.png',
-      is_show: true
-    },
-    {
-      name: '必应',
-      url: 'https://cn.bing.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/65630386088eb.png',
-      is_show: true
-    },
-    {
-      name: '百度',
-      url: 'https://www.baidu.com/s?wd={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/656303de24efc.png',
-      is_show: true
-    },
-    {
-      name: '搜狗|微信',
-      url: 'https://weixin.sogou.com/weixin?query={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/20/65d4bc3f1dbcd.ico',
-      is_show: true
-    },
-    {
-      name: 'duckduckgo',
-      url: 'https://duckduckgo.com/?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2b2740867.ico',
-      is_show: true
-    },
-    {
-      name: 'presearch',
-      url: 'https://presearch.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2a5e16b04.png',
-      is_show: true
-    },
-    {
-      name: 'devv.ai',
-      url: 'https://devv.ai/zh/search/{keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/25/65b26106a8645.png',
-      is_show: true
-    },
-    {
-      name: 'yandex',
-      url: 'https://yandex.com/search/?text={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/21/65d4f90636b89.ico',
-      is_show: true
-    }
-  ],
-  _value: [
-    {
-      name: '谷歌',
-      url: 'https://google.com/search?igu=1&q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/6563038539819.png',
-      is_show: true
-    },
-    {
-      name: '必应',
-      url: 'https://cn.bing.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/65630386088eb.png',
-      is_show: true
-    },
-    {
-      name: '百度',
-      url: 'https://www.baidu.com/s?wd={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/656303de24efc.png',
-      is_show: true
-    },
-    {
-      name: '搜狗|微信',
-      url: 'https://weixin.sogou.com/weixin?query={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/20/65d4bc3f1dbcd.ico',
-      is_show: true
-    },
-    {
-      name: 'duckduckgo',
-      url: 'https://duckduckgo.com/?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2b2740867.ico',
-      is_show: true
-    },
-    {
-      name: 'presearch',
-      url: 'https://presearch.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2a5e16b04.png',
-      is_show: true
-    },
-    {
-      name: 'devv.ai',
-      url: 'https://devv.ai/zh/search/{keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/25/65b26106a8645.png',
-      is_show: true
-    },
-    {
-      name: 'yandex',
-      url: 'https://yandex.com/search/?text={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/21/65d4f90636b89.ico',
-      is_show: true
-    }
-  ]
-}
-全局中间件c，影响所有页面
-definePageMeta() is a compiler-hint helper that is only usable inside the script block of a single file component which is also a page. Its arguments should be compiled away and passing it at runtime has no effect.
-{
-  title: 'smartwallex:聪明钱一站式导航平台',
-  description: '币圈导航| 区块链导航| WEB3导航|聪明钱导航  聪明钱包导航平台 专注于为您提供各种聪明钱包信息，包括交易所资源、链上数据、一级工具等。无论您在寻找哪种资源，我们都将尽力为您提供，为您的学习或工作助力',
-  keywords: 'Web3,最全导航,币圈导航,比特币,狗狗币,以太坊,MEME,瑞波币, 免费加密货币,Pnut,Doge,金狗,土狗,投研,PNut,BTC,ETH,BITCOIN, 优质币圈资源, 资源聚合, 在线资源, 链上数据, 币种信息, 币种行情, 币种分析, 币种交易, 币种钱包, 币种工具, 钱包平台',
-  icon: '/smartwallex2.jpg'
-}
-selectedResourceType is  { key: 'search', name: '综合' }
-【formatResourceList】searchOrder.value is search undefined
-resourceList is  RefImpl {
-  __v_isShallow: false,
-  dep: undefined,
-  __v_isRef: true,
-  _rawValue: [
-    {
-      name: '谷歌',
-      url: 'https://google.com/search?igu=1&q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/6563038539819.png',
-      is_show: true
-    },
-    {
-      name: '必应',
-      url: 'https://cn.bing.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/65630386088eb.png',
-      is_show: true
-    },
-    {
-      name: '百度',
-      url: 'https://www.baidu.com/s?wd={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/656303de24efc.png',
-      is_show: true
-    },
-    {
-      name: '搜狗|微信',
-      url: 'https://weixin.sogou.com/weixin?query={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/20/65d4bc3f1dbcd.ico',
-      is_show: true
-    },
-    {
-      name: 'duckduckgo',
-      url: 'https://duckduckgo.com/?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2b2740867.ico',
-      is_show: true
-    },
-    {
-      name: 'presearch',
-      url: 'https://presearch.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2a5e16b04.png',
-      is_show: true
-    },
-    {
-      name: 'devv.ai',
-      url: 'https://devv.ai/zh/search/{keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/25/65b26106a8645.png',
-      is_show: true
-    },
-    {
-      name: 'yandex',
-      url: 'https://yandex.com/search/?text={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/21/65d4f90636b89.ico',
-      is_show: true
-    }
-  ],
-  _value: [
-    {
-      name: '谷歌',
-      url: 'https://google.com/search?igu=1&q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/6563038539819.png',
-      is_show: true
-    },
-    {
-      name: '必应',
-      url: 'https://cn.bing.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/65630386088eb.png',
-      is_show: true
-    },
-    {
-      name: '百度',
-      url: 'https://www.baidu.com/s?wd={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/656303de24efc.png',
-      is_show: true
-    },
-    {
-      name: '搜狗|微信',
-      url: 'https://weixin.sogou.com/weixin?query={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/20/65d4bc3f1dbcd.ico',
-      is_show: true
-    },
-    {
-      name: 'duckduckgo',
-      url: 'https://duckduckgo.com/?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2b2740867.ico',
-      is_show: true
-    },
-    {
-      name: 'presearch',
-      url: 'https://presearch.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2a5e16b04.png',
-      is_show: true
-    },
-    {
-      name: 'devv.ai',
-      url: 'https://devv.ai/zh/search/{keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/25/65b26106a8645.png',
-      is_show: true
-    },
-    {
-      name: 'yandex',
-      url: 'https://yandex.com/search/?text={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/21/65d4f90636b89.ico',
-      is_show: true
-    }
-  ]
-}
-全局中间件c，影响所有页面
-definePageMeta() is a compiler-hint helper that is only usable inside the script block of a single file component which is also a page. Its arguments should be compiled away and passing it at runtime has no effect.
-{
-  title: 'smartwallex:聪明钱一站式导航平台',
-  description: '币圈导航| 区块链导航| WEB3导航|聪明钱导航  聪明钱包导航平台 专注于为您提供各种聪明钱包信息，包括交易所资源、链上数据、一级工具等。无论您在寻找哪种资源，我们都将尽力为您提供，为您的学习或工作助力',
-  keywords: 'Web3,最全导航,币圈导航,比特币,狗狗币,以太坊,MEME,瑞波币, 免费加密货币,Pnut,Doge,金狗,土狗,投研,PNut,BTC,ETH,BITCOIN, 优质币圈资源, 资源聚合, 在线资源, 链上数据, 币种信息, 币种行情, 币种分析, 币种交易, 币种钱包, 币种工具, 钱包平台',
-  icon: '/smartwallex2.jpg'
-}
-selectedResourceType is  { key: 'search', name: '综合' }
-【formatResourceList】searchOrder.value is search undefined
-resourceList is  RefImpl {
-  __v_isShallow: false,
-  dep: undefined,
-  __v_isRef: true,
-  _rawValue: [
-    {
-      name: '谷歌',
-      url: 'https://google.com/search?igu=1&q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/6563038539819.png',
-      is_show: true
-    },
-    {
-      name: '必应',
-      url: 'https://cn.bing.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/65630386088eb.png',
-      is_show: true
-    },
-    {
-      name: '百度',
-      url: 'https://www.baidu.com/s?wd={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/656303de24efc.png',
-      is_show: true
-    },
-    {
-      name: '搜狗|微信',
-      url: 'https://weixin.sogou.com/weixin?query={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/20/65d4bc3f1dbcd.ico',
-      is_show: true
-    },
-    {
-      name: 'duckduckgo',
-      url: 'https://duckduckgo.com/?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2b2740867.ico',
-      is_show: true
-    },
-    {
-      name: 'presearch',
-      url: 'https://presearch.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2a5e16b04.png',
-      is_show: true
-    },
-    {
-      name: 'devv.ai',
-      url: 'https://devv.ai/zh/search/{keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/25/65b26106a8645.png',
-      is_show: true
-    },
-    {
-      name: 'yandex',
-      url: 'https://yandex.com/search/?text={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/21/65d4f90636b89.ico',
-      is_show: true
-    }
-  ],
-  _value: [
-    {
-      name: '谷歌',
-      url: 'https://google.com/search?igu=1&q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/6563038539819.png',
-      is_show: true
-    },
-    {
-      name: '必应',
-      url: 'https://cn.bing.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/65630386088eb.png',
-      is_show: true
-    },
-    {
-      name: '百度',
-      url: 'https://www.baidu.com/s?wd={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/656303de24efc.png',
-      is_show: true
-    },
-    {
-      name: '搜狗|微信',
-      url: 'https://weixin.sogou.com/weixin?query={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/20/65d4bc3f1dbcd.ico',
-      is_show: true
-    },
-    {
-      name: 'duckduckgo',
-      url: 'https://duckduckgo.com/?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2b2740867.ico',
-      is_show: true
-    },
-    {
-      name: 'presearch',
-      url: 'https://presearch.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2a5e16b04.png',
-      is_show: true
-    },
-    {
-      name: 'devv.ai',
-      url: 'https://devv.ai/zh/search/{keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/25/65b26106a8645.png',
-      is_show: true
-    },
-    {
-      name: 'yandex',
-      url: 'https://yandex.com/search/?text={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/21/65d4f90636b89.ico',
-      is_show: true
-    }
-  ]
-}
-ℹ hmr update /components/Ads/HeaderBannerAd.vue, /assets/css/tailwind.css, /assets/tailwind.css
-ℹ hmr update /components/Ads/GoogleAds.vue, /assets/css/tailwind.css, /assets/tailwind.css
-ℹ hmr update /components/Ads/FooterBannerAd.vue, /assets/css/tailwind.css, /assets/tailwind.css
-ℹ hmr update /components/Index/IndexNavGroup.vue?vue&type=style&index=0&scoped=a97a2f23&lang.css
-ℹ hmr update /components/Index/IndexNavGroup.vue, /assets/css/tailwind.css, /assets/tailwind.css, /assets/css/tailwind.css?direct, /assets/tailwind.css?direct
-ℹ hmr update /assets/global.scss, /assets/global.scss?direct
-ℹ hmr update /components/Index/IndexNavGroup.vue, /assets/css/tailwind.css, /assets/tailwind.css, /assets/css/tailwind.css?direct, /assets/tailwind.css?direct
-ℹ hmr update /components/Index/IndexNavGroup.vue, /assets/css/tailwind.css, /assets/tailwind.css, /assets/css/tailwind.css?direct, /assets/tailwind.css?direct (x2)
-ℹ hmr update /components/Index/IndexNavGroup.vue, /assets/css/tailwind.css, /assets/tailwind.css, /assets/css/tailwind.css?direct, /assets/tailwind.css?direct (x3)
-ℹ hmr update /components/Index/IndexNavGroup.vue, /assets/css/tailwind.css, /assets/tailwind.css, /assets/css/tailwind.css?direct, /assets/tailwind.css?direct (x4)
-✔ Vite server hmr 24 files in 1071.707ms
-全局中间件c，影响所有页面
-definePageMeta() is a compiler-hint helper that is only usable inside the script block of a single file component which is also a page. Its arguments should be compiled away and passing it at runtime has no effect.
-{
-  title: 'smartwallex:聪明钱一站式导航平台',
-  description: '币圈导航| 区块链导航| WEB3导航|聪明钱导航  聪明钱包导航平台 专注于为您提供各种聪明钱包信息，包括交易所资源、链上数据、一级工具等。无论您在寻找哪种资源，我们都将尽力为您提供，为您的学习或工作助力',
-  keywords: 'Web3,最全导航,币圈导航,比特币,狗狗币,以太坊,MEME,瑞波币, 免费加密货币,Pnut,Doge,金狗,土狗,投研,PNut,BTC,ETH,BITCOIN, 优质币圈资源, 资源聚合, 在线资源, 链上数据, 币种信息, 币种行情, 币种分析, 币种交易, 币种钱包, 币种工具, 钱包平台',
-  icon: '/smartwallex2.jpg'
-}
-selectedResourceType is  { key: 'search', name: '综合' }
-【formatResourceList】searchOrder.value is search undefined
-resourceList is  RefImpl {
-  __v_isShallow: false,
-  dep: undefined,
-  __v_isRef: true,
-  _rawValue: [
-    {
-      name: '谷歌',
-      url: 'https://google.com/search?igu=1&q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/6563038539819.png',
-      is_show: true
-    },
-    {
-      name: '必应',
-      url: 'https://cn.bing.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/65630386088eb.png',
-      is_show: true
-    },
-    {
-      name: '百度',
-      url: 'https://www.baidu.com/s?wd={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/656303de24efc.png',
-      is_show: true
-    },
-    {
-      name: '搜狗|微信',
-      url: 'https://weixin.sogou.com/weixin?query={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/20/65d4bc3f1dbcd.ico',
-      is_show: true
-    },
-    {
-      name: 'duckduckgo',
-      url: 'https://duckduckgo.com/?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2b2740867.ico',
-      is_show: true
-    },
-    {
-      name: 'presearch',
-      url: 'https://presearch.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2a5e16b04.png',
-      is_show: true
-    },
-    {
-      name: 'devv.ai',
-      url: 'https://devv.ai/zh/search/{keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/25/65b26106a8645.png',
-      is_show: true
-    },
-    {
-      name: 'yandex',
-      url: 'https://yandex.com/search/?text={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/21/65d4f90636b89.ico',
-      is_show: true
-    }
-  ],
-  _value: [
-    {
-      name: '谷歌',
-      url: 'https://google.com/search?igu=1&q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/6563038539819.png',
-      is_show: true
-    },
-    {
-      name: '必应',
-      url: 'https://cn.bing.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/65630386088eb.png',
-      is_show: true
-    },
-    {
-      name: '百度',
-      url: 'https://www.baidu.com/s?wd={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/656303de24efc.png',
-      is_show: true
-    },
-    {
-      name: '搜狗|微信',
-      url: 'https://weixin.sogou.com/weixin?query={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/20/65d4bc3f1dbcd.ico',
-      is_show: true
-    },
-    {
-      name: 'duckduckgo',
-      url: 'https://duckduckgo.com/?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2b2740867.ico',
-      is_show: true
-    },
-    {
-      name: 'presearch',
-      url: 'https://presearch.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2a5e16b04.png',
-      is_show: true
-    },
-    {
-      name: 'devv.ai',
-      url: 'https://devv.ai/zh/search/{keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/25/65b26106a8645.png',
-      is_show: true
-    },
-    {
-      name: 'yandex',
-      url: 'https://yandex.com/search/?text={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/21/65d4f90636b89.ico',
-      is_show: true
-    }
-  ]
-}
-全局中间件c，影响所有页面
-definePageMeta() is a compiler-hint helper that is only usable inside the script block of a single file component which is also a page. Its arguments should be compiled away and passing it at runtime has no effect.
-{
-  title: 'smartwallex:聪明钱一站式导航平台',
-  description: '币圈导航| 区块链导航| WEB3导航|聪明钱导航  聪明钱包导航平台 专注于为您提供各种聪明钱包信息，包括交易所资源、链上数据、一级工具等。无论您在寻找哪种资源，我们都将尽力为您提供，为您的学习或工作助力',
-  keywords: 'Web3,最全导航,币圈导航,比特币,狗狗币,以太坊,MEME,瑞波币, 免费加密货币,Pnut,Doge,金狗,土狗,投研,PNut,BTC,ETH,BITCOIN, 优质币圈资源, 资源聚合, 在线资源, 链上数据, 币种信息, 币种行情, 币种分析, 币种交易, 币种钱包, 币种工具, 钱包平台',
-  icon: '/smartwallex2.jpg'
-}
-selectedResourceType is  { key: 'search', name: '综合' }
-【formatResourceList】searchOrder.value is search undefined
-resourceList is  RefImpl {
-  __v_isShallow: false,
-  dep: undefined,
-  __v_isRef: true,
-  _rawValue: [
-    {
-      name: '谷歌',
-      url: 'https://google.com/search?igu=1&q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/6563038539819.png',
-      is_show: true
-    },
-    {
-      name: '必应',
-      url: 'https://cn.bing.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/65630386088eb.png',
-      is_show: true
-    },
-    {
-      name: '百度',
-      url: 'https://www.baidu.com/s?wd={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/656303de24efc.png',
-      is_show: true
-    },
-    {
-      name: '搜狗|微信',
-      url: 'https://weixin.sogou.com/weixin?query={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/20/65d4bc3f1dbcd.ico',
-      is_show: true
-    },
-    {
-      name: 'duckduckgo',
-      url: 'https://duckduckgo.com/?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2b2740867.ico',
-      is_show: true
-    },
-    {
-      name: 'presearch',
-      url: 'https://presearch.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2a5e16b04.png',
-      is_show: true
-    },
-    {
-      name: 'devv.ai',
-      url: 'https://devv.ai/zh/search/{keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/25/65b26106a8645.png',
-      is_show: true
-    },
-    {
-      name: 'yandex',
-      url: 'https://yandex.com/search/?text={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/21/65d4f90636b89.ico',
-      is_show: true
-    }
-  ],
-  _value: [
-    {
-      name: '谷歌',
-      url: 'https://google.com/search?igu=1&q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/6563038539819.png',
-      is_show: true
-    },
-    {
-      name: '必应',
-      url: 'https://cn.bing.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/65630386088eb.png',
-      is_show: true
-    },
-    {
-      name: '百度',
-      url: 'https://www.baidu.com/s?wd={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/656303de24efc.png',
-      is_show: true
-    },
-    {
-      name: '搜狗|微信',
-      url: 'https://weixin.sogou.com/weixin?query={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/20/65d4bc3f1dbcd.ico',
-      is_show: true
-    },
-    {
-      name: 'duckduckgo',
-      url: 'https://duckduckgo.com/?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2b2740867.ico',
-      is_show: true
-    },
-    {
-      name: 'presearch',
-      url: 'https://presearch.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2a5e16b04.png',
-      is_show: true
-    },
-    {
-      name: 'devv.ai',
-      url: 'https://devv.ai/zh/search/{keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/25/65b26106a8645.png',
-      is_show: true
-    },
-    {
-      name: 'yandex',
-      url: 'https://yandex.com/search/?text={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/21/65d4f90636b89.ico',
-      is_show: true
-    }
-  ]
-}
-全局中间件c，影响所有页面
-definePageMeta() is a compiler-hint helper that is only usable inside the script block of a single file component which is also a page. Its arguments should be compiled away and passing it at runtime has no effect.
-{
-  title: 'smartwallex:聪明钱一站式导航平台',
-  description: '币圈导航| 区块链导航| WEB3导航|聪明钱导航  聪明钱包导航平台 专注于为您提供各种聪明钱包信息，包括交易所资源、链上数据、一级工具等。无论您在寻找哪种资源，我们都将尽力为您提供，为您的学习或工作助力',
-  keywords: 'Web3,最全导航,币圈导航,比特币,狗狗币,以太坊,MEME,瑞波币, 免费加密货币,Pnut,Doge,金狗,土狗,投研,PNut,BTC,ETH,BITCOIN, 优质币圈资源, 资源聚合, 在线资源, 链上数据, 币种信息, 币种行情, 币种分析, 币种交易, 币种钱包, 币种工具, 钱包平台',
-  icon: '/smartwallex2.jpg'
-}
-selectedResourceType is  { key: 'search', name: '综合' }
-【formatResourceList】searchOrder.value is search undefined
-resourceList is  RefImpl {
-  __v_isShallow: false,
-  dep: undefined,
-  __v_isRef: true,
-  _rawValue: [
-    {
-      name: '谷歌',
-      url: 'https://google.com/search?igu=1&q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/6563038539819.png',
-      is_show: true
-    },
-    {
-      name: '必应',
-      url: 'https://cn.bing.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/65630386088eb.png',
-      is_show: true
-    },
-    {
-      name: '百度',
-      url: 'https://www.baidu.com/s?wd={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/656303de24efc.png',
-      is_show: true
-    },
-    {
-      name: '搜狗|微信',
-      url: 'https://weixin.sogou.com/weixin?query={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/20/65d4bc3f1dbcd.ico',
-      is_show: true
-    },
-    {
-      name: 'duckduckgo',
-      url: 'https://duckduckgo.com/?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2b2740867.ico',
-      is_show: true
-    },
-    {
-      name: 'presearch',
-      url: 'https://presearch.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2a5e16b04.png',
-      is_show: true
-    },
-    {
-      name: 'devv.ai',
-      url: 'https://devv.ai/zh/search/{keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/25/65b26106a8645.png',
-      is_show: true
-    },
-    {
-      name: 'yandex',
-      url: 'https://yandex.com/search/?text={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/21/65d4f90636b89.ico',
-      is_show: true
-    }
-  ],
-  _value: [
-    {
-      name: '谷歌',
-      url: 'https://google.com/search?igu=1&q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/6563038539819.png',
-      is_show: true
-    },
-    {
-      name: '必应',
-      url: 'https://cn.bing.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/65630386088eb.png',
-      is_show: true
-    },
-    {
-      name: '百度',
-      url: 'https://www.baidu.com/s?wd={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/656303de24efc.png',
-      is_show: true
-    },
-    {
-      name: '搜狗|微信',
-      url: 'https://weixin.sogou.com/weixin?query={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/20/65d4bc3f1dbcd.ico',
-      is_show: true
-    },
-    {
-      name: 'duckduckgo',
-      url: 'https://duckduckgo.com/?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2b2740867.ico',
-      is_show: true
-    },
-    {
-      name: 'presearch',
-      url: 'https://presearch.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2a5e16b04.png',
-      is_show: true
-    },
-    {
-      name: 'devv.ai',
-      url: 'https://devv.ai/zh/search/{keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/25/65b26106a8645.png',
-      is_show: true
-    },
-    {
-      name: 'yandex',
-      url: 'https://yandex.com/search/?text={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/21/65d4f90636b89.ico',
-      is_show: true
-    }
-  ]
-}
-ℹ hmr update /components/Index/IndexNavGroup.vue, /assets/css/tailwind.css, /assets/tailwind.css, /assets/css/tailwind.css?direct, /assets/tailwind.css?direct (x5)
-✔ Vite server hmr 16 files in 774.24ms
-全局中间件c，影响所有页面
-definePageMeta() is a compiler-hint helper that is only usable inside the script block of a single file component which is also a page. Its arguments should be compiled away and passing it at runtime has no effect.
-{
-  title: 'smartwallex:聪明钱一站式导航平台',
-  description: '币圈导航| 区块链导航| WEB3导航|聪明钱导航  聪明钱包导航平台 专注于为您提供各种聪明钱包信息，包括交易所资源、链上数据、一级工具等。无论您在寻找哪种资源，我们都将尽力为您提供，为您的学习或工作助力',
-  keywords: 'Web3,最全导航,币圈导航,比特币,狗狗币,以太坊,MEME,瑞波币, 免费加密货币,Pnut,Doge,金狗,土狗,投研,PNut,BTC,ETH,BITCOIN, 优质币圈资源, 资源聚合, 在线资源, 链上数据, 币种信息, 币种行情, 币种分析, 币种交易, 币种钱包, 币种工具, 钱包平台',
-  icon: '/smartwallex2.jpg'
-}
-selectedResourceType is  { key: 'search', name: '综合' }
-【formatResourceList】searchOrder.value is search undefined
-resourceList is  RefImpl {
-  __v_isShallow: false,
-  dep: undefined,
-  __v_isRef: true,
-  _rawValue: [
-    {
-      name: '谷歌',
-      url: 'https://google.com/search?igu=1&q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/6563038539819.png',
-      is_show: true
-    },
-    {
-      name: '必应',
-      url: 'https://cn.bing.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/65630386088eb.png',
-      is_show: true
-    },
-    {
-      name: '百度',
-      url: 'https://www.baidu.com/s?wd={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/656303de24efc.png',
-      is_show: true
-    },
-    {
-      name: '搜狗|微信',
-      url: 'https://weixin.sogou.com/weixin?query={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/20/65d4bc3f1dbcd.ico',
-      is_show: true
-    },
-    {
-      name: 'duckduckgo',
-      url: 'https://duckduckgo.com/?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2b2740867.ico',
-      is_show: true
-    },
-    {
-      name: 'presearch',
-      url: 'https://presearch.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2a5e16b04.png',
-      is_show: true
-    },
-    {
-      name: 'devv.ai',
-      url: 'https://devv.ai/zh/search/{keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/25/65b26106a8645.png',
-      is_show: true
-    },
-    {
-      name: 'yandex',
-      url: 'https://yandex.com/search/?text={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/21/65d4f90636b89.ico',
-      is_show: true
-    }
-  ],
-  _value: [
-    {
-      name: '谷歌',
-      url: 'https://google.com/search?igu=1&q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/6563038539819.png',
-      is_show: true
-    },
-    {
-      name: '必应',
-      url: 'https://cn.bing.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/65630386088eb.png',
-      is_show: true
-    },
-    {
-      name: '百度',
-      url: 'https://www.baidu.com/s?wd={keyword}',
-      icon: 'https://img.fre123.com/i/2023/11/26/656303de24efc.png',
-      is_show: true
-    },
-    {
-      name: '搜狗|微信',
-      url: 'https://weixin.sogou.com/weixin?query={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/20/65d4bc3f1dbcd.ico',
-      is_show: true
-    },
-    {
-      name: 'duckduckgo',
-      url: 'https://duckduckgo.com/?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2b2740867.ico',
-      is_show: true
-    },
-    {
-      name: 'presearch',
-      url: 'https://presearch.com/search?q={keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/22/65ae2a5e16b04.png',
-      is_show: true
-    },
-    {
-      name: 'devv.ai',
-      url: 'https://devv.ai/zh/search/{keyword}',
-      icon: 'https://img.fre123.com/i/2024/01/25/65b26106a8645.png',
-      is_show: true
-    },
-    {
-      name: 'yandex',
-      url: 'https://yandex.com/search/?text={keyword}',
-      icon: 'https://img.fre123.com/i/2024/02/21/65d4f90636b89.ico',
-      is_show: true
-    }
-  ]
-}
-ℹ hmr update /components/Index/IndexSearch.vue, /assets/css/tailwind.css, /assets/tailwind.css, /assets/css/tailwind.css?direct, /assets/tailwind.css?direct
-ℹ hmr update /components/Common/Header.vue, /assets/css/tailwind.css, /assets/tailwind.css, /assets/css/tailwind.css?direct, /assets/tailwind.css?direct
-ℹ hmr update /components/Common/Pendant.vue, /assets/css/tailwind.css, /assets/tailwind.css, /assets/css/tailwind.css?direct, /assets/tailwind.css?direct
-✔ Vite server hmr 105 files in 2140.295ms
+✔ Vite server hmr 98 files in 452.485ms
 全局中间件c，影响所有页面
 {
   title: 'smartwallex:聪明钱一站式导航平台',
@@ -1430,6 +381,119 @@ resourceList is  RefImpl {
     }
   ]
 }
-ℹ hmr update /components/Index/IndexSearch.vue, /assets/css/tailwind.css, /assets/tailwind.css, /assets/css/tailwind.css?direct, /assets/tailwind.css?direct
-ℹ hmr update /components/Index/IndexNavGroup.vue, /assets/css/tailwind.css, /assets/tailwind.css, /assets/css/tailwind.css?direct, /assets/tailwind.css?direct
-ℹ hmr update /components/Index/IndexNavGroup.vue, /assets/css/tailwind.css, /assets/tailwind.css, /assets/css/tailwind.css?direct, /assets/tailwind.css?direct (x2)
+✔ Vite server hmr 98 files in 790.933ms
+全局中间件c，影响所有页面
+{
+  title: 'smartwallex:聪明钱一站式导航平台',
+  description: '币圈导航| 区块链导航| WEB3导航|聪明钱导航  聪明钱包导航平台 专注于为您提供各种聪明钱包信息，包括交易所资源、链上数据、一级工具等。无论您在寻找哪种资源，我们都将尽力为您提供，为您的学习或工作助力',
+  keywords: 'Web3,最全导航,币圈导航,比特币,狗狗币,以太坊,MEME,瑞波币, 免费加密货币,Pnut,Doge,金狗,土狗,投研,PNut,BTC,ETH,BITCOIN, 优质币圈资源, 资源聚合, 在线资源, 链上数据, 币种信息, 币种行情, 币种分析, 币种交易, 币种钱包, 币种工具, 钱包平台',
+  icon: '/smartwallex2.jpg'
+}
+definePageMeta() is a compiler-hint helper that is only usable inside the script block of a single file component which is also a page. Its arguments should be compiled away and passing it at runtime has no effect.
+selectedResourceType is  { key: 'search', name: '综合' }
+【formatResourceList】searchOrder.value is search undefined
+resourceList is  RefImpl {
+  __v_isShallow: false,
+  dep: undefined,
+  __v_isRef: true,
+  _rawValue: [
+    {
+      name: '谷歌',
+      url: 'https://google.com/search?igu=1&q={keyword}',
+      icon: 'https://img.fre123.com/i/2023/11/26/6563038539819.png',
+      is_show: true
+    },
+    {
+      name: '必应',
+      url: 'https://cn.bing.com/search?q={keyword}',
+      icon: 'https://img.fre123.com/i/2023/11/26/65630386088eb.png',
+      is_show: true
+    },
+    {
+      name: '百度',
+      url: 'https://www.baidu.com/s?wd={keyword}',
+      icon: 'https://img.fre123.com/i/2023/11/26/656303de24efc.png',
+      is_show: true
+    },
+    {
+      name: '搜狗|微信',
+      url: 'https://weixin.sogou.com/weixin?query={keyword}',
+      icon: 'https://img.fre123.com/i/2024/02/20/65d4bc3f1dbcd.ico',
+      is_show: true
+    },
+    {
+      name: 'duckduckgo',
+      url: 'https://duckduckgo.com/?q={keyword}',
+      icon: 'https://img.fre123.com/i/2024/01/22/65ae2b2740867.ico',
+      is_show: true
+    },
+    {
+      name: 'presearch',
+      url: 'https://presearch.com/search?q={keyword}',
+      icon: 'https://img.fre123.com/i/2024/01/22/65ae2a5e16b04.png',
+      is_show: true
+    },
+    {
+      name: 'devv.ai',
+      url: 'https://devv.ai/zh/search/{keyword}',
+      icon: 'https://img.fre123.com/i/2024/01/25/65b26106a8645.png',
+      is_show: true
+    },
+    {
+      name: 'yandex',
+      url: 'https://yandex.com/search/?text={keyword}',
+      icon: 'https://img.fre123.com/i/2024/02/21/65d4f90636b89.ico',
+      is_show: true
+    }
+  ],
+  _value: [
+    {
+      name: '谷歌',
+      url: 'https://google.com/search?igu=1&q={keyword}',
+      icon: 'https://img.fre123.com/i/2023/11/26/6563038539819.png',
+      is_show: true
+    },
+    {
+      name: '必应',
+      url: 'https://cn.bing.com/search?q={keyword}',
+      icon: 'https://img.fre123.com/i/2023/11/26/65630386088eb.png',
+      is_show: true
+    },
+    {
+      name: '百度',
+      url: 'https://www.baidu.com/s?wd={keyword}',
+      icon: 'https://img.fre123.com/i/2023/11/26/656303de24efc.png',
+      is_show: true
+    },
+    {
+      name: '搜狗|微信',
+      url: 'https://weixin.sogou.com/weixin?query={keyword}',
+      icon: 'https://img.fre123.com/i/2024/02/20/65d4bc3f1dbcd.ico',
+      is_show: true
+    },
+    {
+      name: 'duckduckgo',
+      url: 'https://duckduckgo.com/?q={keyword}',
+      icon: 'https://img.fre123.com/i/2024/01/22/65ae2b2740867.ico',
+      is_show: true
+    },
+    {
+      name: 'presearch',
+      url: 'https://presearch.com/search?q={keyword}',
+      icon: 'https://img.fre123.com/i/2024/01/22/65ae2a5e16b04.png',
+      is_show: true
+    },
+    {
+      name: 'devv.ai',
+      url: 'https://devv.ai/zh/search/{keyword}',
+      icon: 'https://img.fre123.com/i/2024/01/25/65b26106a8645.png',
+      is_show: true
+    },
+    {
+      name: 'yandex',
+      url: 'https://yandex.com/search/?text={keyword}',
+      icon: 'https://img.fre123.com/i/2024/02/21/65d4f90636b89.ico',
+      is_show: true
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab切换测试</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .tab-container {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .tab-header {
+            display: flex;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 20px;
+        }
+        .tab-item {
+            padding: 10px 20px;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s;
+        }
+        .tab-item:hover {
+            color: #007bff;
+        }
+        .tab-item.active {
+            color: #007bff;
+            border-bottom-color: #007bff;
+            font-weight: bold;
+        }
+        .tab-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .item {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+        .item h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+        .item p {
+            margin: 0;
+            color: #666;
+            font-size: 14px;
+        }
+        .test-results {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e8f5e8;
+            border-radius: 5px;
+            border-left: 4px solid #4caf50;
+        }
+        .error {
+            background: #ffebee;
+            border-left-color: #f44336;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h1>Tab切换功能测试</h1>
+        
+        <div class="tab-container">
+            <div class="tab-header">
+                <div 
+                    v-for="(tab, index) in tabs" 
+                    :key="index"
+                    :class="['tab-item', { active: currentTab === index }]"
+                    @click="switchTab(index)"
+                >
+                    {{ tab.name }}
+                </div>
+            </div>
+            
+            <div class="tab-content">
+                <div v-for="(item, index) in currentTabItems" :key="index" class="item">
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.description }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div :class="['test-results', testError ? 'error' : '']">
+            <h3>测试结果:</h3>
+            <p>当前Tab: {{ currentTabName }}</p>
+            <p>可见项目数: {{ currentTabItems.length }}</p>
+            <p v-if="testError" style="color: red;">{{ testError }}</p>
+            <p v-else style="color: green;">✅ Tab切换功能正常</p>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <h3>控制台日志:</h3>
+            <div style="background: #f5f5f5; padding: 10px; border-radius: 5px; font-family: monospace; max-height: 200px; overflow-y: auto;">
+                <div v-for="(log, index) in consoleLogs" :key="index" style="margin: 2px 0;">
+                    {{ log }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const { createApp } = Vue;
+
+        createApp({
+            data() {
+                return {
+                    currentTab: 0,
+                    testError: null,
+                    consoleLogs: [],
+                    tabs: [
+                        {
+                            name: "加密常用",
+                            details: [
+                                { title: "代币市值比较器", description: "最好用的市值比较器", is_show: true },
+                                { title: "流动性Hunter", description: "流动性Hunter", is_show: true },
+                                { title: "聪明钱跟踪平台", description: "最好用的聪明钱跟踪分析平台", is_show: true }
+                            ]
+                        },
+                        {
+                            name: "中心化交易所",
+                            details: [
+                                { title: "币安交易所", description: "全球最大的交易所", is_show: true },
+                                { title: "芝麻交易所", description: "老牌交易所，稳定，可靠", is_show: true },
+                                { title: "欧易交易所", description: "排名前三的交易所", is_show: true }
+                            ]
+                        },
+                        {
+                            name: "新手入门学习大全",
+                            details: [
+                                { title: "币安学院", description: "新手可以在这里学习入门和基础知识", is_show: true },
+                                { title: "加密货币百科全书", description: "世界上最大的区块链和加密货币百科全书", is_show: true },
+                                { title: "芝麻加密学院", description: "芝麻交易所的加密货币学院", is_show: true }
+                            ]
+                        }
+                    ]
+                };
+            },
+            computed: {
+                currentTabItems() {
+                    const currentTab = this.tabs[this.currentTab];
+                    if (!currentTab || !currentTab.details) return [];
+                    return currentTab.details.filter(item => item.is_show !== false);
+                },
+                currentTabName() {
+                    return this.tabs[this.currentTab]?.name || '';
+                }
+            },
+            methods: {
+                switchTab(val) {
+                    this.log(`switchTab called with val: ${val}`);
+                    
+                    // 确保tab索引在有效范围内
+                    if (val < 0 || val >= this.tabs.length) {
+                        this.log(`❌ Invalid tab index: ${val}`);
+                        this.testError = `Invalid tab index: ${val}`;
+                        return;
+                    }
+                    
+                    // 检查目标tab是否有可见的项目
+                    const targetTab = this.tabs[val];
+                    if (!targetTab || !targetTab.details || !Array.isArray(targetTab.details)) {
+                        this.log(`❌ Invalid tab data:`, targetTab);
+                        this.testError = 'Invalid tab data';
+                        return;
+                    }
+                    
+                    const visibleItems = targetTab.details.filter(item => item.is_show !== false);
+                    this.log(`Tab: ${targetTab.name}, Visible items: ${visibleItems.length}`);
+                    
+                    if (visibleItems.length === 0) {
+                        this.log(`❌ No visible items in tab: ${targetTab.name}`);
+                        this.testError = `No visible items in tab: ${targetTab.name}`;
+                        return;
+                    }
+                    
+                    this.log(`✅ Switching to tab: ${targetTab.name}`);
+                    this.currentTab = val;
+                    this.testError = null;
+                },
+                log(message) {
+                    this.consoleLogs.push(`[${new Date().toLocaleTimeString()}] ${message}`);
+                    console.log(message);
+                }
+            },
+            mounted() {
+                this.log('🚀 Tab切换测试页面已加载');
+                this.log(`当前Tab: ${this.currentTabName}, 可见项目: ${this.currentTabItems.length}`);
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>

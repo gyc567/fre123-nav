@@ -1,6 +1,6 @@
 <template>
 	<section
-		v-if="groupData.tab_list[currTab].details.filter((i) => i.is_show).length > 0"
+		v-if="currentTabHasVisibleItems"
 		:id="`${classNamePrefixGroup}${groupData.group_name}`"
 		class="index-nav-group bg-white pt-[10px] mb-[20px] px-4 rounded-lg"
 		:aria-label="`${groupData.group_name}工具分类`"
@@ -25,10 +25,11 @@
 						></li>
 						<li
 							v-for="(tab, i) in groupData.tab_list"
+							:key="i"
 							:data-index="i"
 							:id="`${classNamePrefixGroupTab}${groupData.group_name}_${tab.tab_name}`"
-							class="z-10 hover:text-[#007bff] hover:cursor-pointer active:text-[#007bff] active:font-bold px-3 text-[14px]"
-							:class="`${currTab == i ? 'active' : 'font-wei'}`"
+							class="z-10 hover:text-[#007bff] hover:cursor-pointer active:text-[#007bff] active:font-bold px-3 text-[14px] transition-colors duration-200"
+							:class="currTab === i ? 'active' : 'font-normal'"
 							@mouseenter="slideTo(i)"
 							@mouseleave="slideBack()"
 							@click="switchTab(i)"
@@ -40,13 +41,14 @@
 				<div class="flex-fill"></div>
 			</div>
 			<div
+				v-if="currentTabUpperRight"
 				class="flex-grow text-right text-red-500 text-[14px] hidden md:block text-ellipsis overflow-x-hidden whitespace-nowrap"
 			>
 				<a
 					class="hover:text-red-700"
-					:href="groupData.tab_list[currTab].upper_right_corner?.url"
+					:href="currentTabUpperRight.url"
 					target="_blank"
-					>{{ groupData.tab_list[currTab].upper_right_corner?.title }}</a
+					>{{ currentTabUpperRight.title }}</a
 				>
 			</div>
 		</header>
@@ -56,18 +58,17 @@
 			:aria-label="`${groupData.group_name}工具列表`"
 		>
 			<StyleTooltip
-				v-for="(item, t) in groupData.tab_list[currTab].details.filter((i) => i.is_show)"
+				v-for="(item, t) in currentTabVisibleItems"
 				:key="item.title"
 				:content="item.description"
 				:nowrap="true"
 				:element-id="`desc-${idx}-${t}`"
 				class="mb-[10px]"
-				:class="` ${showNumber <= t ? 'hidden' : ''}`"
+				:class="showNumber <= t ? 'hidden' : ''"
 				role="listitem"
 			>
 				<article>
 					<a
-						v-show="item.is_show"
 						class="index-nav-group-content-item rounded-xl shadow shadow-warm-gray-500 items-center py-[8px] px-[8px] border-[1px] border-white"
 						:href="item.url"
 						target="_blank"
@@ -108,6 +109,8 @@
 </template>
 
 <script setup lang="ts">
+import { computed, nextTick, ref, onMounted } from 'vue'
+import { useRoute } from '#app'
 import type { IGroup } from '~/interface/nav'
 const props = defineProps<{
 	groupData: IGroup
@@ -120,6 +123,26 @@ const classNamePrefixGroupTab = 'nav_group_tab_'
 const currTab = ref(0)
 const isHovering = ref(false)
 const showNumber = ref(100)
+
+// 计算当前tab是否有可见项目
+const currentTabHasVisibleItems = computed(() => {
+	const currentTab = props.groupData.tab_list[currTab.value]
+	if (!currentTab || !currentTab.details) return false
+	return currentTab.details.filter((item) => item.is_show !== false).length > 0
+})
+
+// 计算当前tab的可见项目
+const currentTabVisibleItems = computed(() => {
+	const currentTab = props.groupData.tab_list[currTab.value]
+	if (!currentTab || !currentTab.details) return []
+	return currentTab.details.filter((item) => item.is_show !== false)
+})
+
+// 计算当前tab的右上角链接
+const currentTabUpperRight = computed(() => {
+	const currentTab = props.groupData.tab_list[currTab.value]
+	return currentTab?.upper_right_corner || null
+})
 
 const padding = 12 // 左侧padding
 const fontSize = 14 //字体大小
@@ -144,17 +167,39 @@ const updateAnchor = (tabIndex: number) => {
 	}
 	left += Math.round(padding + (tab.tab_name.length * fontSize * (1 - scale)) / 2)
 
-	const anchor = document.getElementById(`${classNamePrefixGroup}${props.idx}_anchor`)
-	if (anchor) {
-		anchor.style.width = `${newWidth}px`
-		anchor.style.transform = `translateX(${left}px)`
-		anchor.style.transition = 'transform 0.3s, width 0.3s'
-	}
+	// 使用nextTick确保DOM更新完成
+	nextTick(() => {
+		// 只在客户端执行，避免SSR问题
+		if (process.client) {
+			const anchor = document.getElementById(`${classNamePrefixGroup}${props.idx}_anchor`)
+			if (anchor) {
+				anchor.style.width = `${newWidth}px`
+				anchor.style.transform = `translateX(${left}px)`
+				anchor.style.transition = 'transform 0.3s, width 0.3s'
+			}
+		}
+	})
 }
 
 // 切换数据
 let rewrite = false
 const switchTab = (val: number) => {
+	// 确保tab索引在有效范围内
+	if (val < 0 || val >= props.groupData.tab_list.length) {
+		return
+	}
+	
+	// 检查目标tab是否有可见的项目
+	const targetTab = props.groupData.tab_list[val]
+	if (!targetTab || !targetTab.details || !Array.isArray(targetTab.details)) {
+		return
+	}
+	
+	const visibleItems = targetTab.details.filter((item) => item.is_show !== false)
+	if (visibleItems.length === 0) {
+		return
+	}
+	
 	currTab.value = val
 	updateAnchor(val)
 	if (rewrite) {
@@ -182,18 +227,26 @@ const slideBack = () => {
 
 // 展示源网站跳转按钮
 const showToSourceIcon = (type: string, idx: number, t: number) => {
-	const element = document.getElementById(`to-source-icon-${idx}-${t}`)
-	if (type == 'show') {
-		element?.classList.remove('hidden')
-		element?.classList.add('flex')
-	} else {
-		element?.classList.remove('flex')
-		element?.classList.add('hidden')
+	// 只在客户端执行，避免SSR问题
+	if (process.client) {
+		const element = document.getElementById(`to-source-icon-${idx}-${t}`)
+		if (element) {
+			if (type == 'show') {
+				element.classList.remove('hidden')
+				element.classList.add('flex')
+			} else {
+				element.classList.remove('flex')
+				element.classList.add('hidden')
+			}
+		}
 	}
 }
 
 const jumpOut = (url: string) => {
-	window.open(url + '?ref=https://www.fre123.com', '_blank')
+	// 只在客户端执行，避免SSR问题
+	if (process.client) {
+		window.open(url + '?ref=https://www.fre123.com', '_blank')
+	}
 }
 
 const stop = ($event) => {
