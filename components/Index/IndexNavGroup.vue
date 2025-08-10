@@ -1,6 +1,6 @@
 <template>
 	<section
-		v-if="currentTabHasVisibleItems"
+		v-if="!hasRenderError && currentTabHasVisibleItems"
 		:id="`${classNamePrefixGroup}${groupData.group_name}`"
 		class="index-nav-group bg-white pt-[10px] mb-[20px] px-4 rounded-lg"
 		:aria-label="`${groupData.group_name}工具分类`"
@@ -53,23 +53,20 @@
 			</div>
 		</header>
 		<div
-			class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-4 gap-y-2 mt-[24px] cursor-pointer"
+			class="nav-grid-container"
 			role="list"
 			:aria-label="`${groupData.group_name}工具列表`"
 		>
-			<StyleTooltip
+			<div
 				v-for="(item, t) in currentTabVisibleItems"
-				:key="item.title"
-				:content="item.description"
-				:nowrap="true"
-				:element-id="`desc-${idx}-${t}`"
-				class="mb-[10px]"
+				:key="`${item.title}-${t}`"
+				class="nav-item-wrapper"
 				:class="showNumber <= t ? 'hidden' : ''"
 				role="listitem"
 			>
-				<article>
+				<article class="nav-item-card">
 					<a
-						class="index-nav-group-content-item rounded-xl shadow shadow-warm-gray-500 items-center py-[8px] px-[8px] border-[1px] border-white"
+						class="nav-item-link"
 						:href="item.url"
 						target="_blank"
 						rel="nofollow"
@@ -77,35 +74,62 @@
 						@mouseover="showToSourceIcon('show', idx, t)"
 						@mouseout="showToSourceIcon('hide', idx, t)"
 					>
-<img
-    class="index-nav-group-content-item-icon"
-    :src="item.icon"
-    loading="lazy"
-/>
-					<div class="index-nav-group-content-item-main">
-						<h3 class="index-nav-group-content-item-name">{{ item.title }}</h3>
-						<p :id="`desc-${idx}-${t}`" class="index-nav-group-content-item-desc">
-							{{ item.description }}
-						</p>
-					</div>
-					<div
-						v-if="item.ori_url"
-						:id="`to-source-icon-${idx}-${t}`"
-						class="hidden h-full items-center"
-						@click.stop="stop"
-						@click="jumpOut(item.ori_url)"
-					>
-						<Icon
-							size="18"
-							class="flex items-center text-slate-400 hover:text-slate-500"
-							name="uil:arrow-circle-right"
-						></Icon>
-					</div>
-				</a>
+						<img
+							class="nav-item-icon"
+							:src="item.icon"
+							:alt="`${item.title}图标`"
+							loading="lazy"
+							@error="handleImageError"
+						/>
+						<div class="nav-item-content">
+							<h3 class="nav-item-title">{{ item.title }}</h3>
+							<p 
+								:id="`desc-${idx}-${t}`" 
+								class="nav-item-desc"
+								:title="item.description"
+							>
+								{{ item.description }}
+							</p>
+						</div>
+						<div
+							v-if="item.ori_url"
+							:id="`to-source-icon-${idx}-${t}`"
+							class="nav-item-action hidden"
+							@click.stop="stop"
+							@click="jumpOut(item.ori_url)"
+						>
+							<Icon
+								size="18"
+								class="action-icon"
+								name="uil:arrow-circle-right"
+							></Icon>
+						</div>
+					</a>
 				</article>
-			</StyleTooltip>
+			</div>
 		</div>
 	</section>
+	
+	<!-- 错误边界 -->
+	<div v-else-if="hasRenderError" class="error-fallback">
+		<div class="bg-red-50 border border-red-200 rounded-lg p-4 mb-4">
+			<div class="flex">
+				<div class="flex-shrink-0">
+					<svg class="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor">
+						<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+					</svg>
+				</div>
+				<div class="ml-3">
+					<h3 class="text-sm font-medium text-red-800">
+						导航组件加载失败
+					</h3>
+					<div class="mt-2 text-sm text-red-700">
+						<p>{{ groupData?.group_name || '未知分组' }} 的数据结构异常，请检查配置文件。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </template>
 
 <script setup lang="ts">
@@ -123,19 +147,69 @@ const classNamePrefixGroupTab = 'nav_group_tab_'
 const currTab = ref(0)
 const isHovering = ref(false)
 const showNumber = ref(100)
+const hasRenderError = ref(false)
+
+// 验证数据结构
+const validateGroupData = () => {
+	try {
+		if (!props.groupData) {
+			console.error('GroupData is missing')
+			hasRenderError.value = true
+			return false
+		}
+		
+		if (!props.groupData.tab_list || !Array.isArray(props.groupData.tab_list)) {
+			console.error('Tab list is missing or invalid')
+			hasRenderError.value = true
+			return false
+		}
+		
+		if (props.groupData.tab_list.length === 0) {
+			console.error('Tab list is empty')
+			hasRenderError.value = true
+			return false
+		}
+		
+		return true
+	} catch (error) {
+		console.error('Error validating group data:', error)
+		hasRenderError.value = true
+		return false
+	}
+}
 
 // 计算当前tab是否有可见项目
 const currentTabHasVisibleItems = computed(() => {
-	const currentTab = props.groupData.tab_list[currTab.value]
-	if (!currentTab || !currentTab.details) return false
-	return currentTab.details.filter((item) => item.is_show !== false).length > 0
+	try {
+		if (!props.groupData || !props.groupData.tab_list || !Array.isArray(props.groupData.tab_list)) {
+			return false
+		}
+		const currentTab = props.groupData.tab_list[currTab.value]
+		if (!currentTab || !currentTab.details || !Array.isArray(currentTab.details)) {
+			return false
+		}
+		return currentTab.details.filter((item) => item && item.is_show !== false).length > 0
+	} catch (error) {
+		console.error('Error checking visible items:', error)
+		return false
+	}
 })
 
 // 计算当前tab的可见项目
 const currentTabVisibleItems = computed(() => {
-	const currentTab = props.groupData.tab_list[currTab.value]
-	if (!currentTab || !currentTab.details) return []
-	return currentTab.details.filter((item) => item.is_show !== false)
+	try {
+		if (!props.groupData || !props.groupData.tab_list || !Array.isArray(props.groupData.tab_list)) {
+			return []
+		}
+		const currentTab = props.groupData.tab_list[currTab.value]
+		if (!currentTab || !currentTab.details || !Array.isArray(currentTab.details)) {
+			return []
+		}
+		return currentTab.details.filter((item) => item && item.is_show !== false && item.title && item.url)
+	} catch (error) {
+		console.error('Error getting visible items:', error)
+		return []
+	}
 })
 
 // 计算当前tab的右上角链接
@@ -148,10 +222,20 @@ const padding = 12 // 左侧padding
 const fontSize = 14 //字体大小
 const scale = 0.6
 
-const initWidth = ref(
-	Math.round(props.groupData.tab_list[0].tab_name.length * fontSize * scale),
-)
+const initWidth = ref(0)
 const initLeft = ref(0)
+
+// 安全初始化宽度
+const initializeWidth = () => {
+	try {
+		if (props.groupData && props.groupData.tab_list && props.groupData.tab_list[0]) {
+			initWidth.value = Math.round(props.groupData.tab_list[0].tab_name.length * fontSize * scale)
+		}
+	} catch (error) {
+		console.error('Error initializing width:', error)
+		initWidth.value = 60 // 默认宽度
+	}
+}
 
 const updateAnchor = (tabIndex: number) => {
 	const tab = props.groupData.tab_list[tabIndex]
@@ -209,8 +293,13 @@ const switchTab = (val: number) => {
 
 // 初始化移动条位置
 const getTranslateX = () => {
-	updateAnchor(currTab.value)
+	if (validateGroupData()) {
+		updateAnchor(currTab.value)
+	}
 }
+
+// 初始化
+initializeWidth()
 getTranslateX()
 
 // 移动条移动
@@ -223,6 +312,15 @@ const slideTo = (tabIndex: number) => {
 const slideBack = () => {
 	isHovering.value = false
 	updateAnchor(currTab.value)
+}
+
+// 图片加载错误处理
+const handleImageError = (event: Event) => {
+	const target = event.target as HTMLImageElement
+	if (target) {
+		target.src = '/default-icon.svg' // 使用默认图标
+		target.onerror = null // 防止无限循环
+	}
 }
 
 // 展示源网站跳转按钮
@@ -284,16 +382,29 @@ const located = () => {
 }
 
 onMounted(async () => {
+	// 验证数据结构
+	if (!validateGroupData()) {
+		return
+	}
+	
+	// 调试信息
+	console.log('NavGroup mounted:', {
+		groupName: props.groupData.group_name,
+		tabCount: props.groupData.tab_list.length,
+		currentTab: currTab.value,
+		visibleItems: currentTabVisibleItems.value.length
+	})
+	
 	await located()
 	rewrite = true
 })
 </script>
 
 <style scoped>
+/* 标签切换相关样式 */
 .anchor {
 	position: absolute;
 	height: 28px;
-	/* width: 20px; */
 	bottom: 0;
 	opacity: 1;
 	z-index: 0;
@@ -305,104 +416,176 @@ onMounted(async () => {
 	font-weight: bold;
 }
 
+/* 导航组样式 */
 .index-nav-group {
 	box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.07);
 	transition: 0.3s;
 }
+
 .index-nav-group:hover {
 	box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.07);
 }
 
-.index-nav-group-content {
+/* 网格容器 - 使用更强的样式确保生效 */
+.nav-grid-container {
+	display: grid !important;
+	grid-template-columns: repeat(2, 1fr) !important;
+	gap: 1rem !important;
+	margin-top: 1.5rem !important;
+	width: 100% !important;
+}
+
+@media (min-width: 768px) {
+	.nav-grid-container {
+		grid-template-columns: repeat(3, 1fr) !important;
+	}
+}
+
+@media (min-width: 1024px) {
+	.nav-grid-container {
+		grid-template-columns: repeat(4, 1fr) !important;
+	}
+}
+
+@media (min-width: 1280px) {
+	.nav-grid-container {
+		grid-template-columns: repeat(5, 1fr) !important;
+	}
+}
+
+/* 导航项包装器 */
+.nav-item-wrapper {
+	margin-bottom: 0.5rem;
+}
+
+/* 导航项卡片 */
+.nav-item-card {
+	height: 100%;
+}
+
+/* 导航项链接 */
+.nav-item-link {
 	display: flex;
 	align-items: center;
-	height: 100%;
-	flex-wrap: wrap;
-}
-
-.index-nav-group-header {
-	display: flex;
-	border-top: 1px solid rgba(0, 0, 0, 0.05);
-	align-items: center;
-	height: 100%;
-	margin: 50px auto 20px auto;
-	padding: 40px 0 0 0;
-}
-
-.index-nav-group-header-icon {
-	height: 20px;
-	margin-left: 10px;
-}
-
-.index-nav-group-content-item {
-	display: flex;
-	box-sizing: border-box;
-	color: #434343;
+	padding: 0.75rem;
+	background-color: #ffffff;
+	border: 1px solid #e5e7eb;
+	border-radius: 0.75rem;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 	text-decoration: none;
-	transition-property: transform, background-color;
-	transition-duration: 1s, 1s;
-	flex-shrink: 0;
+	color: #374151;
+	transition: all 0.3s ease;
 	position: relative;
-	transition: all 0.5s ease;
+	height: 100%;
+	min-height: 80px;
 }
 
-.index-nav-group-header-name {
-	margin-left: 10px;
+.nav-item-link:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+	border-color: #3b82f6;
 }
 
-.index-nav-group-content-item:hover {
-	z-index: 2;
-	border-color: #efbb91;
-	.index-nav-group-content-item-name {
-		color: #007bff;
-	}
-	.to-source {
-		display: flex;
-	}
-}
-.index-nav-group-content-item:hover > img {
-	transform: scale(1.07);
-}
-
-.index-nav-group-content-item-icon {
+/* 导航项图标 */
+.nav-item-icon {
 	width: 32px;
 	height: 32px;
-	border-radius: 5px;
-	transition: all 0.6s;
-}
-
-.index-nav-group-content-item-main {
-	margin-left: 10px;
-	flex: 1;
-	/* background-color: #40a6ff0f; */
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
-.index-nav-group-content-item-name {
-	font-size: 14px;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	flex: 1;
+	border-radius: 0.375rem;
+	object-fit: cover;
 	flex-shrink: 0;
-	min-width: 70px;
-	/* background-color: rgba(170, 67, 67, 0.1); */
+	transition: transform 0.3s ease;
 }
-.index-nav-group-content-item-desc {
-	font-size: 12px;
-	height: 16px;
-	color: #7f7e7e;
-	/* background-color: #f951ff24; */
+
+.nav-item-link:hover .nav-item-icon {
+	transform: scale(1.1);
+}
+
+/* 导航项内容 */
+.nav-item-content {
+	margin-left: 0.75rem;
+	flex: 1;
+	min-width: 0;
+}
+
+/* 导航项标题 */
+.nav-item-title {
+	font-size: 0.875rem;
+	font-weight: 600;
+	color: #111827;
+	margin: 0 0 0.25rem 0;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+	line-height: 1.25;
 }
 
-.index-nav-group-content-item-desc:hover {
-	display: block;
-	white-space: normal;
-	overflow: visible;
-	-webkit-line-clamp: initial;
+.nav-item-link:hover .nav-item-title {
+	color: #3b82f6;
+}
+
+/* 导航项描述 */
+.nav-item-desc {
+	font-size: 0.75rem;
+	color: #6b7280;
+	margin: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	line-height: 1.25;
+}
+
+/* 导航项操作按钮 */
+.nav-item-action {
+	margin-left: 0.5rem;
+	align-items: center;
+	cursor: pointer;
+}
+
+.nav-item-action.hidden {
+	display: none !important;
+}
+
+.nav-item-link:hover .nav-item-action {
+	display: flex !important;
+}
+
+.action-icon {
+	color: #9ca3af;
+	transition: color 0.2s ease;
+}
+
+.action-icon:hover {
+	color: #6b7280;
+}
+
+/* 响应式调整 */
+@media (max-width: 640px) {
+	.nav-item-link {
+		padding: 0.5rem;
+		min-height: 70px;
+	}
+	
+	.nav-item-icon {
+		width: 28px;
+		height: 28px;
+	}
+	
+	.nav-item-content {
+		margin-left: 0.5rem;
+	}
+	
+	.nav-item-title {
+		font-size: 0.8125rem;
+	}
+	
+	.nav-item-desc {
+		font-size: 0.6875rem;
+	}
+}
+
+/* 错误状态 */
+.nav-item-icon[src="/default-icon.svg"] {
+	background-color: #f3f4f6;
+	border: 1px solid #e5e7eb;
 }
 </style>

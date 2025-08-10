@@ -78,6 +78,7 @@ export default defineNuxtConfig({
 	css: [
 		'~/assets/global.scss',
 		'~/assets/tailwind.css',
+		'~/assets/nav-fix.css',
 		'@fortawesome/fontawesome-svg-core/styles.css',
 	],
 	build: {
